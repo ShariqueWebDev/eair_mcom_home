@@ -1,6 +1,9 @@
+// D:\eair_mcom\eair_mcom_home\src\app\about\page.tsx
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BannerNewSection from "@/components/BannerNewSection";
 
 const AboutPage = () => {
   const teamMembers = [
@@ -47,9 +50,10 @@ const AboutPage = () => {
   ];
   return (
     <div>
+      <BannerNewSection />
       <section
         id="home"
-        className="relative z-10 overflow-hidden rounded-b-[50px] md:px-20 px-5 pb-15 pt-34"
+        className="relative z-10 overflow-hidden rounded-b-[50px] md:px-20 px-5 pb-15"
       >
         {/* Content Container */}
         <div className="relative z-10 mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
@@ -181,16 +185,15 @@ const AboutPage = () => {
             </div>
 
             {/* Team Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-17.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
               {teamMembers.map((member, index) => (
-                <div key={index} className="flex justify-center bg-white">
+                <div key={index} className="flex justify-center">
                   <div
-                    className="group text-center shadow-sm pt-9 pb-5 px-10 bg-white rounded-md"
+                    className="group text-center shadow-sm pt-9 pb-12 px-10 bg-white rounded-md"
                     data-aos="fade-up"
                     data-aos-delay={index * 100}
                   >
-                    {/* Team Image */}
-                    <div className="relative mx-auto mb-7.5 h-50 w-50 rounded-full overflow-hidden shadow-[0_3px_10px_rgb(0,0,0,0.2)] group-hover:ring-4 group-hover:ring-purple-500 transition-all duration-300">
+                    <div className="relative mx-auto mb-6 h-48 w-48 rounded-full overflow-hidden shadow-[0_3px_10px_rgb(0,0,0,0.2)] group-hover:ring-4 group-hover:ring-purple-500 transition-all duration-300">
                       <Image
                         src={member.image}
                         alt={member.name}
@@ -201,13 +204,10 @@ const AboutPage = () => {
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                     </div>
 
-                    {/* Team Info */}
-                    <h3 className="mb-2.5 text-xl font-semibold group-hover:text-purple-400 transition-colors duration-300">
+                    <h3 className="mb-2 text-xl font-semibold group-hover:text-purple-500 transition-colors duration-300">
                       {member.name}
                     </h3>
-                    <p className="mb-6 font-medium text-gray-600">
-                      {member.role}
-                    </p>
+                    <p className="text-gray-600 font-medium">{member.role}</p>
                   </div>
                 </div>
               ))}

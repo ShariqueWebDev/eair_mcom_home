@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/HeaderFooter/Header";
 import FloatingCall from "@/components/Others/FloatingCall";
 import SocialMediaButton from "@/components/Others/FloatingIcons";
+import Footer2 from "@/components/Footer2";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <FloatingCall />
           <SocialMediaButton />
         </div>
+        <Footer2 />
       </body>
     </html>
   );
