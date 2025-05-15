@@ -4,7 +4,7 @@ export const menu = [
     url: "/",
   },
   {
-    label: "About Eiar Mcom",
+    label: "About Mcom",
     url: "/about",
   },
   {
