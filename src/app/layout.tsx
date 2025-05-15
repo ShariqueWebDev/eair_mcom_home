@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/HeaderFooter/Header";
+import FloatingCall from "@/components/Others/FloatingCall";
+import SocialMediaButton from "@/components/Others/FloatingIcons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <div className="fixed bottom-10 right-10 z-[1000]">
+          <FloatingCall />
+          <SocialMediaButton />
+        </div>
       </body>
     </html>
   );

@@ -1,26 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Azer";
+  src: url("/fonts/29lt-azer-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Ensures better rendering */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.templateContainer {
+  @apply container mx-auto px-4 md:px-6 lg:px-10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.content-all {
+}
+
+.heading-all {
+  font-family: "Alef", sans-serif;
+}
+
+.arabicHeadings {
+  /* font-family: "Azer", sans-serif; */
+}
+
+.paraDesign {
+  text-align: left;
+  font-size: 15px;
+  word-spacing: 1;
+  line-height: 1.6;
+  color: #242424;
+}
+
+@media (max-width: 600px) {
+  .paraDesign {
+    text-align: left;
+    font-size: 14px;
+    word-spacing: 1;
+    line-height: 1.6;
+    color: #242424;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.sectionn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+}
+.containerr {
+  position: relative;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
