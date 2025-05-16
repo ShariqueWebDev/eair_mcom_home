@@ -2444,6 +2444,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Breadcrumb from "./BreadCrumb/BreadCrumb";
+import { Check } from "lucide-react";
 
 interface Category {
   name: string;
@@ -2574,145 +2576,151 @@ export default function CategorySection() {
   };
 
   return (
-    <section className="py-8 lg:py-16 overflow-hidden">
-      <div className="mx-auto px-4 max-w-7xl">
-        <div className="flex flex-wrap items-center -mx-3">
-          {/* Image Section */}
-          <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
-            <div className="relative flex items-center justify-center">
-              <Image
-                src={
-                  categories[activeSlide]?.subImage ||
-                  "/service_img/subImg/it.webp"
-                }
-                alt={categories[activeSlide]?.name || "Category"}
-                width={600}
-                height={400}
-                className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
-              />
-              <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
-              <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
-                <div className="bg-white bg-opacity-80 py-8 text-gray-700 text-sm sm:text-lg px-5 rounded-xl pointer-events-none w-full sm:w-3/4">
-                  {categories[activeSlide]?.points.map((point, i) => (
+    <>
+      <Breadcrumb
+        path="Service"
+        title="Our Service"
+        paragraph="Explore our range of services tailored to your needs."
+        bgImg="/top-banner/about-banner.webp"
+      />
+      <section className="py-8 lg:py-16 overflow-hidden">
+        <div className="mx-auto px-4 max-w-7xl">
+          <div className="flex flex-wrap items-center -mx-3">
+            {/* Image Section */}
+            <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
+              <div className="relative flex items-center justify-center">
+                <Image
+                  src={
+                    categories[activeSlide]?.subImage ||
+                    "/service_img/subImg/it.webp"
+                  }
+                  alt={categories[activeSlide]?.name || "Category"}
+                  width={600}
+                  height={400}
+                  className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+                />
+                <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
+                  <div className="bg-white bg-opacity-80 py-8 text-gray-700 text-sm sm:text-lg px-5 rounded-xl pointer-events-none w-full sm:w-3/4">
+                    {categories[activeSlide]?.points.map((point, i) => (
+                      <div
+                        key={i}
+                        className="mb-3 break-words text-xs sm:text-base flex items-start "
+                      >
+                        <div className="bg-[#2e2e84] rounded-full p-0.5 mr-3 mt-1">
+                          <Check size={12} color="#fff" />
+                        </div>
+                        {point}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Categories Section */}
+            <div className="w-full lg:w-7/12 px-3">
+              <h2 className="font-quicksand heading-all text-4xl sm:text-6xl text-gray-500 lg:text-[120px] font-bold leading- tracking- mb-6 lg:mb-8">
+                Explore <br /> Categories
+              </h2>
+
+              <div className="relative">
+                {/* Slider for Desktop/Tablet (md and above) */}
+                <div className="hidden md:block">
+                  <Slider {...settings} ref={sliderRef}>
+                    {categories.map((category, index) => (
+                      <div key={index} className="px-3">
+                        <div
+                          className={`p-6 rounded-2xl flex flex-col items-center text-center ${
+                            category.bgColor
+                          } cursor-pointer ${
+                            index === activeSlide
+                              ? "border border-[#2e2e84]"
+                              : ""
+                          }`}
+                          onClick={() => handleCategorySelect(index)}
+                          onTouchStart={() => handleCategorySelect(index)}
+                        >
+                          <div className="mb-3 transform transition-transform duration-300 hover:scale-110">
+                            <Image
+                              src={category.icon}
+                              alt={category.name}
+                              width={50}
+                              height={50}
+                              className={` ${
+                                index === activeSlide ? "scale-150 my-2 " : ""
+                              } w-10 h-10 lg:w-12 lg:h-12 transition-all duration-500`}
+                            />
+                          </div>
+                          <div>
+                            <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
+                              <p className="font-poppins text-base font-medium text-gray-800 capitalize">
+                                {category.name}
+                              </p>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </Slider>
+                </div>
+
+                {/* Card List for Mobile (below md) */}
+                <div className="md:hidden space-y-4">
+                  {categories.map((category, index) => (
                     <div
-                      key={i}
-                      className="mb-1 break-words text-xs sm:text-base flex items-start"
+                      key={index}
+                      className={`p-4 rounded-lg ${
+                        category.bgColor
+                      } shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
+                        index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+                      }`}
+                      onClick={() => handleCategorySelect(index)}
+                      onTouchStart={() => handleCategorySelect(index)}
                     >
-                      <Image
-                        src="/service_img/icons/select-icon-png-22-4173701700.jpg"
-                        alt="image"
-                        width={20}
-                        height={20}
-                        className="mr-2"
-                      />
-                      {point}
+                      {/* Card Header: Icon and Name */}
+                      <div className="flex items-center mb-3">
+                        <Image
+                          src={category.icon}
+                          alt={category.name}
+                          width={40}
+                          height={40}
+                          className="w-10 h-10 mr-3"
+                        />
+                        <h3 className="font-quicksand text-lg font-semibold text-gray-800">
+                          {category.name}
+                        </h3>
+                      </div>
+
+                      {/* SubImage */}
+                      <div className="relative mb-3">
+                        <Image
+                          src={category.subImage}
+                          alt={category.name}
+                          width={300}
+                          height={200}
+                          className="w-full h-40 object-cover rounded-lg"
+                        />
+                        <div className="absolute inset-0 bg-black opacity-20 rounded-lg"></div>
+                      </div>
+
+                      {/* Points */}
+                      <ul className="text-sm text-gray-700 space-y-1">
+                        {category.points.map((point, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className="mr-2">•</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Categories Section */}
-          <div className="w-full lg:w-7/12 px-3">
-            <h2 className="font-quicksand text-4xl sm:text-6xl text-gray-400 lg:text-[120px] font-bold leading-tight tracking-wide mb-6 lg:mb-8">
-              Explore <br /> Categories
-            </h2>
-
-            <div className="relative">
-              {/* Slider for Desktop/Tablet (md and above) */}
-              <div className="hidden md:block">
-                <Slider {...settings} ref={sliderRef}>
-                  {categories.map((category, index) => (
-                    <div key={index} className="px-3">
-                      <div
-                        className={`p-6 rounded-2xl flex flex-col items-center text-center ${
-                          category.bgColor
-                        } cursor-pointer ${
-                          index === activeSlide
-                            ? "border-4 border-[#2e2e84]"
-                            : ""
-                        }`}
-                        onClick={() => handleCategorySelect(index)}
-                        onTouchStart={() => handleCategorySelect(index)}
-                      >
-                        <div className="mb-3 transform transition-transform duration-300 hover:scale-115">
-                          <Image
-                            src={category.icon}
-                            alt={category.name}
-                            width={50}
-                            height={50}
-                            className="w-12 h-12 lg:w-16 lg:h-16"
-                          />
-                        </div>
-                        <div>
-                          <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
-                            <p className="font-poppins text-base font-medium text-gray-800 capitalize">
-                              {category.name}
-                            </p>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </Slider>
-              </div>
-
-              {/* Card List for Mobile (below md) */}
-              <div className="md:hidden space-y-4">
-                {categories.map((category, index) => (
-                  <div
-                    key={index}
-                    className={`p-4 rounded-lg ${
-                      category.bgColor
-                    } shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
-                      index === activeSlide ? "border-4 border-[#2e2e84]" : ""
-                    }`}
-                    onClick={() => handleCategorySelect(index)}
-                    onTouchStart={() => handleCategorySelect(index)}
-                  >
-                    {/* Card Header: Icon and Name */}
-                    <div className="flex items-center mb-3">
-                      <Image
-                        src={category.icon}
-                        alt={category.name}
-                        width={40}
-                        height={40}
-                        className="w-10 h-10 mr-3"
-                      />
-                      <h3 className="font-quicksand text-lg font-semibold text-gray-800">
-                        {category.name}
-                      </h3>
-                    </div>
-
-                    {/* SubImage */}
-                    <div className="relative mb-3">
-                      <Image
-                        src={category.subImage}
-                        alt={category.name}
-                        width={300}
-                        height={200}
-                        className="w-full h-40 object-cover rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-black opacity-20 rounded-lg"></div>
-                    </div>
-
-                    {/* Points */}
-                    <ul className="text-sm text-gray-700 space-y-1">
-                      {category.points.map((point, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className="mr-2">•</span>
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

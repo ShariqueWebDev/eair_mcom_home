@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
 import ContactCard from "@/components/ContactCard";
 import ContactForm from "@/components/Forms/ContactForm";
 // import Breadcrumb from "@/components/Layouts/Breadcrumb/Breadcrumb";
@@ -40,47 +41,42 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Address",
-      value: "Sharjah, Media City, Sharjah, UAE",
-    },
-    {
-      icon: MapPin,
-      label: "Address",
-      value: "BB 709, Jafza One, Jebel Ali, Dubai, UAE",
+      value: "Office 210, Lulu Office Building, Al Muteena, Dubai, UAE",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+971 5 5332 6843",
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+971 5 8528 8858",
+      value: "+ (971)  55 956 3722",
     },
     {
       icon: Mail,
       label: "Mail",
-      value: "info@yovantrecruitment.com",
+      value: "sales@mcomcctv.com",
     },
   ];
 
   return (
     <>
       {/* <Breadcrumb breadCrumb={["Home", "Contact Us"]} heading="Contact Us" /> */}
-      <div className="templateContainer text-white tex-wh py-8 md:py-8 lg:py-14 flex flex-col lg:flex-row gap-14 lg:gap-14">
+      <div className="">
+        <Breadcrumb
+          path="Contact"
+          title="Contact Mcom"
+          paragraph="Whether you're seeking IT solutions, product distribution, or managed services, our team is ready to help. Let’s start the conversation today."
+          bgImg="/top-banner/contact-banner.webp"
+        />
+      </div>
+      <div className="md:px-20 px-5  text-white py-8 md:py-16 flex flex-col lg:flex-row gap-14 lg:gap-14">
         <div className="space-y-2 w-full lg:w-[60%]">
           <div className="space-y-4">
-            <h2 className="text-3xl lg:text-4xl gradientHeading font-bold tracking-wide">
+            <h2 className="text-3xl lg:text-4xl heading-all gradientHeading text-gray-800 font-bold tracking-wide">
               GET IN TOUCH
             </h2>
-            <p className="tracking-wider leading-relaxed text-[0.9rem] lg:text-[0.95rem] font-light">
+            <p className="tracking-wider leading-relaxed text-gray-600 text-[0.9rem] lg:text-[0.95rem] ">
               Need to get in touch? We'd love to hear from you! Please fill out
               the form or email{" "}
-              <a
-                href="mailto:info@yovantrecruitment.com"
-                className="text-lightGolden"
-              >
-                info@yovantrecruitment.com
+              <a href="mailto:sales@mcomcctv.com" className="text-lightGolden">
+                sales@mcomcctv.com
               </a>
               , and our customer service team will respond within 24-72 hours.
             </p>

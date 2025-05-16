@@ -33,11 +33,12 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer2 />
         <div className="fixed bottom-10 right-10 z-[1000]">
           <FloatingCall />
           <SocialMediaButton />
         </div>
-        <Footer2 />
+        {/* <Footer2 /> */}
       </body>
     </html>
   );

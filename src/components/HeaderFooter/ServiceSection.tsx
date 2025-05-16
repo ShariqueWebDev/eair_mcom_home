@@ -146,13 +146,15 @@ const ServiceSection = () => {
           {/* <span className="inline-flex items-center gap-2 rounded-full px-4.5 py-1.5 text-sm font-medium border border-gray-500 text-gray-800 mb-4">
             <span className="text-[11px]">Our Services</span>
           </span> */}
-          <h2 className="mb-4.5 text-2xl font-bold text-gray-800 heading-all sm:text-4xl xl:text-5xl">
-            What Our User Says
+          <h2 className="mb-4.5 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl">
+            Excellence in HVAC Installation, <br className="max-sm:hidden" />{" "}
+            Service & Repair
           </h2>
           <p className="mx-auto max-w-[714px] font-medium text-gray-600">
-            Build SaaS AI applications using OpenAI and Next.js, this kit comes
-            with pre-configured and pre-built examples, making it easier to
-            quickly kickstart your AI startup.
+            Mcom is a heating and cooling service company with a history of
+            excellence, customer service, and quality craftsmanship. We
+            specialize in HVAC service, replacement, and repair for both
+            residential and commercial customers in North America.
           </p>
         </div>
 
