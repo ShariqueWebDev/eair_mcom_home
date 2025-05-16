@@ -4,6 +4,7 @@ import ServiceSection from "@/components/HeaderFooter/ServiceSection";
 import WhyChooseUs from "@/components/HeaderFooter/WhyChooseUs";
 import TestimonialSection from "@/components/TestimonialPage/TestimonialSection";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,9 +30,11 @@ export default function Home() {
                 your needs.
               </p>
             </div>
-            <div className="border border-gray-400  px-5 h-fit py-1.5 text-gray-600 rounded-md text-sm">
-              Get in touch
-            </div>
+            <Link href={"/contact"}>
+              <div className="border border-gray-400  px-5 h-fit py-1.5 text-gray-600 rounded-md text-sm">
+                Get in touch
+              </div>
+            </Link>
           </div>
         </div>
       </div>

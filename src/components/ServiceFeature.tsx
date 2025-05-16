@@ -2597,7 +2597,7 @@ export default function CategorySection() {
                   alt={categories[activeSlide]?.name || "Category"}
                   width={600}
                   height={400}
-                  className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+                  className="w-full h-[400px]  md:h-[500px]  object-cover rounded-3xl"
                 />
                 <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
                 <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
@@ -2620,11 +2620,11 @@ export default function CategorySection() {
 
             {/* Categories Section */}
             <div className="w-full lg:w-7/12 px-3">
-              <h2 className="font-quicksand heading-all text-4xl sm:text-6xl text-gray-500 lg:text-[120px] font-bold leading- tracking- mb-6 lg:mb-8">
-                Explore <br /> Categories
+              <h2 className="font-quicksand heading-all text-4xl sm:text-6xl text-gray-500 lg:text-[100px] font-bold leading- tracking- mb-6 lg:mb-8">
+                Explore <br /> Our Services
               </h2>
 
-              <div className="relative">
+              <div className="relative  md:h-[160px]">
                 {/* Slider for Desktop/Tablet (md and above) */}
                 <div className="hidden md:block">
                   <Slider {...settings} ref={sliderRef}>
@@ -2673,7 +2673,7 @@ export default function CategorySection() {
                       className={`p-4 rounded-lg ${
                         category.bgColor
                       } shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
-                        index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+                        index === activeSlide ? "" : ""
                       }`}
                       onClick={() => handleCategorySelect(index)}
                       onTouchStart={() => handleCategorySelect(index)}

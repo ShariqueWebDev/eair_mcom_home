@@ -7,32 +7,60 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us -  Mcom",
+  description:
+    "Get in touch with  Mcom for expert IT solutions, cybersecurity services, cloud infrastructure, and product inquiries. We're here to assist you with timely and reliable support.",
+  keywords: [
+    "Contact  Mcom",
+    "IT Support",
+    "Cybersecurity Contact",
+    "Cloud Services Help",
+    "Managed IT Assistance",
+    "IT Company UAE",
+    "Technology Contact Page",
+  ],
+  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  creator: " Mcom",
+  publisher: " Mcom",
+  metadataBase: new URL("https://mcom.com"),
   openGraph: {
-    siteName: "Yovant Recruitment Services",
-    title: "Contact Us",
+    title: "Contact  Mcom - Let's Connect",
     description:
-      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
-    url: `https://yovantrecruitment.com/contact`,
-    type: "website",
+      "Reach out to  Mcom for tailored IT and cybersecurity services. Our team is ready to assist you with expert solutions and responsive support.",
+    url: "https://mcom.com/contact",
+    siteName: " Mcom",
     images: [
       {
-        url: `${process.env.FRONTEND}/assets/logo/webp/opengraph.webp`,
-        width: 1200,
-        height: 630,
-        alt: "Yovant Recruitment Services",
+        url: "/logo/logo-mcom.png",
+        width: 800,
+        height: 600,
+        alt: " Mcom Logo",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us",
+    title: "Contact  Mcom - Reach Our IT Experts",
     description:
-      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
-    images: [`${process.env.FRONTEND}/assets/logo/webp/opengraph.webp`],
+      "Connect with the  Mcom team for personalized IT services, cybersecurity support, and cloud infrastructure solutions.",
+    images: ["/logo/logo-mcom.png"],
+    site: "@mcom",
+    creator: "@mcom",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
   },
   alternates: {
-    canonical: `${process.env.FRONTEND}/contact`,
+    canonical: "https://mcom.com/contact",
   },
 };
 
