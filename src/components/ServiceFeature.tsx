@@ -1384,6 +1384,1060 @@
 //   );
 // }
 
+///////////////////// 15-5-2025------------
+// "use client";
+// import { useState, useRef } from "react";
+// import Image from "next/image";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// const categories = [
+//   {
+//     name: "IT Service",
+//     bgColor: "bg-[#fbf9e4]",
+//     icon: "/service_img/icons/global-icon-png-1-62588758.jpg",
+//     subImage: "/service_img/subImg/it.webp",
+//     points: [
+//       "Server installation and configuration.",
+//       "Infrastructure planning and implementing.",
+//       "Remote access services.",
+//       "Exchange server configuration.",
+//       "Terminal server and client connectivity.",
+//       "Email server solutions for corporate.",
+//       "NAT solutions.",
+//     ],
+//   },
+//   {
+//     name: "CCTV Service",
+//     bgColor: "bg-[#fef1f1]",
+//     icon: "/service_img/icons/cctv-camera-131-1086991-134936168.png",
+//     subImage: "/service_img/subImg/cctv.webp",
+//     points: [
+//       "Digital video recording and clients installation.",
+//       "CCTV camera installation.",
+//       "Certification of CCTV projects.",
+//       "IP Camera Installation & Configuration.",
+//       "Remote Monitoring Setup (Mobile & PC Access).",
+//       "Upgrading Legacy CCTV Systems to HD/IP.",
+//       "Cloud Storage & Backup Solutions",
+//     ],
+//   },
+//   {
+//     name: "Bio-Metric Service",
+//     bgColor: "bg-[#e1f4]",
+//     icon: "/service_img/icons/Fingerprint-512-3274273457.png",
+//     subImage: "/service_img/subImg/bio-metric.webp",
+//     points: [
+//       "Annual Maintenance Contracts (AMC) for Servers, Workstations, Printers, and Plotters.",
+//       "Access Control System Installation & Configuration.",
+//       "PABX (Private Automatic Branch Exchange) Installation & Configuration.",
+//       "Biometric Time Attendance System Setup.",
+//       "Intercom & Paging System Installation.",
+//     ],
+//   },
+//   {
+//     name: "UI / UX Service",
+//     bgColor: "bg-[#e1fcf2]",
+//     icon: "/service_img/icons/pngtree-ui-and-ux-app-concept-elements-collection-for-social-media-png-image_6866294-2171584179.png",
+//     subImage: "/service_img/subImg/ui-ux-service2.webp",
+//     points: [
+//       "Website Domain Purchase & Configuration.",
+//       "Graphics Design & Visual Content Creation.",
+//       "Web development.",
+//       "UI/UX Wireframing & Prototyping.",
+//       "User Journey Mapping & Persona Development.",
+//       "Brand Identity Design (Logo, Colors, Fonts).",
+//       "User Testing & Feedback Implementation.",
+//     ],
+//   },
+//   {
+//     name: "Networking Service",
+//     bgColor: "bg-[#f4f1fe]",
+//     icon: "/service_img/icons/pngtree-network-icon-png-image_8443511-389870977.png",
+//     subImage: "/service_img/subImg/network.webp",
+//     points: [
+//       "Computer Assembling & Hardware Setup.",
+//       "System Troubleshooting & Diagnostics.",
+//       "Data Recovery & Backup Solutions.",
+//       "Regular System Servicing & Cleaning.",
+//       "LAN & WAN Network Setup.",
+//       "Firewall Installation & Network Security Setup.",
+//       "Server Installation & Maintenance.",
+//     ],
+//   },
+// ];
+
+// export default function CategorySection() {
+//   const [activeSlide, setActiveSlide] = useState(0);
+//   const sliderRef = useRef<any>(null);
+
+//   const settings = {
+//     centerMode: true,
+//     centerPadding: "0px",
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     infinite: true,
+//     speed: 500,
+//     dots: false,
+//     beforeChange: (current: any, next: any) => {
+//       console.log("Slider changing to index:", next);
+//       setActiveSlide(next);
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//     ],
+//   };
+
+//   const handleCategorySelect = (index: any) => {
+//     console.log("Category selected:", index);
+//     setActiveSlide(index);
+//     if (sliderRef.current) {
+//       sliderRef.current.slickGoTo(index);
+//     }
+//   };
+
+//   return (
+//     <section className="py-12 overflow-hidden lg:py-16">
+//       <div className="container mx-auto px-4 max-w-7xl">
+//         <div className="flex flex-wrap items-center -mx-3">
+//           {/* Image Section */}
+//           <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
+//             <div className="relative">
+//               <Image
+//                 src={
+//                   categories[activeSlide]?.subImage || "/service_img/it.webp"
+//                 }
+//                 alt={categories[activeSlide]?.name || "Category"}
+//                 width={600}
+//                 height={400}
+//                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+//               />
+
+//               {/* Overlay text */}
+//               <div className="absolute top-24 sm:bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-80 text-gray-700 text-sm sm:text-lg py-2 sm:py-3 px-3 sm:px-5 rounded-xl w-[calc(100%-24px)] sm:w-[calc(100%-40px)] max-h-[32vh] overflow-y-auto overflow-x-hidden pointer-events-none">
+//                 {Array.isArray(categories[activeSlide]?.points)
+//                   ? categories[activeSlide].points.map((point, i) => (
+//                       <div
+//                         key={i}
+//                         className="mb-1 break-words whitespace-normal text-xs sm:text-base"
+//                       >
+//                         • {point}
+//                       </div>
+//                     ))
+//                   : categories[activeSlide]?.points ||
+//                     "Explore our range of services."}
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Categories Section */}
+//           <div className="w-full lg:w-7/12 px-3">
+//             <h2 className="font-quicksand text-4xl sm:text-6xl lg:text-[120px] opacity-60 font-bold text-black leading-tight tracking-wide mb-6 lg:mb-8">
+//               Explore Categories
+//             </h2>
+//             <div className="relative">
+//               {/* Slider for Desktop/Tablet (md and above) */}
+//               <div className="hidden md:block">
+//                 <Slider {...settings} ref={sliderRef}>
+//                   {categories.map((category, index) => (
+//                     <div key={index} className="px-3">
+//                       <div
+//                         className={`p-6 rounded-2xl flex flex-col items-center text-center ${
+//                           category.bgColor
+//                         } transition-transform transform hover:scale-105 cursor-pointer ${
+//                           index === activeSlide
+//                             ? "border-4 border-[#2e2e84]"
+//                             : ""
+//                         }`}
+//                         onClick={() => handleCategorySelect(index)}
+//                         onTouchStart={() => handleCategorySelect(index)} // Added for touch support
+//                         data-aos="flip-left"
+//                         data-aos-duration="1000"
+//                         data-aos-delay={200 + index * 200}
+//                       >
+//                         <div className="mb-3">
+//                           <Image
+//                             src={category.icon}
+//                             alt={category.name}
+//                             width={50}
+//                             height={50}
+//                             className="w-12 h-12 lg:w-16 lg:h-16"
+//                           />
+//                         </div>
+//                         <div>
+//                           <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
+//                             <a
+//                               href="/shop"
+//                               className="font-poppins text-base font-medium text-gray-800 capitalize"
+//                             >
+//                               {category.name}
+//                             </a>
+//                           </h5>
+//                         </div>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </Slider>
+//               </div>
+//               {/* Grid for Mobile (below md) */}
+//               <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+//                 {categories.map((category, index) => (
+//                   <div
+//                     key={index}
+//                     className={`p-4 sm:p-6 rounded-2xl flex flex-col items-center text-center ${
+//                       category.bgColor
+//                     } transition-transform transform hover:scale-105 cursor-pointer ${
+//                       index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+//                     }`}
+//                     onClick={() => handleCategorySelect(index)}
+//                     onTouchStart={() => handleCategorySelect(index)} // Added for touch support
+//                     data-aos="flip-left"
+//                     data-aos-duration="1000"
+//                     data-aos-delay={200 + index * 200}
+//                   >
+//                     <div className="mb-3">
+//                       <Image
+//                         src={category.icon}
+//                         alt={category.name}
+//                         width={50}
+//                         height={50}
+//                         className="w-10 h-10 sm:w-12 sm:h-12"
+//                       />
+//                     </div>
+//                     <div>
+//                       <h5 className="font-quicksand text-sm sm:text-base font-semibold text-gray-800 mb-1">
+//                         <a
+//                           href="/shop"
+//                           className="font-poppins text-sm sm:text-base font-medium text-gray-800 capitalize pointer-events-none" // Prevent link clicks
+//                         >
+//                           {category.name}
+//                         </a>
+//                       </h5>
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// "use client";
+// import { useState, useRef } from "react";
+// import Image from "next/image";
+// import Slider, { Settings } from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// const categories = [
+//   {
+//     name: "IT Service",
+//     bgColor: "bg-[#fbf9e4]",
+//     icon: "/service_img/icons/global-icon-png-1-62588758.jpg",
+//     subImage: "/service_img/subImg/it.webp",
+//     points: [
+//       "Server installation and configuration.",
+//       "Infrastructure planning and implementing.",
+//       "Remote access services.",
+//       "Exchange server configuration.",
+//       "Terminal server and client connectivity.",
+//       "Email server solutions for corporate.",
+//       "NAT solutions.",
+//     ],
+//   },
+//   {
+//     name: "CCTV Service",
+//     bgColor: "bg-[#fef1f1]",
+//     icon: "/service_img/icons/cctv-camera-131-1086991-134936168.png",
+//     subImage: "/service_img/subImg/cctv.webp",
+//     points: [
+//       "Digital video recording and clients installation.",
+//       "CCTV camera installation.",
+//       "Certification of CCTV projects.",
+//       "IP Camera Installation & Configuration.",
+//       "Remote Monitoring Setup (Mobile & PC Access).",
+//       "Upgrading Legacy CCTV Systems to HD/IP.",
+//       "Cloud Storage & Backup Solutions",
+//     ],
+//   },
+//   {
+//     name: "Bio-Metric Service",
+//     bgColor: "bg-[#e1f4]",
+//     icon: "/service_img/icons/Fingerprint-512-3274273457.png",
+//     subImage: "/service_img/subImg/bio-metric.webp",
+//     points: [
+//       "Annual Maintenance Contracts (AMC) for Servers, Workstations, Printers, and Plotters.",
+//       "Access Control System Installation & Configuration.",
+//       "PABX (Private Automatic Branch Exchange) Installation & Configuration.",
+//       "Biometric Time Attendance System Setup.",
+//       "Intercom & Paging System Installation.",
+//     ],
+//   },
+//   {
+//     name: "UI / UX Service",
+//     bgColor: "bg-[#e1fcf2]",
+//     icon: "/service_img/icons/pngtree-ui-and-ux-app-concept-elements-collection-for-social-media-png-image_6866294-2171584179.png",
+//     subImage: "/service_img/subImg/ui-ux-service2.webp",
+//     points: [
+//       "Website Domain Purchase & Configuration.",
+//       "Graphics Design & Visual Content Creation.",
+//       "Web development.",
+//       "UI/UX Wireframing & Prototyping.",
+//       "User Journey Mapping & Persona Development.",
+//       "Brand Identity Design (Logo, Colors, Fonts).",
+//       "User Testing & Feedback Implementation.",
+//     ],
+//   },
+//   {
+//     name: "Networking Service",
+//     bgColor: "bg-[#f4f1fe]",
+//     icon: "/service_img/icons/pngtree-network-icon-png-image_8443511-389870977.png",
+//     subImage: "/service_img/subImg/network.webp",
+//     points: [
+//       "Computer Assembling & Hardware Setup.",
+//       "System Troubleshooting & Diagnostics.",
+//       "Data Recovery & Backup Solutions.",
+//       "Regular System Servicing & Cleaning.",
+//       "LAN & WAN Network Setup.",
+//       "Firewall Installation & Network Security Setup.",
+//       "Server Installation & Maintenance.",
+//     ],
+//   },
+// ];
+
+// export default function CategorySection() {
+//   const [activeSlide, setActiveSlide] = useState(0);
+//   const sliderRef = useRef<Slider>(null);
+
+//   const settings: Settings = {
+//     centerMode: true,
+//     centerPadding: "0px",
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     infinite: true,
+//     speed: 500,
+//     dots: false,
+//     beforeChange: (next: number) => {
+//       console.log("Slider changing to index:", next);
+//       setActiveSlide(next);
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//     ],
+//   };
+
+//   const handleCategorySelect = (index: number) => {
+//     console.log("Category selected:", index);
+//     setActiveSlide(index);
+//     if (sliderRef.current) {
+//       sliderRef.current.slickGoTo(index);
+//     }
+//   };
+
+//   const validActiveSlide = Math.min(
+//     Math.max(activeSlide, 0),
+//     categories.length - 1
+//   );
+
+//   return (
+//     <section className="py-12 overflow-hidden lg:py-16">
+//       <div className="container mx-auto px-4 max-w-7xl">
+//         <div className="flex flex-wrap items-center -mx-3">
+//           {/* Image Section */}
+//           <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
+//             <div className="relative">
+//               <Image
+//                 src={
+//                   categories[validActiveSlide]?.subImage ||
+//                   "/service_img/it.webp"
+//                 }
+//                 alt={categories[validActiveSlide]?.name || "Category"}
+//                 width={600}
+//                 height={400}
+//                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+//               />
+
+//               {/* Overlay text */}
+//               <div className="absolute top-24 sm:bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-80 text-gray-700 text-sm sm:text-lg py-2 sm:py-3 px-3 sm:px-5 rounded-xl w-[calc(100%-24px)] sm:w-[calc(100%-40px)] max-h-[32vh] overflow-y-auto overflow-x-hidden pointer-events-none">
+//                 {Array.isArray(categories[validActiveSlide]?.points)
+//                   ? categories[validActiveSlide].points.map((point, i) => (
+//                       <div
+//                         key={i}
+//                         className="mb-1 break-words whitespace-normal text-xs sm:text-base"
+//                       >
+//                         • {point}
+//                       </div>
+//                     ))
+//                   : categories[validActiveSlide]?.points ||
+//                     "Explore our range of services."}
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Categories Section */}
+//           <div className="w-full lg:w-7/12 px-3">
+//             <h2 className="font-quicksand text-4xl sm:text-6xl lg:text-[120px] opacity-60 font-bold text-black leading-tight tracking-wide mb-6 lg:mb-8">
+//               Explore Categories
+//             </h2>
+//             <div className="relative">
+//               {/* Slider for Desktop/Tablet (md and above) */}
+//               <div className="hidden md:block">
+//                 <Slider {...settings} ref={sliderRef}>
+//                   {categories.map((category, index) => (
+//                     <div key={index} className="px-3">
+//                       <div
+//                         className={`p-6 rounded-2xl flex flex-col items-center text-center ${
+//                           category.bgColor
+//                         } transition-transform transform hover:scale-105 cursor-pointer ${
+//                           index === activeSlide
+//                             ? "border-4 border-[#2e2e84]"
+//                             : ""
+//                         }`}
+//                         onClick={() => handleCategorySelect(index)}
+//                         onTouchEnd={() => handleCategorySelect(index)}
+//                       >
+//                         <div className="mb-3">
+//                           <Image
+//                             src={category.icon}
+//                             alt={category.name}
+//                             width={50}
+//                             height={50}
+//                             className="w-12 h-12 lg:w-16 lg:h-16"
+//                           />
+//                         </div>
+//                         <div>
+//                           <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
+//                             <a
+//                               href="/shop"
+//                               className="font-poppins text-base font-medium text-gray-800 capitalize"
+//                             >
+//                               {category.name}
+//                             </a>
+//                           </h5>
+//                         </div>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </Slider>
+//               </div>
+//               {/* Grid for Mobile (below md) */}
+//               <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+//                 {categories.map((category, index) => (
+//                   <div
+//                     key={index}
+//                     className={`p-4 sm:p-6 rounded-2xl flex flex-col items-center text-center ${
+//                       category.bgColor
+//                     } transition-transform transform hover:scale-105 cursor-pointer ${
+//                       index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+//                     }`}
+//                     onClick={() => handleCategorySelect(index)}
+//                     onTouchEnd={() => handleCategorySelect(index)}
+//                   >
+//                     <div className="mb-3">
+//                       <Image
+//                         src={category.icon}
+//                         alt={category.name}
+//                         width={50}
+//                         height={50}
+//                         className="w-10 h-10 sm:w-12 sm:h-12"
+//                       />
+//                     </div>
+//                     <div>
+//                       <h5 className="font-quicksand text-sm sm:text-base font-semibold text-gray-800 mb-1">
+//                         <a
+//                           href="/shop"
+//                           className="font-poppins text-sm sm:text-base font-medium text-gray-800 capitalize"
+//                         >
+//                           {category.name}
+//                         </a>
+//                       </h5>
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// "use client";
+// import { useState, useRef, useEffect } from "react";
+// import Image from "next/image";
+// import Slider, { Settings } from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// const categories = [
+//   {
+//     name: "IT Service",
+//     bgColor: "bg-[#fbf9e4]",
+//     icon: "/service_img/icons/global-icon-png-1-62588758.jpg",
+//     subImage: "/service_img/subImg/it.webp",
+//     points: [
+//       "Server installation and configuration.",
+//       "Infrastructure planning and implementing.",
+//       "Remote access services.",
+//       "Exchange server configuration.",
+//       "Terminal server and client connectivity.",
+//       "Email server solutions for corporate.",
+//       "NAT solutions.",
+//     ],
+//   },
+//   {
+//     name: "CCTV Service",
+//     bgColor: "bg-[#fef1f1]",
+//     icon: "/service_img/icons/cctv-camera-131-1086991-134936168.png",
+//     subImage: "/service_img/subImg/cctv.webp",
+//     points: [
+//       "Digital video recording and clients installation.",
+//       "CCTV camera installation.",
+//       "Certification of CCTV projects.",
+//       "IP Camera Installation & Configuration.",
+//       "Remote Monitoring Setup (Mobile & PC Access).",
+//       "Upgrading Legacy CCTV Systems to HD/IP.",
+//       "Cloud Storage & Backup Solutions",
+//     ],
+//   },
+//   {
+//     name: "Bio-Metric Service",
+//     bgColor: "bg-[#e1f4]",
+//     icon: "/service_img/icons/Fingerprint-512-3274273457.png",
+//     subImage: "/service_img/subImg/bio-metric.webp",
+//     points: [
+//       "Annual Maintenance Contracts (AMC) for Servers, Workstations, Printers, and Plotters.",
+//       "Access Control System Installation & Configuration.",
+//       "PABX (Private Automatic Branch Exchange) Installation & Configuration.",
+//       "Biometric Time Attendance System Setup.",
+//       "Intercom & Paging System Installation.",
+//     ],
+//   },
+//   {
+//     name: "UI / UX Service",
+//     bgColor: "bg-[#e1fcf2]",
+//     icon: "/service_img/icons/pngtree-ui-and-ux-app-concept-elements-collection-for-social-media-png-image_6866294-2171584179.png",
+//     subImage: "/service_img/subImg/ui-ux-service2.webp",
+//     points: [
+//       "Website Domain Purchase & Configuration.",
+//       "Graphics Design & Visual Content Creation.",
+//       "Web development.",
+//       "UI/UX Wireframing & Prototyping.",
+//       "User Journey Mapping & Persona Development.",
+//       "Brand Identity Design (Logo, Colors, Fonts).",
+//       "User Testing & Feedback Implementation.",
+//     ],
+//   },
+//   {
+//     name: "Networking Service",
+//     bgColor: "bg-[#f4f1fe]",
+//     icon: "/service_img/icons/pngtree-network-icon-png-image_8443511-389870977.png",
+//     subImage: "/service_img/subImg/network.webp",
+//     points: [
+//       "Computer Assembling & Hardware Setup.",
+//       "System Troubleshooting & Diagnostics.",
+//       "Data Recovery & Backup Solutions.",
+//       "Regular System Servicing & Cleaning.",
+//       "LAN & WAN Network Setup.",
+//       "Firewall Installation & Network Security Setup.",
+//       "Server Installation & Maintenance.",
+//     ],
+//   },
+// ];
+
+// export default function CategorySection() {
+//   const [activeSlide, setActiveSlide] = useState(1); // Start with second slide for centering
+//   const sliderRef = useRef<Slider>(null);
+
+//   // Center the initial slide on mount
+//   useEffect(() => {
+//     if (sliderRef.current) {
+//       sliderRef.current.slickGoTo(1, true); // Silent transition to center the second slide
+//     }
+//   }, []);
+
+//   const settings: Settings = {
+//     centerMode: true,
+//     centerPadding: "0px",
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     infinite: true,
+//     speed: 500,
+//     dots: false,
+//     initialSlide: 1, // Start with the second slide centered
+//     beforeChange: (next: number) => {
+//       console.log("Slider changing to index:", next);
+//       setActiveSlide(next);
+//       if (sliderRef.current) {
+//         sliderRef.current.slickGoTo(next, false); // Ensure the next slide is centered
+//       }
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//     ],
+//   };
+
+//   const handleCategorySelect = (index: number) => {
+//     console.log("Category selected:", index);
+//     setActiveSlide(index);
+//     if (sliderRef.current) {
+//       sliderRef.current.slickGoTo(index, false); // Center the selected slide
+//     }
+//   };
+
+//   const validActiveSlide = Math.min(
+//     Math.max(activeSlide, 0),
+//     categories.length - 1
+//   );
+
+//   return (
+//     <section className="py-12 overflow-hidden lg:py-16">
+//       <div className="container mx-auto px-4 max-w-7xl">
+//         <div className="flex flex-wrap items-center -mx-3">
+//           {/* Image Section */}
+//           <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
+//             <div className="relative">
+//               <Image
+//                 src={
+//                   categories[validActiveSlide]?.subImage ||
+//                   "/service_img/it.webp"
+//                 }
+//                 alt={categories[validActiveSlide]?.name || "Category"}
+//                 width={600}
+//                 height={400}
+//                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+//               />
+
+//               {/* Overlay text */}
+//               <div className="absolute top-24 sm:bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-80 text-gray-700 text-sm sm:text-lg py-2 sm:py-3 px-3 sm:px-5 rounded-xl w-[calc(100%-24px)] sm:w-[calc(100%-40px)] max-h-[32vh] overflow-y-auto overflow-x-hidden pointer-events-none">
+//                 {Array.isArray(categories[validActiveSlide]?.points)
+//                   ? categories[validActiveSlide].points.map((point, i) => (
+//                       <div
+//                         key={i}
+//                         className="mb-1 break-words whitespace-normal text-xs sm:text-base"
+//                       >
+//                         • {point}
+//                       </div>
+//                     ))
+//                   : categories[validActiveSlide]?.points ||
+//                     "Explore our range of services."}
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Categories Section */}
+//           <div className="w-full lg:w-7/12 px-3">
+//             <h2 className="font-quicksand text-4xl sm:text-6xl lg:text-[120px] opacity-60 font-bold text-black leading-tight tracking-wide mb-6 lg:mb-8">
+//               Explore Categories
+//             </h2>
+//             <div className="relative">
+//               {/* Slider for Desktop/Tablet (md and above) */}
+//               <div className="hidden md:block">
+//                 <Slider {...settings} ref={sliderRef}>
+//                   {categories.map((category, index) => (
+//                     <div key={index} className="px-3">
+//                       <div
+//                         className={`p-6 rounded-2xl flex flex-col items-center text-center ${
+//                           category.bgColor
+//                         } transition-transform transform hover:scale-105 cursor-pointer ${
+//                           index === activeSlide
+//                             ? "border-4 border-[#2e2e84] scale-110 z-10"
+//                             : ""
+//                         }`}
+//                         onClick={() => handleCategorySelect(index)}
+//                         onTouchEnd={() => handleCategorySelect(index)}
+//                       >
+//                         <div className="mb-3">
+//                           <Image
+//                             src={category.icon}
+//                             alt={category.name}
+//                             width={50}
+//                             height={50}
+//                             className="w-12 h-12 lg:w-16 lg:h-16"
+//                           />
+//                         </div>
+//                         <div>
+//                           <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
+//                             <a
+//                               href="/shop"
+//                               className="font-poppins text-base font-medium text-gray-800 capitalize"
+//                             >
+//                               {category.name}
+//                             </a>
+//                           </h5>
+//                         </div>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </Slider>
+//               </div>
+//               {/* Grid for Mobile (below md) */}
+//               <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+//                 {categories.map((category, index) => (
+//                   <div
+//                     key={index}
+//                     className={`p-4 sm:p-6 rounded-2xl flex flex-col items-center text-center ${
+//                       category.bgColor
+//                     } transition-transform transform hover:scale-105 cursor-pointer ${
+//                       index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+//                     }`}
+//                     onClick={() => handleCategorySelect(index)}
+//                     onTouchEnd={() => handleCategorySelect(index)}
+//                   >
+//                     <div className="mb-3">
+//                       <Image
+//                         src={category.icon}
+//                         alt={category.name}
+//                         width={50}
+//                         height={50}
+//                         className="w-10 h-10 sm:w-12 sm:h-12"
+//                       />
+//                     </div>
+//                     <div>
+//                       <h5 className="font-quicksand text-sm sm:text-base font-semibold text-gray-800 mb-1">
+//                         <a
+//                           href="/shop"
+//                           className="font-poppins text-sm sm:text-base font-medium text-gray-800 capitalize"
+//                         >
+//                           {category.name}
+//                         </a>
+//                       </h5>
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+// "use client";
+// import { useState, useRef } from "react";
+// import Image from "next/image";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// interface Category {
+//   name: string;
+//   bgColor: string;
+//   icon: string;
+//   subImage: string;
+//   points: string[];
+// }
+
+// const categories: Category[] = [
+//   {
+//     name: "IT Service",
+//     bgColor: "bg-[#fbf9e4]",
+//     icon: "/service_img/icons/global-icon-png-1-62588758.jpg",
+//     subImage: "/service_img/subImg/it.webp",
+//     points: [
+//       "Server installation and configuration.",
+//       "Infrastructure planning and implementing.",
+//       "Remote access services.",
+//       "Exchange server configuration.",
+//       "Terminal server and client connectivity.",
+//       "Email server solutions for corporate.",
+//       "NAT solutions.",
+//     ],
+//   },
+//   {
+//     name: "CCTV Service",
+//     bgColor: "bg-[#fef1f1]",
+//     icon: "/service_img/icons/cctv-camera-131-1086991-134936168.png",
+//     subImage: "/service_img/subImg/cctv.webp",
+//     points: [
+//       "Digital video recording and clients installation.",
+//       "CCTV camera installation.",
+//       "Certification of CCTV projects.",
+//       "IP Camera Installation & Configuration.",
+//       "Remote Monitoring Setup (Mobile & PC Access).",
+//       "Upgrading Legacy CCTV Systems to HD/IP.",
+//       "Cloud Storage & Backup Solutions",
+//     ],
+//   },
+//   {
+//     name: "Bio-Metric Service",
+//     bgColor: "bg-[#e1f4]",
+//     icon: "/service_img/icons/Fingerprint-512-3274273457.png",
+//     subImage: "/service_img/subImg/bio-metric.webp",
+//     points: [
+//       "Annual Maintenance Contracts (AMC) for Servers, Workstations, Printers, and Plotters.",
+//       "Access Control System Installation & Configuration.",
+//       "PABX (Private Automatic Branch Exchange) Installation & Configuration.",
+//       "Biometric Time Attendance System Setup.",
+//       "Intercom & Paging System Installation.",
+//     ],
+//   },
+//   {
+//     name: "UI / UX Service",
+//     bgColor: "bg-[#e1fcf2]",
+//     icon: "/service_img/icons/pngtree-ui-and-ux-app-concept-elements-collection-for-social-media-png-image_6866294-2171584179.png",
+//     subImage: "/service_img/subImg/ui-ux-service2.webp",
+//     points: [
+//       "Website Domain Purchase & Configuration.",
+//       "Graphics Design & Visual Content Creation.",
+//       "Web development.",
+//       "UI/UX Wireframing & Prototyping.",
+//       "User Journey Mapping & Persona Development.",
+//       "Brand Identity Design (Logo, Colors, Fonts).",
+//       "User Testing & Feedback Implementation.",
+//     ],
+//   },
+//   {
+//     name: "Networking Service",
+//     bgColor: "bg-[#f4f1fe]",
+//     icon: "/service_img/icons/pngtree-network-icon-png-image_8443511-389870977.png",
+//     subImage: "/service_img/subImg/network.webp",
+//     points: [
+//       "Computer Assembling & Hardware Setup.",
+//       "System Troubleshooting & Diagnostics.",
+//       "Data Recovery & Backup Solutions.",
+//       "Regular System Servicing & Cleaning.",
+//       "LAN & WAN Network Setup.",
+//       "Firewall Installation & Network Security Setup.",
+//       "Server Installation & Maintenance.",
+//     ],
+//   },
+// ];
+
+// export default function CategorySection() {
+//   const [activeSlide, setActiveSlide] = useState<number>(0);
+//   const sliderRef = useRef<Slider>(null);
+
+//   const settings = {
+//     centerMode: true,
+//     centerPadding: "0px",
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     infinite: true,
+//     speed: 500,
+//     dots: false,
+//     beforeChange: (_current: number, next: number) => {
+//       console.log("Slider changing to index:", next);
+//       setActiveSlide(next);
+//     },
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerMode: false,
+//         },
+//       },
+//     ],
+//   };
+
+//   const handleCategorySelect = (index: number) => {
+//     console.log("Category selected:", index);
+//     setActiveSlide(index);
+//     if (sliderRef.current) {
+//       sliderRef.current.slickGoTo(index);
+//     }
+//   };
+
+//   return (
+//     <section className="py-12 overflow-hidden lg:py-16">
+//       <div className="mx-auto px-4 max-w-7xl">
+//         <div className="flex flex-wrap items-center -mx-3">
+//           {/* Image Section */}
+//           <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
+//             <div className="relative flex items-center justify-center">
+//               {/* Image */}
+//               <Image
+//                 src={
+//                   categories[activeSlide]?.subImage || "/service_img/it.webp"
+//                 }
+//                 alt={categories[activeSlide]?.name || "Category"}
+//                 width={600}
+//                 height={400}
+//                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
+//               />
+
+//               {/* Black overlay */}
+//               <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
+
+//               {/* Overlay text */}
+//               <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
+//                 <div className="bg-white bg-opacity-80 py-12 text-gray-700 text-sm sm:text-lg px-5 rounded-xl pointer-events-none w-full sm:w-3/4 overflow-hidden">
+//                   {Array.isArray(categories[activeSlide]?.points)
+//                     ? categories[activeSlide].points.map((point, i) => (
+//                         <div
+//                           key={i}
+//                           className="mb-1 break-words text-xs sm:text-base leading-tight"
+//                         >
+//                           {point}
+//                         </div>
+//                       ))
+//                     : categories[activeSlide]?.points ||
+//                       "Explore our range of services."}
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+
+//           {/* Categories Section */}
+//           <div className="w-full lg:w-7/12 px-3">
+//             <h2 className="font-quicksand text-4xl sm:text-6xl lg:text-[120px] font-bold leading-tight tracking-wide mb-6 lg:mb-8 outline-text">
+//               Explore <br /> Categories
+//             </h2>
+
+//             <div className="relative">
+//               {/* Slider for Desktop/Tablet (md and above) */}
+//               <div className="hidden md:block">
+//                 <Slider {...settings} ref={sliderRef}>
+//                   {categories.map((category, index) => (
+//                     <div key={index} className="px-3">
+//                       <div
+//                         className={`p-6 rounded-2xl flex flex-col items-center text-center ${
+//                           category.bgColor
+//                         } transition-transform transform hover:scale-105 cursor-pointer ${
+//                           index === activeSlide
+//                             ? "border-4 border-[#2e2e84]"
+//                             : ""
+//                         }`}
+//                         onClick={() => handleCategorySelect(index)}
+//                         onTouchStart={() => handleCategorySelect(index)}
+//                         data-aos="flip-left"
+//                         data-aos-duration="1000"
+//                         data-aos-delay={200 + index * 200}
+//                       >
+//                         <div className="mb-3">
+//                           <Image
+//                             src={category.icon}
+//                             alt={category.name}
+//                             width={50}
+//                             height={50}
+//                             className="w-12 h-12 lg:w-16 lg:h-16"
+//                           />
+//                         </div>
+//                         <div>
+//                           <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
+//                             <p className="font-poppins text-base font-medium text-gray-800 capitalize">
+//                               {category.name}
+//                             </p>
+//                           </h5>
+//                         </div>
+//                       </div>
+//                     </div>
+//                   ))}
+//                 </Slider>
+//               </div>
+//               {/* Grid for Mobile (below md) */}
+//               <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+//                 {categories.map((category, index) => (
+//                   <div
+//                     key={index}
+//                     className={`p-4 sm:p-6 rounded-2xl flex flex-col items-center text-center ${
+//                       category.bgColor
+//                     } transition-transform transform hover:scale-105 cursor-pointer ${
+//                       index === activeSlide ? "border-4 border-[#2e2e84]" : ""
+//                     }`}
+//                     onClick={() => handleCategorySelect(index)}
+//                     data-lotypes="true"
+//                     onTouchStart={() => handleCategorySelect(index)}
+//                     data-aos="flip-left"
+//                     data-aos-duration="1000"
+//                     data-aos-delay={200 + index * 200}
+//                   >
+//                     <div className="mb-3">
+//                       <Image
+//                         src={category.icon}
+//                         alt={category.name}
+//                         width={50}
+//                         height={50}
+//                         className="w-10 h-10 sm:w-12 sm:h-12"
+//                       />
+//                     </div>
+//                     <div>
+//                       <h5 className="font-quicksand text-sm sm:text-base font-semibold text-gray-800 mb-1">
+//                         <p className="font-poppins text-sm sm:text-base font-medium text-gray-800 capitalize pointer-events-none">
+//                           {category.name}
+//                         </p>
+//                       </h5>
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+////////////////////// best service card////////////////////////
 "use client";
 import { useState, useRef } from "react";
 import Image from "next/image";
@@ -1391,7 +2445,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const categories = [
+interface Category {
+  name: string;
+  bgColor: string;
+  icon: string;
+  subImage: string;
+  points: string[];
+}
+
+const categories: Category[] = [
   {
     name: "IT Service",
     bgColor: "bg-[#fbf9e4]",
@@ -1424,7 +2486,7 @@ const categories = [
   },
   {
     name: "Bio-Metric Service",
-    bgColor: "bg-[#e1f4]",
+    bgColor: "bg-[#F5EEDD]",
     icon: "/service_img/icons/Fingerprint-512-3274273457.png",
     subImage: "/service_img/subImg/bio-metric.webp",
     points: [
@@ -1468,8 +2530,8 @@ const categories = [
 ];
 
 export default function CategorySection() {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const sliderRef = useRef<any>(null);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
+  const sliderRef = useRef<Slider>(null);
 
   const settings = {
     centerMode: true,
@@ -1481,8 +2543,7 @@ export default function CategorySection() {
     infinite: true,
     speed: 500,
     dots: false,
-    beforeChange: (current: any, next: any) => {
-      console.log("Slider changing to index:", next);
+    beforeChange: (_current: number, next: number) => {
       setActiveSlide(next);
     },
     responsive: [
@@ -1505,8 +2566,7 @@ export default function CategorySection() {
     ],
   };
 
-  const handleCategorySelect = (index: any) => {
-    console.log("Category selected:", index);
+  const handleCategorySelect = (index: number) => {
     setActiveSlide(index);
     if (sliderRef.current) {
       sliderRef.current.slickGoTo(index);
@@ -1514,44 +2574,51 @@ export default function CategorySection() {
   };
 
   return (
-    <section className="py-12 overflow-hidden lg:py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section className="py-8 lg:py-16 overflow-hidden">
+      <div className="mx-auto px-4 max-w-7xl">
         <div className="flex flex-wrap items-center -mx-3">
           {/* Image Section */}
           <div className="w-full lg:w-5/12 px-3 mb-6 lg:mb-0">
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <Image
                 src={
-                  categories[activeSlide]?.subImage || "/service_img/it.webp"
+                  categories[activeSlide]?.subImage ||
+                  "/service_img/subImg/it.webp"
                 }
                 alt={categories[activeSlide]?.name || "Category"}
                 width={600}
                 height={400}
                 className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[500px] object-cover rounded-3xl"
               />
-
-              {/* Overlay text */}
-              <div className="absolute top-24 sm:bottom-8 left-1/2 -translate-x-1/2 bg-white bg-opacity-80 text-gray-700 text-sm sm:text-lg py-2 sm:py-3 px-3 sm:px-5 rounded-xl w-[calc(100%-24px)] sm:w-[calc(100%-40px)] max-h-[32vh] overflow-y-auto overflow-x-hidden pointer-events-none">
-                {Array.isArray(categories[activeSlide]?.points)
-                  ? categories[activeSlide].points.map((point, i) => (
-                      <div
-                        key={i}
-                        className="mb-1 break-words whitespace-normal text-xs sm:text-base"
-                      >
-                        • {point}
-                      </div>
-                    ))
-                  : categories[activeSlide]?.points ||
-                    "Explore our range of services."}
+              <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
+              <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
+                <div className="bg-white bg-opacity-80 py-8 text-gray-700 text-sm sm:text-lg px-5 rounded-xl pointer-events-none w-full sm:w-3/4">
+                  {categories[activeSlide]?.points.map((point, i) => (
+                    <div
+                      key={i}
+                      className="mb-1 break-words text-xs sm:text-base flex items-start"
+                    >
+                      <Image
+                        src="/service_img/icons/select-icon-png-22-4173701700.jpg"
+                        alt="image"
+                        width={20}
+                        height={20}
+                        className="mr-2"
+                      />
+                      {point}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
           {/* Categories Section */}
           <div className="w-full lg:w-7/12 px-3">
-            <h2 className="font-quicksand text-4xl sm:text-6xl lg:text-[120px] opacity-60 font-bold text-black leading-tight tracking-wide mb-6 lg:mb-8">
-              Explore Categories
+            <h2 className="font-quicksand text-4xl sm:text-6xl text-gray-400 lg:text-[120px] font-bold leading-tight tracking-wide mb-6 lg:mb-8">
+              Explore <br /> Categories
             </h2>
+
             <div className="relative">
               {/* Slider for Desktop/Tablet (md and above) */}
               <div className="hidden md:block">
@@ -1561,18 +2628,15 @@ export default function CategorySection() {
                       <div
                         className={`p-6 rounded-2xl flex flex-col items-center text-center ${
                           category.bgColor
-                        } transition-transform transform hover:scale-105 cursor-pointer ${
+                        } cursor-pointer ${
                           index === activeSlide
                             ? "border-4 border-[#2e2e84]"
                             : ""
                         }`}
                         onClick={() => handleCategorySelect(index)}
-                        onTouchStart={() => handleCategorySelect(index)} // Added for touch support
-                        data-aos="flip-left"
-                        data-aos-duration="1000"
-                        data-aos-delay={200 + index * 200}
+                        onTouchStart={() => handleCategorySelect(index)}
                       >
-                        <div className="mb-3">
+                        <div className="mb-3 transform transition-transform duration-300 hover:scale-115">
                           <Image
                             src={category.icon}
                             alt={category.name}
@@ -1583,12 +2647,9 @@ export default function CategorySection() {
                         </div>
                         <div>
                           <h5 className="font-quicksand text-base font-semibold text-gray-800 mb-1">
-                            <a
-                              href="/shop"
-                              className="font-poppins text-base font-medium text-gray-800 capitalize"
-                            >
+                            <p className="font-poppins text-base font-medium text-gray-800 capitalize">
                               {category.name}
-                            </a>
+                            </p>
                           </h5>
                         </div>
                       </div>
@@ -1596,41 +2657,55 @@ export default function CategorySection() {
                   ))}
                 </Slider>
               </div>
-              {/* Grid for Mobile (below md) */}
-              <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+              {/* Card List for Mobile (below md) */}
+              <div className="md:hidden space-y-4">
                 {categories.map((category, index) => (
                   <div
                     key={index}
-                    className={`p-4 sm:p-6 rounded-2xl flex flex-col items-center text-center ${
+                    className={`p-4 rounded-lg ${
                       category.bgColor
-                    } transition-transform transform hover:scale-105 cursor-pointer ${
+                    } shadow-md cursor-pointer transition-transform hover:scale-[1.02] ${
                       index === activeSlide ? "border-4 border-[#2e2e84]" : ""
                     }`}
                     onClick={() => handleCategorySelect(index)}
-                    onTouchStart={() => handleCategorySelect(index)} // Added for touch support
-                    data-aos="flip-left"
-                    data-aos-duration="1000"
-                    data-aos-delay={200 + index * 200}
+                    onTouchStart={() => handleCategorySelect(index)}
                   >
-                    <div className="mb-3">
+                    {/* Card Header: Icon and Name */}
+                    <div className="flex items-center mb-3">
                       <Image
                         src={category.icon}
                         alt={category.name}
-                        width={50}
-                        height={50}
-                        className="w-10 h-10 sm:w-12 sm:h-12"
+                        width={40}
+                        height={40}
+                        className="w-10 h-10 mr-3"
                       />
+                      <h3 className="font-quicksand text-lg font-semibold text-gray-800">
+                        {category.name}
+                      </h3>
                     </div>
-                    <div>
-                      <h5 className="font-quicksand text-sm sm:text-base font-semibold text-gray-800 mb-1">
-                        <a
-                          href="/shop"
-                          className="font-poppins text-sm sm:text-base font-medium text-gray-800 capitalize pointer-events-none" // Prevent link clicks
-                        >
-                          {category.name}
-                        </a>
-                      </h5>
+
+                    {/* SubImage */}
+                    <div className="relative mb-3">
+                      <Image
+                        src={category.subImage}
+                        alt={category.name}
+                        width={300}
+                        height={200}
+                        className="w-full h-40 object-cover rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-black opacity-20 rounded-lg"></div>
                     </div>
+
+                    {/* Points */}
+                    <ul className="text-sm text-gray-700 space-y-1">
+                      {category.points.map((point, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="mr-2">•</span>
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>
