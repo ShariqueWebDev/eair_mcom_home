@@ -86,15 +86,27 @@ const Header: React.FC<HeaderProps> = () => {
 
           {/* LOGO */}
           <div className="w-1/2 md:w-1/3 flex items-center justify-start lg:justify-center">
-            <Link href={"/"}>
-              <Image
-                src={"/logo/logo-mcom.png"}
-                alt=""
-                height={100}
-                className="w-28"
-                width={200}
-              />
-            </Link>
+            {hasScrolled ? (
+              <Link href={"/"}>
+                <Image
+                  src={"/logo/logo-mcom.png"}
+                  alt=""
+                  height={100}
+                  className="w-28"
+                  width={200}
+                />
+              </Link>
+            ) : (
+              <Link href={"/"}>
+                <Image
+                  src={"/logo/white-logo.png"}
+                  alt=""
+                  height={100}
+                  className="w-28"
+                  width={200}
+                />
+              </Link>
+            )}
           </div>
 
           {/* BUTTONS */}

@@ -1,5 +1,7 @@
 import BlogSection from "@/components/BlogSection";
+import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
 import FeaturesWeb from "@/components/FeaturesWeb";
+import ServiceSection from "@/components/HeaderFooter/ServiceSection";
 import ServiceFeature from "@/components/ServiceFeature";
 // import BenefitSectionForService from "@/components/Services/BenefitSection";
 import { Metadata } from "next";
@@ -66,7 +68,14 @@ export const metadata: Metadata = {
 const ServicePage = () => {
   return (
     <div>
-      <ServiceFeature />
+      {/* <ServiceFeature /> */}
+      <Breadcrumb
+        path="Service"
+        title="Our Service"
+        paragraph="Explore our range of services tailored to your needs."
+        bgImg="/top-banner/about-banner.webp"
+      />
+      <ServiceSection />
       <BlogSection />
       <FeaturesWeb />
     </div>

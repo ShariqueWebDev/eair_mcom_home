@@ -1940,7 +1940,7 @@ export default function Footer2() {
             <div className="mb-4 flex justify-center lg:justify-start">
               <div className="relative w-16 h-8 sm:w-20 sm:h-10 md:w-24 md:h-12 lg:w-28 lg:h-14 rounded overflow-hidden">
                 <Image
-                  src="/logo/logo-mcom.png"
+                  src="/logo/white-logo.png"
                   alt="Company Logo"
                   fill
                   className="object-contain"
