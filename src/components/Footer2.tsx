@@ -1220,72 +1220,72 @@
 //               {/* Contact */}
 //               <div className="flex-1 mt-6 md:mt-0">
 //                 <h6 className="text-white font-semibold mb-4">Contact</h6>
-//                 <ul className="space-y-2 text-sm">
-//                   <li>
-//                     <Link href="#" className="flex items-center gap-1.5">
-//                       <svg
-//                         xmlns="http://www.w3.org/2000/svg"
-//                         className="size-4 sm:size-5 shrink-0"
-//                         fill="none"
-//                         viewBox="0 0 24 24"
-//                         stroke="currentColor"
-//                         strokeWidth="2"
-//                       >
-//                         <path
-//                           strokeLinecap="round"
-//                           strokeLinejoin="round"
-//                           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-//                         />
-//                       </svg>
-//                       <span className="text-gray-300">+ (971) 55 956 3722</span>
-//                     </Link>
-//                   </li>
-//                   <li>
-//                     <Link href="#" className="flex items-center gap-1.5">
-//                       <svg
-//                         xmlns="http://www.w3.org/2000/svg"
-//                         className="size-4 sm:size-5 shrink-0"
-//                         fill="none"
-//                         viewBox="0 0 24 24"
-//                         stroke="currentColor"
-//                         strokeWidth="2"
-//                       >
-//                         <path
-//                           strokeLinecap="round"
-//                           strokeLinejoin="round"
-//                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-//                         />
-//                       </svg>
-//                       <span className="text-gray-300">sales@mcomcctv.com</span>
-//                     </Link>
-//                   </li>
-//                   <li>
-//                     <Link href="#" className="flex items-center gap-1.5">
-//                       <svg
-//                         xmlns="http://www.w3.org/2000/svg"
-//                         className="size-4 sm:size-5 shrink-0 mt-0.5"
-//                         fill="none"
-//                         viewBox="0 0 24 24"
-//                         stroke="currentColor"
-//                         strokeWidth="2"
-//                       >
-//                         <path
-//                           strokeLinecap="round"
-//                           strokeLinejoin="round"
-//                           d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-//                         />
-//                         <path
-//                           strokeLinecap="round"
-//                           strokeLinejoin="round"
-//                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-//                         />
-//                       </svg>
-//                       <address className="text-gray-300 not-italic">
-//                         Office 210, Lulu Office Building, Al Muteena, Dubai, UAE
-//                       </address>
-//                     </Link>
-//                   </li>
-//                 </ul>
+// <ul className="space-y-2 text-sm">
+//   <li>
+//     <Link href="#" className="flex items-center gap-1.5">
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="size-4 sm:size-5 shrink-0"
+//         fill="none"
+//         viewBox="0 0 24 24"
+//         stroke="currentColor"
+//         strokeWidth="2"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+//         />
+//       </svg>
+//       <span className="text-gray-300">+ (971) 55 956 3722</span>
+//     </Link>
+//   </li>
+//   <li>
+//     <Link href="#" className="flex items-center gap-1.5">
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="size-4 sm:size-5 shrink-0"
+//         fill="none"
+//         viewBox="0 0 24 24"
+//         stroke="currentColor"
+//         strokeWidth="2"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+//         />
+//       </svg>
+//       <span className="text-gray-300">sales@mcomcctv.com</span>
+//     </Link>
+//   </li>
+//   <li>
+//     <Link href="#" className="flex items-center gap-1.5">
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="size-4 sm:size-5 shrink-0 mt-0.5"
+//         fill="none"
+//         viewBox="0 0 24 24"
+//         stroke="currentColor"
+//         strokeWidth="2"
+//       >
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+//         />
+//         <path
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+//         />
+//       </svg>
+//       <address className="text-gray-300 not-italic">
+//         Office 210, Lulu Office Building, Al Muteena, Dubai, UAE
+//       </address>
+//     </Link>
+//   </li>
+// </ul>
 //               </div>
 //             </div>
 
@@ -1679,6 +1679,252 @@
 //   );
 // }
 
+// "use client";
+// import Link from "next/link";
+// import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+// import Image from "next/image";
+
+// export default function Footer2() {
+//   return (
+//     <footer className="bg-gray-900 text-white py-6 px-20">
+//       <div className="container mx-auto px-4 sm:px-6 lg:px-30">
+//         <div className="flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-6">
+//           {/* Left Section: Logo and Description */}
+//           <div className="flex-1 text-center lg:text-left">
+//             <div className="mb-4">
+//               <div className="w-20 sm:w-24 lg:w-28 h-10 sm:h-12 lg:h-14 relative rounded overflow-hidden mx-auto lg:mx-0">
+//                 <Image
+//                   src="/logo/logo-mcom.png"
+//                   alt="Company Logo"
+//                   fill
+//                   className="object-contain"
+//                 />
+//               </div>
+//             </div>
+//             <p className="text-xs sm:text-sm lg:text-base mb-4 max-w-xs sm:max-w-sm lg:max-w-md mx-auto lg:mx-0">
+//               Lorem ipsum, dolor sit amet consectetur adipiscing elit. Dolore
+//               nulla mollitia tempora sapiente maiores vero a distinctio
+//               veritatis.
+//             </p>
+//             {/* Social Media Icons */}
+//             <div className="flex justify-center lg:justify-start space-x-3 sm:space-x-4">
+//               <a
+//                 href="#"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//               >
+//                 <FaFacebook />
+//               </a>
+//               <a
+//                 href="#"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//               >
+//                 <FaInstagram />
+//               </a>
+//               <a
+//                 href="#"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//               >
+//                 <FaTwitter />
+//               </a>
+//               <a
+//                 href="#"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//               >
+//                 <FaLinkedin />
+//               </a>
+//             </div>
+//           </div>
+
+//           {/* Middle Section: Quick Links */}
+//           <div className="w-32 sm:w-36 lg:w-40 text-center lg:text-left">
+//             <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3">
+//               Links
+//             </h3>
+//             <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
+//               <li>
+//                 <Link href="/" className="hover:text-gray-400">
+//                   Home
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link href="/about" className="hover:text-gray-400">
+//                   About
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link href="/services" className="hover:text-gray-400">
+//                   Services
+//                 </Link>
+//               </li>
+//               <li>
+//                 <Link href="/contact" className="hover:text-gray-400">
+//                   Contact
+//                 </Link>
+//               </li>
+//             </ul>
+//           </div>
+
+//           {/* Right Section: Contact Info */}
+//           <div className="w-full max-w-44 sm:max-w-48 lg:max-w-52  lg:-translate-x-8 md:-translate-x-0 text-center lg:text-left mx-auto">
+//             <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3">
+//               Contact
+//             </h3>
+//             <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
+//               <li className="flex items-center justify-center lg:justify-start">
+//                 <svg
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   className="size-4 sm:size-5 shrink-0 mr-2"
+//                   fill="none"
+//                   viewBox="0 0 24 24"
+//                   stroke="currentColor"
+//                   strokeWidth="2"
+//                 >
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+//                   />
+//                 </svg>{" "}
+//                 +971 55 956 3722
+//               </li>
+//               <li className="flex items-center justify-center lg:justify-start">
+//                 <svg
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   className="size-4 sm:size-5 shrink-0 mr-2"
+//                   fill="none"
+//                   viewBox="0 0 24 24"
+//                   stroke="currentColor"
+//                   strokeWidth="2"
+//                 >
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+//                   />
+//                 </svg>
+//                 sales@mccomcctv.com
+//               </li>
+//               <li className="flex items-start justify-center lg:justify-start">
+//                 <svg
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   className="size-4 sm:size-5 shrink-0 mt-0.5 mr-2"
+//                   fill="none"
+//                   viewBox="0 0 24 24"
+//                   stroke="currentColor"
+//                   strokeWidth="2"
+//                 >
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+//                   />
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+//                   />
+//                 </svg>
+//                 <span className="max-w-36 sm:max-w-40 lg:max-w-44">
+//                   Office 210, Lulu Office Building, Al Muteena, Dubai, UAE
+//                 </span>
+//               </li>
+//             </ul>
+//           </div>
+
+//           <div className="w-full max-w-44 sm:max-w-48 lg:max-w-52 text-center lg:text-left mx-auto">
+//             <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3">
+//               Open Hours
+//             </h3>
+//             <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
+//               <li className="flex items-center justify-center lg:justify-start">
+//                 Mon-Sat: 9am - 6pm
+//               </li>
+//             </ul>
+//           </div>
+
+//           {/* Map Section */}
+//           <div className="flex-1 w-full">
+//             <div className="w-full h-36 sm:h-40 lg:h-48 rounded overflow-hidden">
+//               <iframe
+//                 className="w-full h-full border-0"
+//                 loading="lazy"
+//                 allowFullScreen
+//                 referrerPolicy="no-referrer-when-downgrade"
+//                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.331203857261!2d55.31852477593921!3d25.27114742921135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434a4e13e249%3A0xa55f0198ec9cbd60!2sLulu%20Building%2C%20Al%20Muteena%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1715869900000!5m2!1sen!2sus"
+//               ></iframe>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Bottom Section: Copyright */}
+//         <div className="border-t border-gray-700 mt-6 pt-4 text-center text-xs sm:text-sm lg:text-base">
+//           <p>
+//             © 2025 By EAIR | All Rights Reserved. Terms & Conditions. Privacy
+//             Policy
+//           </p>
+//         </div>
+//       </div>
+
+//       {/* Custom Styles for Responsive Adjustments */}
+//       <style jsx>{`
+//         @media (max-width: 480px) {
+//           .container {
+//             padding-left: 12px;
+//             padding-right: 12px;
+//           }
+//           .w-20 {
+//             width: 64px;
+//             height: 32px;
+//           }
+//           .text-xs {
+//             font-size: 10px;
+//           }
+//           .text-base {
+//             font-size: 14px;
+//           }
+//           .max-w-36 {
+//             max-width: 144px;
+//           }
+//           .h-36 {
+//             height: 120px;
+//           }
+//           .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+//             margin-left: 6px;
+//           }
+//           .space-y-2 > :not([hidden]) ~ :not([hidden]) {
+//             margin-top: 4px;
+//           }
+//         }
+
+//         @media (min-width: 481px) and (max-width: 768px) {
+//           .container {
+//             padding-left: 16px;
+//             padding-right: 16px;
+//           }
+//           .w-24 {
+//             width: 80px;
+//             height: 40px;
+//           }
+//           .h-40 {
+//             height: 160px;
+//           }
+//         }
+
+//         @media (min-width: 769px) and (max-width: 1024px) {
+//           .container {
+//             padding-left: 24px;
+//             padding-right: 24px;
+//           }
+//           .w-28 {
+//             width: 96px;
+//             height: 48px;
+//           }
+//         }
+//       `}</style>
+//     </footer>
+//   );
+// }
+
 "use client";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
@@ -1686,108 +1932,178 @@ import Image from "next/image";
 
 export default function Footer2() {
   return (
-    <footer className="bg-gray-900 text-white py-6">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-30">
-        <div className="flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-6">
-          {/* Left Section: Logo and Description */}
-          <div className="flex-1 text-center lg:text-left">
-            <div className="mb-4">
-              <div className="w-20 sm:w-24 lg:w-28 h-10 sm:h-12 lg:h-14 relative rounded overflow-hidden mx-auto lg:mx-0">
+    <footer className="bg-gray-900 text-white py-6 px-4 sm:px-6 md:px-52 lg:px-20">
+      <div className="container mx-auto">
+        <div className="flex flex-col gap-8 sm:gap-10 md:grid md:grid-cols-2 md:gap-6 lg:flex lg:flex-row lg:justify-between lg:gap-8">
+          {/* Left Section: Logo and Description (Full width on md) */}
+          <div className="flex-1 text-center md:col-span-2 lg:text-left">
+            <div className="mb-4 flex justify-center lg:justify-start">
+              <div className="relative w-16 h-8 sm:w-20 sm:h-10 md:w-24 md:h-12 lg:w-28 lg:h-14 rounded overflow-hidden">
                 <Image
-                  src="/logo/logo-mcom.png" // replace with your actual path
+                  src="/logo/logo-mcom.png"
                   alt="Company Logo"
                   fill
                   className="object-contain"
                 />
               </div>
             </div>
-            <p className="text-xs sm:text-sm lg:text-base mb-4 max-w-xs sm:max-w-sm lg:max-w-md mx-auto lg:mx-0">
+            <p className="text-xs sm:text-sm md:text-base lg:text-base mb-4 max-w-[16rem] sm:max-w-xs md:max-w-2xl lg:max-w-sm mx-auto lg:mx-0">
               Lorem ipsum, dolor sit amet consectetur adipiscing elit. Dolore
               nulla mollitia tempora sapiente maiores vero a distinctio
               veritatis.
             </p>
             {/* Social Media Icons */}
-            <div className="flex justify-center lg:justify-start space-x-3 sm:space-x-4">
+            <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 md:gap-5">
               <a
                 href="#"
-                className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
               >
                 <FaFacebook />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
               >
                 <FaLinkedin />
               </a>
             </div>
           </div>
 
-          {/* Middle Section: Quick Links */}
-          <div className="w-32 sm:w-36 lg:w-40 text-center lg:text-left">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3">
-              Quick Links
+          {/* Links Section */}
+          <div className="text-center md:text-left">
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
+              Links
             </h3>
-            <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
+            <ul className="space-y-2 text-sm text-gray-200 sm:text-sm md:text-base lg:text-base">
               <li>
-                <Link href="/" className="hover:text-gray-400">
+                <Link
+                  href="/"
+                  className="hover:text-gray-400 transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-gray-400">
+                <Link
+                  href="/about"
+                  className="hover:text-gray-400 transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-gray-400">
+                <Link
+                  href="/services"
+                  className="hover:text-gray-400 transition-colors"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-gray-400">
+                <Link
+                  href="/contact"
+                  className="hover:text-gray-400 transition-colors"
+                >
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Right Section: Contact Info */}
-          <div className="w-full max-w-44 sm:max-w-48 lg:max-w-52 text-center lg:text-left mx-auto">
-            <h3 className="text-base sm:text-lg lg:text-xl font-semibold mb-3">
+          {/* Contact Section */}
+          <div className="text-center md:text-left">
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
               Contact
             </h3>
-            <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
-              <li className="flex items-center justify-center lg:justify-start">
-                <span className="mr-2">📞</span> +971 55 956 3722
+            <ul className="space-y-2 text-xs text-gray-200 sm:text-sm md:text-base lg:text-base">
+              <li className="flex items-center justify-center md:justify-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                +971 55 956 3722
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <span className="mr-2">✉️</span> sales@mccomcctv.com
+              <li className="flex items-center justify-center md:justify-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                sales@mccomcctv.com
               </li>
-              <li className="flex items-start justify-center lg:justify-start">
-                <span className="mr-2 mt-1">📍</span>
-                <span className="max-w-36 sm:max-w-40 lg:max-w-44">
+              <li className="flex items-start justify-center md:justify-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mt-0.5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span className="max-w-[9rem] sm:max-w-36 md:max-w-40 lg:max-w-44">
                   Office 210, Lulu Office Building, Al Muteena, Dubai, UAE
                 </span>
               </li>
             </ul>
           </div>
 
+          {/* Open Hours Section */}
+          <div className="text-center md:text-left">
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
+              Open Hours
+            </h3>
+            <ul className="space-y-2 text-gray-200 text-xs sm:text-sm md:text-base lg:text-base">
+              <li className="flex items-center justify-center md:justify-start">
+                Mon-Sat: 9am - 6pm
+              </li>
+            </ul>
+          </div>
+
           {/* Map Section */}
-          <div className="flex-1 w-full">
-            <div className="w-full h-36 sm:h-40 lg:h-48 rounded overflow-hidden">
+          <div className="flex-1 w-full text-center md:text-left">
+            <div className="w-full h-32 sm:h-36 md:h-40 lg:h-48 rounded overflow-hidden">
               <iframe
                 className="w-full h-full border-0"
                 loading="lazy"
@@ -1800,70 +2116,13 @@ export default function Footer2() {
         </div>
 
         {/* Bottom Section: Copyright */}
-        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-xs sm:text-sm lg:text-base">
+        <div className="border-t border-gray-700 mt-8 sm:mt-10 md:mt-12 pt-4 text-center text-xs sm:text-sm md:text-base lg:text-base">
           <p>
             © 2025 By EAIR | All Rights Reserved. Terms & Conditions. Privacy
             Policy
           </p>
         </div>
       </div>
-
-      {/* Custom Styles for Responsive Adjustments */}
-      <style jsx>{`
-        @media (max-width: 480px) {
-          .container {
-            padding-left: 12px;
-            padding-right: 12px;
-          }
-          .w-20 {
-            width: 64px;
-            height: 32px;
-          }
-          .text-xs {
-            font-size: 10px;
-          }
-          .text-base {
-            font-size: 14px;
-          }
-          .max-w-36 {
-            max-width: 144px;
-          }
-          .h-36 {
-            height: 120px;
-          }
-          .space-x-3 > :not([hidden]) ~ :not([hidden]) {
-            margin-left: 6px;
-          }
-          .space-y-2 > :not([hidden]) ~ :not([hidden]) {
-            margin-top: 4px;
-          }
-        }
-
-        @media (min-width: 481px) and (max-width: 768px) {
-          .container {
-            padding-left: 16px;
-            padding-right: 16px;
-          }
-          .w-24 {
-            width: 80px;
-            height: 40px;
-          }
-          .h-40 {
-            height: 160px;
-          }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-          .container {
-            padding-left: 24px;
-            padding-right: 24px;
-          }
-          .w-28 {
-            width: 96px;
-            height: 48px;
-          }
-        }
-      `}</style>
     </footer>
   );
 }

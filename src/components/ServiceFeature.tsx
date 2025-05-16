@@ -2583,7 +2583,7 @@ export default function CategorySection() {
         paragraph="Explore our range of services tailored to your needs."
         bgImg="/top-banner/about-banner.webp"
       />
-      <section className="py-8 lg:py-16 overflow-hidden">
+      <section className="py-8 lg:py-16 md:px-20 px-5  overflow-hidden">
         <div className="mx-auto px-4 max-w-7xl">
           <div className="flex flex-wrap items-center -mx-3">
             {/* Image Section */}

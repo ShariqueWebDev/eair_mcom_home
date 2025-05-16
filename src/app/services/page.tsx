@@ -1,5 +1,7 @@
+import BlogSection from "@/components/BlogSection";
+import FeaturesWeb from "@/components/FeaturesWeb";
 import ServiceFeature from "@/components/ServiceFeature";
-import BenefitSectionForService from "@/components/Services/BenefitSection";
+// import BenefitSectionForService from "@/components/Services/BenefitSection";
 import { Metadata } from "next";
 import React from "react";
 
@@ -65,7 +67,8 @@ const ServicePage = () => {
   return (
     <div>
       <ServiceFeature />
-      <BenefitSectionForService />
+      <BlogSection />
+      <FeaturesWeb />
     </div>
   );
 };
