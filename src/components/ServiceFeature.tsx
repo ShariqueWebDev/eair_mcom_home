@@ -2597,11 +2597,11 @@ export default function CategorySection() {
                   alt={categories[activeSlide]?.name || "Category"}
                   width={600}
                   height={400}
-                  className="w-full h-[400px]  md:h-[500px]  object-cover rounded-3xl"
+                  className="w-full h-[400px]  md:h-[500px]  object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 bg-black opacity-30 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
                 <div className="absolute inset-0 flex items-center justify-center px-3 sm:px-5">
-                  <div className="bg-white bg-opacity-80 py-8 text-gray-700 text-sm sm:text-lg px-5 rounded-xl pointer-events-none w-full sm:w-3/4">
+                  <div className="bg-white bg-opacity-80 py-8 text-gray-700 text-sm sm:text-lg px-5 rounded-lg pointer-events-none w-full sm:w-3/4">
                     {categories[activeSlide]?.points.map((point, i) => (
                       <div
                         key={i}
@@ -2620,7 +2620,7 @@ export default function CategorySection() {
 
             {/* Categories Section */}
             <div className="w-full lg:w-7/12 px-3">
-              <h2 className="font-quicksand heading-all text-4xl sm:text-6xl text-gray-500 lg:text-[100px] font-bold leading- tracking- mb-6 lg:mb-8">
+              <h2 className="font-quicksand heading-all text-4xl sm:text-6xl text-gray-700 lg:text-[100px] font-bold leading- tracking- mb-6 lg:mb-8">
                 Explore <br /> Our Services
               </h2>
 

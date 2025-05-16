@@ -230,7 +230,7 @@ const AboutPage = () => {
         <section className="overflow-hidden py-16 md:px-32 px-5 bg-gray-100">
           <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
             {/* Header */}
-            <div className="relative z-10 mb-16 text-center" data-aos="fade-up">
+            <div className="relative z-10 mb-12 text-center" data-aos="fade-up">
               {/* <span className="inline-flex items-center gap-2 rounded-full px-4.5 py-1.5 text-sm font-medium border border-gray-500 text-gray-800 mb-4">
                 <span className="text-[11px]">Meet Our Team</span>
               </span> */}
@@ -245,7 +245,7 @@ const AboutPage = () => {
             </div>
 
             {/* Team Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-17.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16  ">
               {teamMembers.map((member, index) => (
                 <div key={index} className="flex justify-center bg">
                   <div

@@ -25,7 +25,7 @@ const Breadcrumb = ({
       {/* Breadcrumb Navigation */}
       <div className="mt-10">
         <div className="relative  z-10 w-full max-w-7xl mx-auto mt-5">
-          <div className="flex items-center gap-2 text-xs sm:text-sm md:text-base text-white">
+          <div className="flex items-center gap-2 text-sm text-white">
             <Link
               href="/"
               className="text-gray-300 hover:text-blue-400 transition-colors"

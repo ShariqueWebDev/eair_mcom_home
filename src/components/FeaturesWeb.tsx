@@ -264,7 +264,7 @@ const FeaturesWeb: React.FC = () => {
             <h4 className="font-medium uppercase text-xs text-gray-500 dark:text-white flex items-center gap-4">
               New features
             </h4>
-            <h2 className="text-3xl xl:text-5xl font-bold mt-4 mb-6">
+            <h2 className="text-3xl xl:text-5xl font-bold heading-all mt-4 mb-6">
               Opting For Security & Making You
               <span className="relative inline-block ml-2">
                 <span className="bg-gradient-to-r from-sky-400 to-[#e441b6] bg-clip-text text-transparent">
