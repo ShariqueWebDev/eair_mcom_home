@@ -193,11 +193,11 @@
 //       </div>
 //       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 border-t border-gray-100 py-6 dark:border-gray-800">
 //         <div className="flex flex-col-reverse items-center justify-between gap-4 sm:flex-row sm:items-center sm:text-left text-center">
-//           <p className="text-sm text-white dark:text-gray-400 sm:order-1">
+//           <p className="text-sm text-white dark:text-gray-300 sm:order-1">
 //             © 2025 By EAIR
 //           </p>
 
-//           <p className="text-sm text-gray-400">
+//           <p className="text-sm text-gray-300">
 //             <span className="block sm:inline">All rights reserved. </span>
 //             <Link
 //               href="#"
@@ -417,7 +417,7 @@
 //       <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8 border-t border-gray-800">
 //         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
 //           <p className="text-xs text-white sm:text-sm">© 2025 By EAIR</p>
-//           <p className="text-xs text-gray-400 sm:text-sm">
+//           <p className="text-xs text-gray-300 sm:text-sm">
 //             <span className="block sm:inline">All rights reserved. </span>
 //             <Link
 //               href="#"
@@ -637,7 +637,7 @@
 //       <div className="mx-auto max-w-screen-xl px-4 lg:py-6 pb-6 sm:px-6 lg:px-8 border-t border-gray-200">
 //         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
 //           <p className="text-xs text-white sm:text-sm">© 2025 By EAIR</p>
-//           <p className="text-xs text-gray-400 sm:text-sm">
+//           <p className="text-xs text-gray-300 sm:text-sm">
 //             <span className="block sm:inline">All rights reserved. </span>
 //             <Link
 //               href="#"
@@ -855,7 +855,7 @@
 // <div className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8 border-t border-gray-200">
 //   <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-4">
 //     <p className="text-xs sm:text-sm">© 2025 By EAIR</p>
-//     <p className="text-xs sm:text-sm text-gray-400">
+//     <p className="text-xs sm:text-sm text-gray-300">
 //       <span className="block sm:inline">All rights reserved. </span>
 //       <Link
 //         href="#"
@@ -1077,7 +1077,7 @@
 //   <div className="mx-auto max-w-screen-xl bg-black px-4 py-6 sm:px-6 lg:px-8 border-t border-gray-200">
 //     <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-4">
 //       <p className="text-xs sm:text-sm">© 2025 By EAIR</p>
-//       <p className="text-xs sm:text-sm text-gray-400">
+//       <p className="text-xs sm:text-sm text-gray-300">
 //         <span className="block sm:inline">All rights reserved. </span>
 //         <Link
 //           href="#"
@@ -1309,7 +1309,7 @@
 //       <div className="mx-auto max-w-screen-xl bg-black px-4 py-6 sm:px-6 lg:px-8 border-t border-gray-200">
 //         <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-4">
 //           <p className="text-xs sm:text-sm text-white">© 2025 By EAIR</p>
-//           <p className="text-xs sm:text-sm text-gray-400">
+//           <p className="text-xs sm:text-sm text-gray-300">
 //             <span className="block sm:inline">All rights reserved. </span>
 //             <Link
 //               href="#"
@@ -1539,7 +1539,7 @@
 //       <div className="mx-auto max-w-screen-xl bg-black px-4 py-6 sm:py-6 sm:px-6 lg:px-8 border-t border-gray-800">
 //         <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-between sm:gap-4 text-center sm:text-left">
 //           <p className="text-xs text-white">© 2025 By EAIR</p>
-//           <p className="text-xs text-gray-400">
+//           <p className="text-xs text-gray-300">
 //             <span className="block sm:inline">All rights reserved. </span>
 //             <Link
 //               href="#"
@@ -1592,16 +1592,16 @@
 //             </p>
 //             {/* Social Media Icons */}
 //             <div className="flex justify-center lg:justify-start space-x-4">
-//               <a href="#" className="text-xl hover:text-gray-400">
+//               <a href="#" className="text-xl hover:text-gray-300">
 //                 <FaFacebook />
 //               </a>
-//               <a href="#" className="text-xl hover:text-gray-400">
+//               <a href="#" className="text-xl hover:text-gray-300">
 //                 <FaInstagram />
 //               </a>
-//               <a href="#" className="text-xl hover:text-gray-400">
+//               <a href="#" className="text-xl hover:text-gray-300">
 //                 <FaTwitter />
 //               </a>
-//               <a href="#" className="text-xl hover:text-gray-400">
+//               <a href="#" className="text-xl hover:text-gray-300">
 //                 <FaLinkedin />
 //               </a>
 //             </div>
@@ -1612,22 +1612,22 @@
 //             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
 //             <ul className="space-y-2 text-sm">
 //               <li>
-//                 <Link href="/" className="hover:text-gray-400">
+//                 <Link href="/" className="hover:text-gray-300">
 //                   Home
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/about" className="hover:text-gray-400">
+//                 <Link href="/about" className="hover:text-gray-300">
 //                   About
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/services" className="hover:text-gray-400">
+//                 <Link href="/services" className="hover:text-gray-300">
 //                   Services
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/contact" className="hover:text-gray-400">
+//                 <Link href="/contact" className="hover:text-gray-300">
 //                   Contact
 //                 </Link>
 //               </li>
@@ -1710,25 +1710,25 @@
 //             <div className="flex justify-center lg:justify-start space-x-3 sm:space-x-4">
 //               <a
 //                 href="#"
-//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-300"
 //               >
 //                 <FaFacebook />
 //               </a>
 //               <a
 //                 href="#"
-//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-300"
 //               >
 //                 <FaInstagram />
 //               </a>
 //               <a
 //                 href="#"
-//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-300"
 //               >
 //                 <FaTwitter />
 //               </a>
 //               <a
 //                 href="#"
-//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-400"
+//                 className="text-base sm:text-lg lg:text-xl hover:text-gray-300"
 //               >
 //                 <FaLinkedin />
 //               </a>
@@ -1742,22 +1742,22 @@
 //             </h3>
 //             <ul className="space-y-2 text-xs sm:text-sm lg:text-base">
 //               <li>
-//                 <Link href="/" className="hover:text-gray-400">
+//                 <Link href="/" className="hover:text-gray-300">
 //                   Home
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/about" className="hover:text-gray-400">
+//                 <Link href="/about" className="hover:text-gray-300">
 //                   About
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/services" className="hover:text-gray-400">
+//                 <Link href="/services" className="hover:text-gray-300">
 //                   Services
 //                 </Link>
 //               </li>
 //               <li>
-//                 <Link href="/contact" className="hover:text-gray-400">
+//                 <Link href="/contact" className="hover:text-gray-300">
 //                   Contact
 //                 </Link>
 //               </li>
@@ -1932,7 +1932,7 @@ import Image from "next/image";
 
 export default function Footer2() {
   return (
-    <footer className="bg-gray-900 text-white py-6 px-4 sm:px-6 md:px-52 lg:px-20">
+    <footer className="bg-gray-900 text-white py-12 px-5  sm:px-6 md:px-20">
       <div className="container mx-auto">
         <div className="flex flex-col gap-8 sm:gap-10 md:grid md:grid-cols-2 md:gap-6 lg:flex lg:flex-row lg:justify-between lg:gap-8">
           {/* Left Section: Logo and Description (Full width on md) */}
@@ -1947,34 +1947,35 @@ export default function Footer2() {
                 />
               </div>
             </div>
-            <p className="text-xs sm:text-sm md:text-base lg:text-base mb-4 max-w-[16rem] sm:max-w-xs md:max-w-2xl lg:max-w-sm mx-auto lg:mx-0">
-              Lorem ipsum, dolor sit amet consectetur adipiscing elit. Dolore
-              nulla mollitia tempora sapiente maiores vero a distinctio
-              veritatis.
+            <p className="text-xs sm:text-sm md:text-sm mb-4 max-w-[16rem] text-gray-300 sm:max-w-xs md:max-w-2xl lg:max-w-sm mx-auto lg:mx-0">
+              At Mcom, we are driven by a singular mission - to cultivate a
+              dynamic and diverse portfolio in the realm of Cybersecurity
+              Services, complete IT and Cloud Infrastructure solutions, IT
+              product distributions, and managed services.
             </p>
             {/* Social Media Icons */}
             <div className="flex justify-center lg:justify-start gap-3 sm:gap-4 md:gap-5">
               <a
                 href="#"
-                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-300 transition-colors"
               >
                 <FaFacebook />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-300 transition-colors"
               >
                 <FaInstagram />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-300 transition-colors"
               >
                 <FaTwitter />
               </a>
               <a
                 href="#"
-                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-400 transition-colors"
+                className="text-base sm:text-lg md:text-xl lg:text-xl hover:text-gray-300 transition-colors"
               >
                 <FaLinkedin />
               </a>
@@ -1983,14 +1984,14 @@ export default function Footer2() {
 
           {/* Links Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
+            <h3 className="text-base heading-all sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
               Links
             </h3>
-            <ul className="space-y-2 text-sm text-gray-200 sm:text-sm md:text-base lg:text-base">
+            <ul className=" text-sm text-gray-300 sm:text-sm md:text-base space-y-4 lg:text-sm">
               <li>
                 <Link
                   href="/"
-                  className="hover:text-gray-400 transition-colors"
+                  className="hover:text-gray-300 transition-colors"
                 >
                   Home
                 </Link>
@@ -1998,7 +1999,7 @@ export default function Footer2() {
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-gray-400 transition-colors"
+                  className="hover:text-gray-300 transition-colors"
                 >
                   About
                 </Link>
@@ -2006,7 +2007,7 @@ export default function Footer2() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-gray-400 transition-colors"
+                  className="hover:text-gray-300 transition-colors"
                 >
                   Services
                 </Link>
@@ -2014,7 +2015,7 @@ export default function Footer2() {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-gray-400 transition-colors"
+                  className="hover:text-gray-300 transition-colors"
                 >
                   Contact
                 </Link>
@@ -2023,12 +2024,12 @@ export default function Footer2() {
           </div>
 
           {/* Contact Section */}
-          <div className="text-center md:text-left">
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
-              Contact
+          <div className="text-center md:text-left md:ml-10 ml-0">
+            <h3 className="text-base sm:text-lg heading-all md:text-xl lg:text-xl font-semibold mb-3">
+              Contact Us
             </h3>
-            <ul className="space-y-2 text-xs text-gray-200 sm:text-sm md:text-base lg:text-base">
-              <li className="flex items-center justify-center md:justify-start">
+            <ul className="space-y-4 text-xs text-gray-300 sm:text-sm md:text-base lg:text-base">
+              <li className="flex items-center justify-center md:justify-start text-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mr-2"
@@ -2045,7 +2046,7 @@ export default function Footer2() {
                 </svg>
                 +971 55 956 3722
               </li>
-              <li className="flex items-center justify-center md:justify-start">
+              <li className="flex items-center justify-center md:justify-start  text-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mr-2"
@@ -2062,7 +2063,7 @@ export default function Footer2() {
                 </svg>
                 sales@mccomcctv.com
               </li>
-              <li className="flex items-start justify-center md:justify-start">
+              <li className="flex items-start justify-center md:justify-start  text-sm">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 shrink-0 mt-0.5 mr-2"
@@ -2091,11 +2092,11 @@ export default function Footer2() {
 
           {/* Open Hours Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold mb-3">
+            <h3 className="text-base sm:text-lg heading-all md:text-xl lg:text-xl font-semibold mb-3">
               Open Hours
             </h3>
-            <ul className="space-y-2 text-gray-200 text-xs sm:text-sm md:text-base lg:text-base">
-              <li className="flex items-center justify-center md:justify-start">
+            <ul className="space-y-2 text-gray-300 text-sm  md:text-base ">
+              <li className="flex items-center justify-center md:justify-start text-sm">
                 Mon-Sat: 9am - 6pm
               </li>
             </ul>
@@ -2117,7 +2118,7 @@ export default function Footer2() {
 
         {/* Bottom Section: Copyright */}
         <div className="border-t border-gray-700 mt-8 sm:mt-10 md:mt-12 pt-4 text-center text-xs sm:text-sm md:text-base lg:text-base">
-          <p>
+          <p className="text-sm text-gray-300">
             © 2025 By EAIR | All Rights Reserved. Terms & Conditions. Privacy
             Policy
           </p>

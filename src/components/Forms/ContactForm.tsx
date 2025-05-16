@@ -64,7 +64,7 @@ const ContactForm = () => {
             value={formData.name}
             required
             onChange={handleChange}
-            className=" placeholder:text-gray-700 text-sm text-black  w-full focus:outline-none border border-[#312f83] rounded-md pl-3 !border-b py-1.5"
+            className=" placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none border border-gray-300 rounded-md pl-3 !border-b py-1.5"
             placeholder="Your Name"
           />
         </div>
@@ -76,7 +76,7 @@ const ContactForm = () => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="placeholder:text-gray-700 text-sm text-black  w-full focus:outline-none border border-[#312f83] rounded-md pl-3 !border-b py-1.5"
+            className="placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none border border-gray-300 rounded-md pl-3 !border-b py-1.5"
             placeholder="Your Email"
           />
         </div>
@@ -87,7 +87,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="placeholder:text-gray-700 text-sm text-black  w-full focus:outline-none border border-[#312f83] rounded-md pl-3 !border-b py-1.5"
+            className="placeholder:text-gray-500 text-sm text-black  w-full focus:outline-none border border-gray-300 rounded-md pl-3 !border-b py-1.5"
             required
             placeholder="Your Contact"
           />
@@ -98,7 +98,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="placeholder:text-gray-700 text-sm text-black capitalize w-full focus:outline-none border border-[#312f83] rounded-md pl-3 !border-b py-1.5"
+            className="placeholder:text-gray-500 5ext-sm text-black capitalize w-full focus:outline-none border border-gray-300 rounded-md pl-3 !border-b py-1.5"
             required
             rows={5}
             placeholder="Message"

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Quicksand:wght@300;400;700&display=swap");
 @import "tailwindcss";
 
 @font-face {
@@ -15,14 +15,19 @@
 
 * {
   box-sizing: border-box;
+}
+
+body {
   font-family: "Quicksand", sans-serif;
+  font-display: swap;
+  font-weight: 400 !important;
 }
 
 .content-all {
 }
 
 .heading-all {
-  font-family: "Alef", sans-serif;
+  font-family: "Alef", sans-serif !important;
 }
 
 .arabicHeadings {

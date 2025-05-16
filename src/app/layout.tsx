@@ -86,9 +86,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Quicksand:wght@300;700&display=swap"
+        ></link>
+      </head>
+      <body className={``}>
         <Header />
         {children}
         <Footer2 />
