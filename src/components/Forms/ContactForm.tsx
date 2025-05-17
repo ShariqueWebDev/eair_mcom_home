@@ -3,6 +3,7 @@ import { sendContactEnquiry } from "../../../lib/Mail/ContactForm/sendContactEnq
 // import { message } from "antd";
 import { Loader2Icon, Mail, MessageCircle, Phone, User } from "lucide-react";
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 // import toast from "react-hot-toast";
 
 const ContactForm = () => {
@@ -44,9 +45,19 @@ const ContactForm = () => {
         });
         // toast.success("Form Submitted!");
         setLoading(false);
+        Swal.fire({
+          title: "Email have been sent successfully!",
+          icon: "success",
+          draggable: true,
+        });
       }
     } catch (error) {
       console.error(error);
+      Swal.fire({
+        title: "Some error occured!",
+        icon: "error",
+        draggable: true,
+      });
       // toast("Something went wrong, please try again.");
     } finally {
       setLoading(false);
@@ -136,7 +147,7 @@ const ContactForm = () => {
             )}
             {/* Button text with transition */}
             <span
-              className={`transition-opacity flex items-center gap-2 justify-center py-1.5 duration-300 ease-in-out ${
+              className={`transition-opacity flex items-center gap-2 justify-center py-1.5 duration-300 ease-in-out cursor-pointer ${
                 loading ? "opacity-50" : "opacity-100"
               }`}
             >
