@@ -127,7 +127,7 @@ const serviceData = [
   //   },
 ];
 
-const ServiceSection = ({ isPage }: { isPage: boolean }) => {
+const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
   const [showAll, setShowAll] = useState(false);
 
   const handleShowMore = () => {
