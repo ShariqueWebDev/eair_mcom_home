@@ -248,7 +248,7 @@ const FeaturesWeb: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/camera_img/feature-bg.jpg"
+          src="/feature-bg.webp"
           alt="About"
           className="w-full h-full object-cover dark:hidden"
           fill

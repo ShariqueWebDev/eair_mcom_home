@@ -25,7 +25,7 @@ export const slidesData: SlidesDataProps[] = [
     title: "Smart License Plate Detection",
     subtitle: <div>ANPR Cameras Monitoring Urban Traffic Seamlessly</div>,
 
-    imgPath: "/banner-bg/licence-detec.webp",
+    imgPath: "/banner-bg/license.webp",
   },
   {
     title: "Smart Visitor Digital Log Book",
@@ -50,15 +50,15 @@ export const slidesData: SlidesDataProps[] = [
     imgPath: "/banner-bg/video-manag.webp",
   },
   {
-    title: "Queue Management & Digital Signage Solutions",
+    title: "Secure & Seamless Access with Biometric Services",
     subtitle: (
       <div>
-        Streamline Customer Flow with Centralized Control,{" "}
-        <br className="max-sm:hidden" /> Multilingual Support & Smart
-        Notifications
+        Empowering businesses with advanced fingerprint, facial, and retina
+        recognition solutions <br className="max-sm:hidden" /> for unmatched
+        identity verification and data protection.
       </div>
     ),
 
-    imgPath: "/banner-bg/queue-manag.webp",
+    imgPath: "/banner-bg/bio-metric1.webp",
   },
 ];

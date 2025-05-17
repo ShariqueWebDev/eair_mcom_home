@@ -1,6 +1,6 @@
 :root {
   --color-text: #ffffff;
-  --color-bg: #000;
+  /* --color-bg: #b3adad; */
   --color-bg-accent: #fff;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
@@ -107,8 +107,7 @@
 .marquee__group img {
   width: var(--size);
   background: var(--color-bg-accent);
-  aspect-ratio: 16/9;
-  padding: calc(var(--size) / 10);
+  /* padding: calc(var(--size) / 10); */
   border-radius: 0.2rem;
   object-fit: contain;
 }
@@ -116,5 +115,5 @@
 .marquee--vertical .marquee__group img {
   aspect-ratio: 1;
   width: calc(var(--size) / 1.5);
-  padding: calc(var(--size) / 6);
+  /* padding: calc(var(--size) / 6); */
 }

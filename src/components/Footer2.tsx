@@ -230,7 +230,7 @@ export default function Footer2() {
           {/* Bottom Section: Copyright */}
           <div className="border-t border-gray-700 mt-8 sm:mt-10 md:mt-12 pt-4 text-center text-xs sm:text-sm md:text-base lg:text-base">
             <p className="text-sm text-gray-300">
-              © 2025 By EAIR | All Rights Reserved. Terms & Conditions. Privacy
+              © 2025 By Mcom | All Rights Reserved. Terms & Conditions. Privacy
               Policy
             </p>
           </div>

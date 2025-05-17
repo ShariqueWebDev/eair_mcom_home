@@ -227,31 +227,31 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      image: "/banner-bg/banner1.webp",
+      image: "/feature-img/emerg.webp",
       date: "1",
       title: "Emergency Service",
-      text: "Business tailored design of company in some we form solution.",
+      text: "Our Emergency Services are designed to provide rapid, reliable, and responsive support when it matters most",
     },
     {
       id: 2,
-      image: "/banner-bg/banner1.webp",
+      image: "/feature-img/guarantee.webp",
       date: "2",
       title: "Satifaction Guarantee",
-      text: "Business tailored design of company in some we form solution.",
+      text: "Your satisfaction is our top priority. We are committed to delivering high-quality services that meet your expectations and business goals.",
     },
     {
       id: 3,
-      image: "/banner-bg/banner1.webp",
+      image: "/feature-img/payment.webp",
       date: "3",
-      title: "No Uprfront Payment",
-      text: "Business tailored design of company in some we form solution.",
+      title: "No Upfront Payment",
+      text: "We believe in building trust before transactions. That’s why we offer our services with no upfront payment required.",
     },
     {
       id: 4,
-      image: "/banner-bg/banner1.webp",
+      image: "/feature-img/exper.webp",
       date: "4",
       title: "20 Years of Experience",
-      text: "Business tailored design of company in some we form solution.",
+      text: "With over two decades of industry experience, we bring a deep understanding of market dynamics, client needs, and evolving business landscapes. ",
     },
   ];
 
@@ -304,7 +304,7 @@ const BlogSection = () => {
                 </div>
 
                 {/* Overlay tint */}
-                <div className="absolute inset-0 bg-white/0 group-hover:bg-black/40 z-0 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/50 z-0 transition-colors duration-300" />
 
                 {/* Content */}
                 <div className="relative z-20 h-full flex flex-col justify-between p-6 text-white">
@@ -329,7 +329,7 @@ const BlogSection = () => {
                       </p>
                     </h3>
                     <p
-                      className="text-sm text-gray-300 transition-colors duration-200"
+                      className="text-sm text-gray-200 transition-colors duration-200 h-[120px]"
                       data-aos="fade-up"
                     >
                       {post.text}

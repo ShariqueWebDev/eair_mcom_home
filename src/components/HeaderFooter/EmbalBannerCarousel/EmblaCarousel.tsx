@@ -25,7 +25,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      once: false,
+      once: true,
     });
   }, []);
 

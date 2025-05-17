@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://eiarmcom.com",
+    canonical: "https://mcom.com",
   },
 };
 

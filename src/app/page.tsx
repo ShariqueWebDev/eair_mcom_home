@@ -10,6 +10,7 @@ import "../components/HeaderFooter/EmbalBannerCarousel/embla.css";
 import Link from "next/link";
 import Wrapper from "@/components/Others/Wrapper";
 import { OPTIONS, slidesData } from "../../lib/emblaData";
+import OurClients from "@/components/OurClient";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       <WhyChooseUs />
       <AboutUsSection heading={true} />
       <TestimonialSection />
-      <Wrapper className="md:py-16 max-sm:pb-0 py-10">
+      <OurClients />
+      <Wrapper className="md:pb-16 max-sm:pb-0 pt-10">
         <div className="">
           <div className="bg-[#f3f4f6] p-10 rounded-xl" data-aos="fade-up">
             <div className="flex md:flex-row flex-col justify-between items-center">

@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
 import { Metadata } from "next";
 import AboutUsSection from "@/components/About/AboutUsSection";
 import Wrapper from "@/components/Others/Wrapper";
+import OurClients from "@/components/OurClient";
 
 export const metadata: Metadata = {
   title: "About Us -  Mcom",
@@ -140,7 +141,7 @@ const AboutPage = () => {
           </div>
 
           {/* Team Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 pb-16 ">
             {teamMembers.map((member, index) => (
               <div
                 className=" !max-w-[350px] w-full px-5 md:py-7 pb-0 pt-5 flex flex-col items-center justify-center shadow-lg rounded-md border-gray-100 !bg-white"
@@ -175,6 +176,9 @@ const AboutPage = () => {
           </div>
         </div>
       </Wrapper>
+      <div className="">
+        <OurClients />
+      </div>
     </div>
   );
 };

@@ -129,14 +129,14 @@ const Header: React.FC<HeaderProps> = () => {
             isOpen ? "translate-y-0" : "-translate-y-full"
           } transition-transform duration-500 ease-in-out`}
           style={{
-            backgroundImage: "url(/menu-bg.webp)",
+            backgroundImage: "url(/banner-bg/menu-bg.webp)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/70 z-0"></div>
+          <div className="absolute inset-0 bg-black/75 z-0"></div>
 
           {/* Content (z-10 to appear above overlay) */}
           <Link className="lg:hidden absolute top-4 left-4 z-10" href={"/"}>
