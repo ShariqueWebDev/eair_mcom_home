@@ -16,15 +16,23 @@ const ContactCard: React.FC<Props> = ({ item }) => {
        flex items-center gap-5 p-6 rounded-xl "
     >
       <div>
-        <div className="bg-gradient-to-r from-darkGolden to-lightGolden p-3 rounded-lg">
-          <item.icon size={30} strokeWidth={1.5} className="text-[#2e2f87]" />
+        <div
+          className="bg-gradient-to-r from-darkGolden to-lightGolden p-3 rounded-lg"
+          data-aos="fade-up"
+        >
+          <item.icon size={25} strokeWidth={1.5} className="text-[#2e2f87]" />
         </div>
       </div>
       <div>
-        <h3 className="text-lightGolden text-lg uppercase font-semibold tracking-wider text-gray-900">
+        <h3
+          className="text-lightGolden text-lg uppercase font-semibold tracking-wider text-gray-900"
+          data-aos="fade-up"
+        >
           {item.label}
         </h3>
-        <p className="text-sm tracking-wide text-gray-600">{item.value}</p>
+        <p className="text-sm tracking-wide text-gray-600" data-aos="fade-up">
+          {item.value}
+        </p>
       </div>
     </div>
   );

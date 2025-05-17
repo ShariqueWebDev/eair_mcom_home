@@ -221,6 +221,7 @@
 
 "use client";
 import Image from "next/image";
+import Wrapper from "./Others/Wrapper";
 
 const BlogSection = () => {
   const blogPosts = [
@@ -255,75 +256,92 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 md:px-20 px-5" id="blog">
-      <div className="container mx-auto ">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          {/* <h6 className="text-sm font-semibold text-gray-600 flex items-center justify-center gap-2">
+    <Wrapper className="">
+      <section className="py-16 bg-gray-50" id="blog">
+        <div className="container mx-auto ">
+          {/* Section Title */}
+          <div className="text-center mb-12">
+            {/* <h6 className="text-sm font-semibold text-gray-600 flex items-center justify-center gap-2">
             <span className="block w-8 h-px bg-gray-400"></span>
             Our Latest News
             <span className="block w-8 h-px bg-gray-400"></span>
           </h6> */}
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-900  heading-all">
-            Our Benefits
-          </h3>
-        </div>
-
-        {/* Blog Cards Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 justify-center px-4 lg:">
-          {blogPosts.map((post) => (
-            <div
-              key={post.id}
-              className="w-full max-w-sm mx-auto relative h-80 rounded-lg overflow-hidden group bg-gray-200"
+            <h3
+              className="text-3xl md:text-4xl font-bold text-gray-900  heading-all"
+              data-aos="fade-up"
             >
-              {/* Decorative Shape (like ::after) */}
+              Our Benefits
+            </h3>
+          </div>
+
+          {/* Blog Cards Grid */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 justify-center  lg:">
+            {blogPosts.map((post) => (
               <div
-                className="absolute top-0 left-0 z-10"
-                style={{
-                  width: "135px",
-                  height: "70px",
-                  backgroundColor: "var(--tolak-base, #2e2e84)",
-                  clipPath: "polygon(0 0, 100% 0, 58% 100%, 0 100%)",
-                }}
-              />
-
-              {/* Blog Image (hover effect) */}
-              <div className="absolute inset-0 z-0 transition-opacity duration-300 ">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+                key={post.id}
+                className="w-full max-w-sm mx-auto relative h-80 rounded-lg overflow-hidden group bg-gray-200"
+                data-aos="fade-up"
+              >
+                {/* Decorative Shape (like ::after) */}
+                <div
+                  className="absolute top-0 left-0 z-10"
+                  style={{
+                    width: "135px",
+                    height: "70px",
+                    backgroundColor: "var(--tolak-base, #2e2e84)",
+                    clipPath: "polygon(0 0, 100% 0, 58% 100%, 0 100%)",
+                  }}
                 />
-              </div>
 
-              {/* Overlay tint */}
-              <div className="absolute inset-0 bg-white/0 group-hover:bg-black/40 z-0 transition-colors duration-300" />
-
-              {/* Content */}
-              <div className="relative z-20 h-full flex flex-col justify-between p-6 text-white">
-                {/* Date Badge */}
-                <div className="bg-white text-gray-400 text-center py-3 px-6 rounded w-fit mb-4">
-                  <span className="block !text-5xl heading-all font-bold ">
-                    {post.date.split(" ")[0]}
-                  </span>
+                {/* Blog Image (hover effect) */}
+                <div className="absolute inset-0 z-0 transition-opacity duration-300 ">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  />
                 </div>
 
-                {/* Title & Text */}
-                <div className="group">
-                  <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-white transition-colors duration-200">
-                    <p className="hover:underline heading-all">{post.title}</p>
-                  </h3>
-                  <p className="text-sm text-gray-300 transition-colors duration-200">
-                    {post.text}
-                  </p>
+                {/* Overlay tint */}
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-black/40 z-0 transition-colors duration-300" />
+
+                {/* Content */}
+                <div className="relative z-20 h-full flex flex-col justify-between p-6 text-white">
+                  {/* Date Badge */}
+                  <div
+                    className="bg-white text-gray-400 text-center py-3 px-6 rounded w-fit mb-4"
+                    data-aos="fade-up"
+                  >
+                    <span className="block !text-5xl heading-all font-bold ">
+                      {post.date.split(" ")[0]}
+                    </span>
+                  </div>
+
+                  {/* Title & Text */}
+                  <div className="group">
+                    <h3
+                      className="text-xl font-semibold mb-2 text-white group-hover:text-white transition-colors duration-200"
+                      data-aos="fade-up"
+                    >
+                      <p className="hover:underline heading-all">
+                        {post.title}
+                      </p>
+                    </h3>
+                    <p
+                      className="text-sm text-gray-300 transition-colors duration-200"
+                      data-aos="fade-up"
+                    >
+                      {post.text}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Wrapper>
   );
 };
 

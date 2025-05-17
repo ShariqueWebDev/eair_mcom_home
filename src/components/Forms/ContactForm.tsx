@@ -56,7 +56,10 @@ const ContactForm = () => {
   return (
     <div className="w-full lg:w-[100%]">
       <form className="space-y-3" onSubmit={handleSubmit}>
-        <div className="flex gap-3 items-center border-b py-2">
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
           <User size={20} color="#2e2f87" strokeWidth={1} />
           <input
             type="text"
@@ -68,7 +71,10 @@ const ContactForm = () => {
             placeholder="Your Name"
           />
         </div>
-        <div className="flex gap-3 items-center border-b py-2">
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
           <Mail size={20} color="#2e2f87" strokeWidth={1} />
           <input
             type="email"
@@ -80,7 +86,10 @@ const ContactForm = () => {
             placeholder="Your Email"
           />
         </div>
-        <div className="flex gap-3 items-center border-b py-2">
+        <div
+          className="flex gap-3 items-center border-b py-2"
+          data-aos="fade-up"
+        >
           <Phone size={20} color="#2e2f87" strokeWidth={1} />
           <input
             type="text"
@@ -92,7 +101,10 @@ const ContactForm = () => {
             placeholder="Your Contact"
           />
         </div>
-        <div className="flex gap-3 items-start border-b py-2">
+        <div
+          className="flex gap-3 items-start border-b py-2"
+          data-aos="fade-up"
+        >
           <MessageCircle size={20} color="#2e2f87" strokeWidth={1} />
           <textarea
             name="message"
@@ -104,7 +116,10 @@ const ContactForm = () => {
             placeholder="Message"
           />
         </div>
-        <div className="mt-4 flex justify-center items-center">
+        <div
+          className="mt-4 flex justify-center items-center"
+          data-aos="fade-up"
+        >
           <button
             type="submit"
             className="bg-gradient-to-r font-medium border w-fit hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py- text-sm border-[#312f83] rounded text-black" // Add transition classes

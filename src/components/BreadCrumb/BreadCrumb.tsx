@@ -25,7 +25,10 @@ const Breadcrumb = ({
       {/* Breadcrumb Navigation */}
       <div className="mt-10">
         <div className="relative  z-10 w-full max-w-7xl mx-auto mt-5">
-          <div className="flex items-center gap-2 text-sm text-white">
+          <div
+            className="flex items-center gap-2 text-sm text-white"
+            data-aos="fade-in"
+          >
             <Link
               href="/"
               className="text-gray-300 hover:text-blue-400 transition-colors"
@@ -39,11 +42,17 @@ const Breadcrumb = ({
 
         {/* Main Content */}
         <div className="relative max-w-[90%] sm:max-w-[700px] md:max-w-[850px] bg-opacity-90  py-6 sm:py-8 md:py-10 rounded-md text-start">
-          <h1 className=" text-3xl md:text-4xl  font-bold text-white pb-4 sm:pb- heading-all">
+          <h1
+            className=" text-3xl md:text-4xl  font-bold text-white pb-4 sm:pb- heading-all"
+            data-aos="fade-in"
+          >
             {title}
             {/* Empower Your Business with Agile Solutions */}
           </h1>
-          <p className="text-xs sm:text-sm md:text-base  text-gray-300 mt2 leading-relaxed">
+          <p
+            className="text-xs sm:text-sm md:text-base  text-gray-300 mt2 leading-relaxed"
+            data-aos="fade-in"
+          >
             {paragraph}
             {/* Encompasses a rich tapestry of skills. With our headquarters nestled
           in Thiruvananthapuram, we extend our presence across the vast expanse

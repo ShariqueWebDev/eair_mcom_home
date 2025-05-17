@@ -21,7 +21,10 @@ const TestimonialSection = () => {
   return (
     <div className="bg-gray-100 md:pt-16 py-10 max-sm:px-5 ">
       <>
-        <h4 className="text-center font-semibold md:text-4xl text-3xl text-gray-800 heading-all uppercase">
+        <h4
+          className="text-center font-semibold md:text-4xl text-3xl text-gray-800 heading-all uppercase"
+          data-aos="fade-up"
+        >
           Our Testimonials
         </h4>
         <div className="">

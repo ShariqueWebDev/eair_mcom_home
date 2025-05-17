@@ -5,6 +5,7 @@ import Header from "@/components/HeaderFooter/Header";
 import FloatingCall from "@/components/Others/FloatingCall";
 import SocialMediaButton from "@/components/Others/FloatingIcons";
 import Footer2 from "@/components/Footer2";
+import AosWrapper from "@/components/Others/AosWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -93,6 +94,7 @@ export default function RootLayout({
         ></link>
       </head>
       <body className={``}>
+        <AosWrapper />
         <Header />
         {children}
         <Footer2 />

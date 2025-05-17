@@ -241,7 +241,10 @@ const FeaturesWeb: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative h-[90vh] overflow-hidden py-20 lg:pb-24 xl:pb-28 mb-16">
+    <section
+      className="relative h-[90vh] overflow-hidden py-20 lg:pb-24 xl:pb-28 mb-16"
+      data-aos="fade-up"
+    >
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -261,10 +264,16 @@ const FeaturesWeb: React.FC = () => {
 
           {/* Content on the Right */}
           <div className="md:w-1/2 animate-slide-right md:order-last">
-            <h4 className="font-medium uppercase text-xs text-gray-500 dark:text-white flex items-center gap-4">
+            <h4
+              className="font-medium uppercase text-xs text-gray-500 dark:text-white flex items-center gap-4"
+              data-aos="fade-up"
+            >
               New features
             </h4>
-            <h2 className="text-3xl xl:text-5xl font-bold heading-all mt-4 mb-6">
+            <h2
+              className="text-3xl xl:text-5xl font-bold heading-all mt-4 mb-6"
+              data-aos="fade-up"
+            >
               Opting For Security & Making You
               <span className="relative inline-block ml-2">
                 <span className="bg-gradient-to-r from-sky-400 to-[#e441b6] bg-clip-text text-transparent">
@@ -275,7 +284,7 @@ const FeaturesWeb: React.FC = () => {
             </h2>
 
             {/* Features */}
-            <div className="flex items-center gap-5 py-2">
+            <div className="flex items-center gap-5 py-2" data-aos="fade-up">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
                 <p className="text-lg font-semibold text-gray-400">01</p>
               </div>
@@ -285,7 +294,7 @@ const FeaturesWeb: React.FC = () => {
                 </h3>
               </div>
             </div>
-            <div className="flex items-center gap-5 py-2">
+            <div className="flex items-center gap-5 py-2" data-aos="fade-up">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
                 <p className="text-lg font-semibold text-gray-400">02</p>
               </div>
@@ -295,7 +304,7 @@ const FeaturesWeb: React.FC = () => {
                 </h3>
               </div>
             </div>
-            <div className="flex items-center gap-5 py-2">
+            <div className="flex items-center gap-5 py-2" data-aos="fade-up">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
                 <p className="text-lg font-semibold text-gray-400">03</p>
               </div>
@@ -303,7 +312,7 @@ const FeaturesWeb: React.FC = () => {
                 <h3 className="text-lg font-semibold">Drone CCTV Discussion</h3>
               </div>
             </div>
-            <div className="flex items-center gap-5 py-2">
+            <div className="flex items-center gap-5 py-2" data-aos="fade-up">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-800">
                 <p className="text-lg font-semibold text-gray-400">04</p>
               </div>

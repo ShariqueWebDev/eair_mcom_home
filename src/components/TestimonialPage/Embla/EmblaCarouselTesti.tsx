@@ -40,8 +40,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls sm:relative">
-        <div className="embla__buttons max-sm:!flex gap-3   ">
+      <div className="embla__controls sm:relative" data-aos="fade-up">
+        <div className="embla__buttons max-sm:!flex gap-3">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

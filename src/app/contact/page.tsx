@@ -97,10 +97,16 @@ const Contact = () => {
       <div className="md:px-20 px-5  text-white py-8 md:py-16 flex flex-col lg:flex-row gap-14 lg:gap-14">
         <div className="space-y-2 w-full lg:w-[60%]">
           <div className="space-y-4">
-            <h2 className="text-3xl lg:text-4xl heading-all gradientHeading text-gray-800 font-bold tracking-wide">
+            <h2
+              className="text-3xl lg:text-4xl heading-all gradientHeading text-gray-800 font-bold tracking-wide"
+              data-aos="fade-up"
+            >
               GET IN TOUCH
             </h2>
-            <p className="tracking-wider leading-relaxed text-gray-600 text-[0.9rem] lg:text-[0.95rem] ">
+            <p
+              className="tracking-wider leading-relaxed text-gray-600 text-[0.9rem] lg:text-[0.95rem] "
+              data-aos="fade-up"
+            >
               Need to get in touch? We'd love to hear from you! Please fill out
               the form or email{" "}
               <a href="mailto:sales@mcomcctv.com" className="text-lightGolden">
@@ -111,13 +117,13 @@ const Contact = () => {
           </div>
           <div className="grid grid-cols-1 pt-4 md:grid-cols-2 gap-4 lg:gap-5">
             {data.map((item, index) => (
-              <div key={index}>
+              <div key={index} data-aos="fade-up">
                 <ContactCard item={item} />
               </div>
             ))}
           </div>
         </div>
-        <div className="w-full lg:w-[40%] space-y-5">
+        <div className="w-full lg:w-[40%] space-y-5" data-aos="fade-up">
           <ContactForm />
         </div>
       </div>

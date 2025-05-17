@@ -1,6 +1,7 @@
 "use client";
 import { Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const serviceData = [
@@ -126,7 +127,7 @@ const serviceData = [
   //   },
 ];
 
-const ServiceSection = () => {
+const ServiceSection = ({ isPage }: { isPage: boolean }) => {
   const [showAll, setShowAll] = useState(false);
 
   const handleShowMore = () => {
@@ -146,11 +147,17 @@ const ServiceSection = () => {
           {/* <span className="inline-flex items-center gap-2 rounded-full px-4.5 py-1.5 text-sm font-medium border border-gray-500 text-gray-800 mb-4">
             <span className="text-[11px]">Our Services</span>
           </span> */}
-          <h2 className="mb-4.5 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl">
+          <h2
+            className="mb-4.5 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl"
+            data-aos="fade-up"
+          >
             Excellence in HVAC Installation, <br className="max-sm:hidden" />{" "}
             Service & Repair
           </h2>
-          <p className="mx-auto max-w-[714px] font-medium text-gray-600">
+          <p
+            className="mx-auto max-w-[714px] font-medium text-gray-600"
+            data-aos="fade-up"
+          >
             Mcom is a heating and cooling service company with a history of
             excellence, customer service, and quality craftsmanship. We
             specialize in HVAC service, replacement, and repair for both
@@ -166,8 +173,9 @@ const ServiceSection = () => {
               <div
                 key={index}
                 className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
+                data-aos="fade-up"
               >
-                <div className="flex items-center gap-4.5">
+                <div className="flex items-center gap-4.5" data-aos="fade-up">
                   <div className="relative h-12 w-12 overflow-hidden ">
                     <Image
                       src={service.iconPath}
@@ -186,11 +194,18 @@ const ServiceSection = () => {
                     </p> */}
                   </div>
                 </div>
-                <div className="relative my-6 h-[1px] w-full bg-gray-600"></div>
+                <div
+                  className="relative my-6 h-[1px] w-full bg-gray-600"
+                  data-aos="fade-up"
+                ></div>
                 <div className="">
                   {service?.points?.map((item, index) => {
                     return (
-                      <div className="flex gap-3 mb-2" key={index}>
+                      <div
+                        className="flex gap-3 mb-2"
+                        key={index}
+                        data-aos="fade-up"
+                      >
                         <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                           <Check color="#fff" size={16} />
                         </div>
@@ -209,7 +224,15 @@ const ServiceSection = () => {
             ))}
           </div>
         </div>
-
+        {isPage && (
+          <div className="flex justify-center ">
+            <Link href={"/services"} data-aos={"fade-up"} className=" mx-auto ">
+              <button className="bg-[#323085] text-white text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
+                Know more
+              </button>
+            </Link>
+          </div>
+        )}
         {/* Show More Button */}
         {/* {!showAll && (
           <div className="absolute inset-x-0 bottom-20 flex justify-center bg-gradient-to-t from-gray-900 pb-8 pt-32 transition-opacity duration-300">

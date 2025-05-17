@@ -1,8 +1,5 @@
-import Link from "next/link";
-import React from "react";
-import EmblaCarousel from "./EmbalBannerCarousel/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
-import "./EmbalBannerCarousel/embla.css";
+
 export const OPTIONS: EmblaOptionsType = {};
 // const SLIDE_COUNT = 5;
 // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -65,13 +62,3 @@ export const slidesData: SlidesDataProps[] = [
     imgPath: "/banner-bg/queue-manag.webp",
   },
 ];
-
-const Banner = () => {
-  return (
-    <div>
-      <EmblaCarousel slides={slidesData} options={OPTIONS} />
-    </div>
-  );
-};
-
-export default Banner;
