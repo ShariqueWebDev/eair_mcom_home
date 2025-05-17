@@ -12,7 +12,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
             className="text-center mb-7 md:text-4xl text-3xl text-gray-800 uppercase font-semibold heading-all"
             data-aos="fade-up"
           >
-            About Eair Mcom
+            About Mcom
           </h3>
         )}
         <div className="flex flex-wrap ">
