@@ -1,5 +1,5 @@
 "use client";
-import { sendContactEnquiry } from "../../../lib/Mail/ContactForm/sendContactEnquiry";
+import { sendContactEnquiry } from "../../lib/Mail/ContactForm/sendContactEnquiry";
 // import { message } from "antd";
 import { Loader2Icon, Mail, MessageCircle, Phone, User } from "lucide-react";
 import React, { useState } from "react";

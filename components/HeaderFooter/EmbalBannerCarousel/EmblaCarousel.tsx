@@ -11,7 +11,9 @@ import Link from "next/link";
 import { SlidesDataProps } from "../Banner";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Wrapper from "@/components/Others/Wrapper";
+// import Wrapper from "@/components/Others/Wrapper";
+import Image from "next/image";
+import Wrapper from "../../Others/Wrapper";
 
 type PropType = {
   slides: SlidesDataProps[];
@@ -26,6 +28,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
     Aos.init({
       duration: 1000,
       once: true,
+      // disable: "mobile", // Disable animations on mobile for performance
     });
   }, []);
 
@@ -42,7 +45,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
     // Auto-scrolling logic
     const autoScrollInterval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 3000); // Change slide every 3 seconds
+    }, 5000); // Change slide every 3 seconds
 
     return () => {
       emblaApi.off("select", onSelect);
@@ -66,13 +69,26 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
               <div className="embla__slide__number">
                 <Wrapper className=" relative w-full md:h-screen h-[80svh] flex items-center text-white overflow-hidden">
                   <section
-                    key={selectedIndex === index ? `slide-${index}` : undefined}
+                  // key={selectedIndex === index ? `slide-${index}` : undefined}
                   >
                     <div
                       className="absolute inset-0 bg-center bg-cover"
-                      style={{ backgroundImage: `url(${item?.imgPath})` }}
+                      // style={{ backgroundImage: `url(${item?.imgPath})` }}
                     />
-                    <div className="absolute inset-0 bg-black/60" />
+
+                    {/* <div className="absolute inset-0 bg-black/60" /> */}
+                    <div className="absolute inset-0">
+                      <Image
+                        src={item?.imgPath}
+                        alt={item?.title}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        quality={75}
+                        priority={index === 0} // Prioritize first slide
+                        loading={index > 0 ? "lazy" : undefined} // Lazy load others
+                      />
+                      <div className="absolute inset-0 bg-black/60" />
+                    </div>
 
                     <div className="relative z-10 md:w-1/2 w-full mt-12">
                       <div

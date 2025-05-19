@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@react-google-maps/api": "^2.20.6",
     "aos": "^2.3.4",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.510.0",

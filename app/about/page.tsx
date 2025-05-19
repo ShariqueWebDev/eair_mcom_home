@@ -1,12 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
+// import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
 import { Metadata } from "next";
-import AboutUsSection from "@/components/About/AboutUsSection";
-import Wrapper from "@/components/Others/Wrapper";
-import OurClients from "@/components/OurClient";
-import Achievment from "@/components/Achievment";
+import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
+import AboutUsSection from "../../components/About/AboutUsSection";
+import Wrapper from "../../components/Others/Wrapper";
+import OurClients from "../../components/OurClient";
+import Achievment from "../../components/Achievment";
+// import AboutUsSection from "@/components/About/AboutUsSection";
+// import Wrapper from "@/components/Others/Wrapper";
+// import OurClients from "@/components/OurClient";
+// import Achievment from "@/components/Achievment";
 
 export const metadata: Metadata = {
   title: "About Us -  Mcom",

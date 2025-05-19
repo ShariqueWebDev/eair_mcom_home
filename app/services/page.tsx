@@ -1,11 +1,15 @@
-import BlogSection from "@/components/BlogSection";
-import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
-import FeaturesWeb from "@/components/FeaturesWeb";
-import ServiceSection from "@/components/HeaderFooter/ServiceSection";
-import ServiceFeature from "@/components/ServiceFeature";
+// import BlogSection from "@/components/BlogSection";
+// import Breadcrumb from "@/components/BreadCrumb/BreadCrumb";
+// import FeaturesWeb from "@/components/FeaturesWeb";
+// import ServiceSection from "@/components/HeaderFooter/ServiceSection";
+// import ServiceFeature from "@/components/ServiceFeature";
 // import BenefitSectionForService from "@/components/Services/BenefitSection";
 import { Metadata } from "next";
 import React from "react";
+import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
+import ServiceSection from "../../components/HeaderFooter/ServiceSection";
+import BlogSection from "../../components/BlogSection";
+import FeaturesWeb from "../../components/FeaturesWeb";
 
 export const metadata: Metadata = {
   title: "Our Services -  Mcom",

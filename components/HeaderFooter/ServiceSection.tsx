@@ -127,7 +127,7 @@ const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
         <div className={``}>
           {/* Column 1 */}
           <div className="space-y-7.5 md:flex md:justify-center md:flex-wrap grid-cols-1 max-sm:place-items-center gap-5">
-            {serviceData.map((service, index) => (
+            {serviceData?.map((service, index) => (
               <div
                 key={index}
                 className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
@@ -175,7 +175,7 @@ const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
                 <div className="absolute inset-0 -z-10 overflow-hidden">
                   <span
                     className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
+                    // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
                   ></span>
                 </div>
               </div>

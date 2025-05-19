@@ -1,17 +1,17 @@
-import AboutUsSection from "@/components/About/AboutUsSection";
+import AboutUsSection from "../components/About/AboutUsSection";
 import Image from "next/image";
 // import Banner, { OPTIONS, slidesData } from "@/components/HeaderFooter/Banner";
-import EmblaCarousel from "@/components/HeaderFooter/EmbalBannerCarousel/EmblaCarousel";
-import ServiceSection from "@/components/HeaderFooter/ServiceSection";
-import WhyChooseUs from "@/components/HeaderFooter/WhyChooseUs";
-import TestimonialSection from "@/components/TestimonialPage/TestimonialSection";
+import EmblaCarousel from "../components/HeaderFooter/EmbalBannerCarousel/EmblaCarousel";
+import ServiceSection from "../components/HeaderFooter/ServiceSection";
+import WhyChooseUs from "../components/HeaderFooter/WhyChooseUs";
+import TestimonialSection from "../components/TestimonialPage/TestimonialSection";
 import { EmblaOptionsType } from "embla-carousel";
 import "../components/HeaderFooter/EmbalBannerCarousel/embla.css";
 import Link from "next/link";
-import Wrapper from "@/components/Others/Wrapper";
-import { OPTIONS, slidesData } from "../../lib/emblaData";
-import OurClients from "@/components/OurClient";
-import Achievment from "@/components/Achievment";
+import Wrapper from "../components/Others/Wrapper";
+import { OPTIONS, slidesData } from "../lib/emblaData";
+import OurClients from "../components/OurClient";
+import Achievment from "../components/Achievment";
 
 export default function Home() {
   return (

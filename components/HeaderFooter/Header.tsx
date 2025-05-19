@@ -207,7 +207,7 @@ const Header: React.FC<HeaderProps> = () => {
           isOpen ? "translate-y-0" : "-translate-y-full"
         } transition-transform duration-500 ease-in-out`}
         style={{
-          backgroundImage: "url(/menu-bg.webp)",
+          // backgroundImage: "url(/menu-bg.webp)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
