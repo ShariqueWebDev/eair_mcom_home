@@ -18,14 +18,14 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
         <div className="flex flex-wrap ">
           {/* Featured Post */}
           <div
-            className="flex w-full  flex-col gap-3 rounded-xl bg-white p-4  lg:flex-row lg:items-center lg:p-2.5"
+            className="flex w-full  flex-col gap-5 rounded-xl bg-white p-4  lg:flex-row lg:items-center lg:p-2.5"
             data-aos="fade-up"
           >
             <div
               className="aspect-[536/320] w-full flex items-center justify-center rounded-lg bg-[#dbcfcb] "
               data-aos="fade-up"
             >
-              <Link href="/pricing">
+              <div>
                 <Image
                   src="/mission.png"
                   alt="Wellness Unveiled: Empowering Your Journey to a Balanced and Vibrant Life"
@@ -34,24 +34,21 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                   className="object-cover"
                   priority
                 />
-              </Link>
+              </div>
             </div>
 
             <div className="w-full lg:max-w-[540px] bg-gray-100 h-full rounded-lg md:p-10 p-5">
-              <Link
-                href="/category/health"
+              <div
                 className="mb-4 inline-flex rounded-full bg-purple-100 px-3 py-1 text-sm font-medium capitalize text-purple-800"
                 data-aos="fade-up"
               >
                 ✨
-              </Link>
+              </div>
               <h1
                 className="mb-4 text-2xl font-bold text-gray-900 xl:text-4xl "
                 data-aos="fade-up"
               >
-                <Link href="/pricing" className="heading-all">
-                  Our Mission
-                </Link>
+                <p className="heading-all">Our Mission</p>
               </h1>
               <p
                 className="max-w-[524px] text-sm text-gray-600"
@@ -75,7 +72,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
               className="relative aspect-[238/180] w-full overflow-hidden"
               data-aos="fade-up"
             >
-              <Link href="/posts/culinary-expeditions-tasting-the-worlds-flavors-in-the-heart-of-local-culture">
+              <div>
                 <Image
                   src="/vision.jpeg"
                   alt="Culinary Expeditions: Tasting the World's Flavors in the Heart of Local Culture"
@@ -83,28 +80,20 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                   className="rounded-lg object-cover"
                   sizes="100vw"
                 />
-              </Link>
+              </div>
             </div>
             <div
               className="w-full lg:max-w-[272px] bg-gray-100 md:h-full rounded-lg p-5"
               data-aos="fade-up"
             >
-              <Link
-                href="/category/health"
-                className="mb-4 inline-flex rounded-full bg-blue-100 px-3 py-1 text-sm font-medium capitalize text-blue-800"
-              >
+              <div className="mb-4 inline-flex rounded-full bg-blue-100 px-3 py-1 text-sm font-medium capitalize text-blue-800">
                 ✨
-              </Link>
+              </div>
               <h2
                 className="mb-3 text-3xl font-semibold text-gray-900"
                 data-aos="fade-up"
               >
-                <Link
-                  href="/posts/culinary-expeditions-tasting-the-worlds-flavors-in-the-heart-of-local-culture "
-                  className="heading-all"
-                >
-                  Our Vision
-                </Link>
+                <div className="heading-all">Our Vision</div>
               </h2>
               <p
                 className="max-w-[524px] text-sm text-gray-600"
@@ -124,7 +113,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
               className="relative aspect-[238/180] w-full overflow-hidden"
               data-aos="fade-up"
             >
-              <Link href="/posts/begin-here-to-obtain-a-brief-summary-encompassing-all-the-essential">
+              <div>
                 <Image
                   src="/values.jpeg"
                   alt="Begin here to obtain a brief summary encompassing all the essential"
@@ -132,28 +121,20 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                   className=" w-full h-full rounded-lg object-cover object-center"
                   sizes="100vw"
                 />
-              </Link>
+              </div>
             </div>
             <div
               className="w-full lg:max-w-[272px] bg-gray-100 md:h-full rounded-lg p-5"
               data-aos="fade-up"
             >
-              <Link
-                href="/category/lifestyle"
-                className="mb-4 inline-flex rounded-full bg-blue-100 px-3 py-1 text-sm font-medium capitalize text-blue-800"
-              >
+              <div className="mb-4 inline-flex rounded-full bg-blue-100 px-3 py-1 text-sm font-medium capitalize text-blue-800">
                 ✨
-              </Link>
+              </div>
               <h2
                 className="mb-3 text-3xl font-semibold text-gray-900"
                 data-aos="fade-up"
               >
-                <Link
-                  href="/posts/begin-here-to-obtain-a-brief-summary-encompassing-all-the-essential"
-                  className="heading-all"
-                >
-                  Our Value
-                </Link>
+                <div className="heading-all">Our Value</div>
               </h2>
               <p className="max-w-[524px] text-gray-600" data-aos="fade-up">
                 Empowering Success through Authenticity, Expertise, and Timely
