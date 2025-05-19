@@ -25,13 +25,13 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
               className="aspect-[536/320] w-full flex items-center justify-center rounded-lg bg-[#dbcfcb] "
               data-aos="fade-up"
             >
-              <div>
+              <div className="rounded-lg overflow-hidden">
                 <Image
-                  src="/mission.png"
+                  src="/about_img/1.webp"
                   alt="Wellness Unveiled: Empowering Your Journey to a Balanced and Vibrant Life"
-                  width={270}
-                  height={270}
-                  className="object-cover"
+                  width={1600}
+                  height={700}
+                  className="object-cover w-full h-full"
                   priority
                 />
               </div>
@@ -74,7 +74,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
             >
               <div>
                 <Image
-                  src="/vision.jpeg"
+                  src="/about_img/2.webp"
                   alt="Culinary Expeditions: Tasting the World's Flavors in the Heart of Local Culture"
                   fill
                   className="rounded-lg object-cover"
@@ -115,7 +115,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
             >
               <div>
                 <Image
-                  src="/values.jpeg"
+                  src="/about_img/3.webp"
                   alt="Begin here to obtain a brief summary encompassing all the essential"
                   fill
                   className=" w-full h-full rounded-lg object-cover object-center"
