@@ -7,9 +7,10 @@
 import { Metadata } from "next";
 import React from "react";
 import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
-import ServiceSection from "../../components/HeaderFooter/ServiceSection";
+// import ServiceSection from "../../components/HeaderFooter/ServiceSection";
 import BlogSection from "../../components/BlogSection";
 import FeaturesWeb from "../../components/FeaturesWeb";
+import ServiceSec from "../../components/HeaderFooter/ServiceSec";
 
 export const metadata: Metadata = {
   title: "Our Services -  Mcom",
@@ -79,7 +80,8 @@ const ServicePage = () => {
         paragraph="Explore our range of services tailored to your needs."
         bgImg="/top-banner/about-banner.webp"
       />
-      <ServiceSection />
+      {/* <ServiceSection /> */}
+      <ServiceSec />
       <BlogSection />
       <FeaturesWeb />
     </div>
