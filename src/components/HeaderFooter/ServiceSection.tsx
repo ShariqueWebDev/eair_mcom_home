@@ -83,48 +83,6 @@ const serviceData = [
       "Intercom & Paging System Installation.",
     ],
   },
-  //   {
-  //     name: "Jay Alexander",
-  //     handle: "@Chris",
-  //     image: "/images/user/user-06.png",
-  //     text: "This kit made it so easy to get started with AI development. The examples are practical and production-ready.",
-  //   },
-  //   {
-  //     name: "Fred Graham",
-  //     handle: "@Allie",
-  //     image: "/images/user/user-07.png",
-  //     text: "The documentation and examples are top-notch. It’s clear the creators put a lot of thought into usability.",
-  //   },
-  //   {
-  //     name: "Chris Cunningham",
-  //     handle: "@Blake",
-  //     image: "/images/user/user-08.png",
-  //     text: "I love how this kit streamlines the process of building AI-powered SaaS apps. It’s a must-have for startups.",
-  //   },
-  //   {
-  //     name: "Polly Webster",
-  //     handle: "@Adelaide",
-  //     image: "/images/user/user-09.png",
-  //     text: "The pre-configured setup allowed me to focus on building features rather than boilerplate code. Amazing!",
-  //   },
-  //   {
-  //     name: "Marc Herrera",
-  //     handle: "@Shane",
-  //     image: "/images/user/user-01.png",
-  //     text: "The pre-built examples in this kit saved me weeks of development time. It’s a fantastic starting point for any AI SaaS project!",
-  //   },
-  //   {
-  //     name: "Alfred Montgomery",
-  //     handle: "@Olivia",
-  //     image: "/images/user/user-02.png",
-  //     text: "Building with OpenAI and Next.js has never been easier. The kit’s structure is intuitive and well-documented.",
-  //   },
-  //   {
-  //     name: "Marvin Williamson",
-  //     handle: "@Jeanette",
-  //     image: "/images/user/user-03.png",
-  //     text: "I was able to launch my AI startup in record time thanks to the pre-configured setup. Highly recommend!",
-  //   },
 ];
 
 const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
@@ -168,7 +126,7 @@ const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
         {/* Testimonials Grid */}
         <div className={``}>
           {/* Column 1 */}
-          <div className="space-y-7.5 md:flex md:justify-center md:flex-wrap grid-cols-1  gap-5">
+          <div className="space-y-7.5 md:flex md:justify-center md:flex-wrap grid-cols-1 max-sm:place-items-center gap-5">
             {serviceData.map((service, index) => (
               <div
                 key={index}
@@ -225,7 +183,7 @@ const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
           </div>
         </div>
         {isPage && (
-          <div className="flex justify-center ">
+          <div className="flex justify-center max-sm:mt-5 ">
             <Link href={"/services"} data-aos={"fade-up"} className=" mx-auto ">
               <button className="bg-[#323085] text-white text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
                 Know more

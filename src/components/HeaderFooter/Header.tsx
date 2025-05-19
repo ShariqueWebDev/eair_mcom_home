@@ -92,19 +92,21 @@ const Header: React.FC<HeaderProps> = () => {
                   src={"/logo/logo-mcom.png"}
                   alt=""
                   height={100}
-                  className="w-28"
+                  className="w-28 z-50"
                   width={200}
                 />
               </Link>
             ) : (
-              <Link href={"/"}>
-                <Image
-                  src={"/logo/white-logo.png"}
-                  alt=""
-                  height={100}
-                  className="w-28"
-                  width={200}
-                />
+              <Link href={"/"} className="relative z-50">
+                <div className="" onClick={() => setIsOpen(false)}>
+                  <Image
+                    src={"/logo/white-logo.png"}
+                    alt=""
+                    height={100}
+                    className="w-28 "
+                    width={200}
+                  />
+                </div>
               </Link>
             )}
           </div>
@@ -136,20 +138,20 @@ const Header: React.FC<HeaderProps> = () => {
           }}
         >
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black/75 z-0"></div>
 
           {/* Content (z-10 to appear above overlay) */}
-          <Link className="lg:hidden absolute top-4 left-4 z-10" href={"/"}>
+          <div className="absolute inset-0 bg-black/75 z-0"></div>
+          <Link className="lg:hidden absolute top-4 left-4 z-50" href={"/"}>
             <Image
-              src={"/logo/logo-mcom.png"}
+              src={"/logo/white-logo.png"}
               alt=""
               height={100}
-              className="w-32"
+              className="w-32 max-sm:hidden"
               width={200}
             />
           </Link>
 
-          <ul className="templateContainer md:!px-28 flex flex-col items-start !space-y-8 textgray lg:space-y-4 uppercase md:justify-center max-sm:mt-60 h-full z-10">
+          <ul className="templateContainer md:!px-28 flex flex-col items-start !space-y-8 textgray lg:space-y-4 uppercase md:justify-center max-sm:mt-60 h-full z-[60]">
             {menu.map((item, index) => (
               <li
                 key={index}

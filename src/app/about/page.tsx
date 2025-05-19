@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import AboutUsSection from "@/components/About/AboutUsSection";
 import Wrapper from "@/components/Others/Wrapper";
 import OurClients from "@/components/OurClient";
+import Achievment from "@/components/Achievment";
 
 export const metadata: Metadata = {
   title: "About Us -  Mcom",
@@ -178,6 +179,9 @@ const AboutPage = () => {
       </Wrapper>
       <div className="">
         <OurClients />
+      </div>
+      <div className="bg-gray-100">
+        <Achievment />
       </div>
     </div>
   );
