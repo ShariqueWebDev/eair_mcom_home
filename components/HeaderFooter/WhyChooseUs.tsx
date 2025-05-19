@@ -70,14 +70,44 @@ const WhyChooseUs = () => {
               className="bg-white backdrop-blur-md w-full max-w-[450px] p-10 rounded-lg shadow-md"
               data-aos="fade-up"
             >
-              {WhyChoosePoints.slice(0, 5).map((item, index) => (
-                <li key={index} className="flex gap-3 mb-5" data-aos="fade-up">
-                  <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={14} />
-                  </div>
-                  <p className="text-sm text-gray-800">{item}</p>
-                </li>
-              ))}
+              {/* {WhyChoosePoints.slice(0, 5).map((item, index) => ( */}
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Skilled & Certified Technicians
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Latest Technology & Tools
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  On-Time Project Delivery
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">Responsive Support</p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">End-to-End Solutions</p>
+              </li>
+              {/* ))} */}
             </ul>
 
             {/* Right Column */}
@@ -85,14 +115,46 @@ const WhyChooseUs = () => {
               className="bg-white backdrop-blur-md w-full max-w-[450px] p-10 rounded-lg shadow-md"
               data-aos="fade-up"
             >
-              {WhyChoosePoints.slice(5).map((item, index) => (
-                <li key={index} className="flex gap-3 mb-5" data-aos="fade-up">
-                  <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={14} />
-                  </div>
-                  <p className="text-sm text-gray-800">{item}</p>
-                </li>
-              ))}
+              {/* {WhyChoosePoints.slice(5).map((item, index) => ( */}
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Security & Compliance First
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">Transparent Pricing</p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Trusted by Businesses & Institutions
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Customer-Centric Approach
+                </p>
+              </li>
+              <li className="flex gap-3 mb-5" data-aos="fade-up">
+                <div className="w-5 h-5 p-1 bg-[#353382] rounded-full flex justify-center items-center">
+                  <Check color="#fff" size={14} />
+                </div>
+                <p className="text-sm text-gray-800">
+                  Warranty & Post-Installation Support
+                </p>
+              </li>
+              {/* ))} */}
             </ul>
           </div>
         </div>

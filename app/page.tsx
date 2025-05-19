@@ -12,13 +12,16 @@ import Wrapper from "../components/Others/Wrapper";
 import { OPTIONS, slidesData } from "../lib/emblaData";
 import OurClients from "../components/OurClient";
 import Achievment from "../components/Achievment";
+import ServiceSec from "../components/HeaderFooter/ServiceSec";
 
 export default function Home() {
   return (
     <div className="">
       <EmblaCarousel slides={slidesData} options={OPTIONS} />
       {/* <Banner /> */}
-      <ServiceSection isPage={true} />
+      {/* <ServiceSection isPage={true} /> */}
+      <ServiceSec />
+
       <WhyChooseUs />
       <AboutUsSection heading={true} />
       <TestimonialSection />

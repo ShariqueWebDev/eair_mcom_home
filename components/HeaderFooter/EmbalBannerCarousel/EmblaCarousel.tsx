@@ -9,8 +9,8 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import { SlidesDataProps } from "../Banner";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 // import Wrapper from "@/components/Others/Wrapper";
 import Image from "next/image";
 import Wrapper from "../../Others/Wrapper";
@@ -25,19 +25,11 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: true,
-      // disable: "mobile", // Disable animations on mobile for performance
-    });
-  }, []);
-
-  useEffect(() => {
     if (!emblaApi) return;
 
     const onSelect = () => {
       setSelectedIndex(emblaApi.selectedScrollSnap());
-      Aos.refreshHard(); // Re-trigger AOS on slide change
+      // Aos.refreshHard(); // Re-trigger AOS on slide change
     };
 
     emblaApi.on("select", onSelect);
@@ -69,7 +61,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
               <div className="embla__slide__number">
                 <Wrapper className=" relative w-full md:h-screen h-[80svh] flex items-center text-white overflow-hidden">
                   <section
-                  // key={selectedIndex === index ? `slide-${index}` : undefined}
+                    key={selectedIndex === index ? `slide-${index}` : undefined}
                   >
                     <div
                       className="absolute inset-0 bg-center bg-cover"

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { serviceData } from "../../lib/serviceData";
 
-const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
+const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
   return (
     <section className="relative z-20 overflow-hidden py-10  md:pt-16">
       <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
@@ -491,4 +491,4 @@ const ServiceSection = ({ isPage }: { isPage?: boolean }) => {
   );
 };
 
-export default ServiceSection;
+export default ServiceSec;
