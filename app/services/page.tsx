@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/logo-mcom.png",
+        url: "/logo/final-logo.png",
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Services -  Mcom",
     description:
       "Explore our expert IT services — from cybersecurity to cloud infrastructure — all under one roof at  Mcom.",
-    images: ["/logo/logo-mcom.png"],
+    images: ["/logo/final-logo.png"],
     site: "@mcom",
     creator: "@mcom",
   },

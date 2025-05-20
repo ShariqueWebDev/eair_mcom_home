@@ -93,6 +93,14 @@ export default function Footer2() {
                 </li>
                 <li data-aos="fade-up">
                   <Link
+                    href="/solution"
+                    className="hover:text-gray-300 transition-colors"
+                  >
+                    Solution
+                  </Link>
+                </li>
+                <li data-aos="fade-up">
+                  <Link
                     href="/services"
                     className="hover:text-gray-300 transition-colors"
                   >

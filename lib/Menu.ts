@@ -7,6 +7,10 @@ export const menu = [
     label: "About Mcom",
     url: "/about",
   },
+  {
+    label: "Solution",
+    url: "/solution",
+  },
 
   {
     label: "Services ",

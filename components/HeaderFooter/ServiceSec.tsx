@@ -35,99 +35,12 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
         {/* Testimonials Grid */}
         <div className={``}>
           {/* Column 1 */}
-          <div className="space-y-7.5 md:flex md:justify-center md:flex-wrap grid-cols-1 max-sm:place-items-center gap-5">
-            {/* <div
-              className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
-              data-aos="fade-up"
-            >
-              <div className="flex items-center gap-4.5" data-aos="fade-up">
-                <div className="relative h-12 w-12 overflow-hidden ">
-                  <Image
-                    src={"/icon/it-service1.png"}
-                    alt={""}
-                    width={48}
-                    height={48}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="text- uppercase  font-semibold text-gray-800">
-                    IT Service
-                  </h3>
-                </div>
-              </div>
-              <div
-                className="relative my-6 h-[1px] w-full bg-gray-600"
-                data-aos="fade-up"
-              ></div>
-              <div className="">
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Server installation and configuration.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Infrastructure planning and implementing.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Remote access services.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Exchange server configuration.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Terminal server and client connectivity.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Email server solutions for corporate.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">NAT solutions.</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 -z-10 overflow-hidden">
-                <span
-                  className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                  // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
-                ></span>
-              </div>
-            </div> */}
+          <div className="space-y-7.5 flex flex-wrap justify-center grid-cols-1 max-sm:place-items-center gap-5">
             <div
-              className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-4.5" data-aos="fade-up">
+              <div className="flex items-center gap-3" data-aos="fade-up">
                 <div className="relative h-12 w-12 overflow-hidden ">
                   <Image
                     src={"/icon/cctv1.png"}
@@ -138,7 +51,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text- uppercase  font-semibold text-gray-800">
+                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
                     CCTV Service
                   </h3>
                 </div>
@@ -148,7 +61,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -156,7 +69,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Digital video recording and clients installation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -164,7 +77,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     CCTV camera installation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -172,7 +85,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Certification of CCTV projects.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -180,7 +93,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     IP Camera Installation & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -188,7 +101,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Remote Monitoring Setup (Mobile & PC Access).
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -196,7 +109,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Upgrading Legacy CCTV Systems to HD/IP.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -205,18 +118,12 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   </p>
                 </div>
               </div>
-              <div className="absolute inset-0 -z-10 overflow-hidden">
-                <span
-                  className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                  // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
-                ></span>
-              </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-4.5" data-aos="fade-up">
+              <div className="flex items-center gap-3" data-aos="fade-up">
                 <div className="relative h-12 w-12 overflow-hidden ">
                   <Image
                     src={"/icon/ui.png"}
@@ -227,7 +134,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text- uppercase  font-semibold text-gray-800">
+                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
                     UI/UX Service
                   </h3>
                 </div>
@@ -237,7 +144,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -245,7 +152,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Website Domain Purchase & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -253,13 +160,13 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Graphics Design & Visual Content Creation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
                   <p className="text-sm mb-2 text-gray-700">Web development.</p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -267,7 +174,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     UI/UX Wireframing & Prototyping.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -275,7 +182,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     User Journey Mapping & Persona Development.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -283,7 +190,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Brand Identity Design (Logo, Colors, Fonts).
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -292,18 +199,12 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   </p>
                 </div>
               </div>
-              <div className="absolute inset-0 -z-10 overflow-hidden">
-                <span
-                  className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                  // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
-                ></span>
-              </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-4.5" data-aos="fade-up">
+              <div className="flex items-center gap-3" data-aos="fade-up">
                 <div className="relative h-12 w-12 overflow-hidden ">
                   <Image
                     src={"/icon/cloud-service1.png"}
@@ -314,7 +215,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text- uppercase  font-semibold text-gray-800">
+                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
                     Networking Service
                   </h3>
                 </div>
@@ -324,7 +225,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -332,7 +233,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Computer Assembling & Hardware Setup.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -340,7 +241,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     System Troubleshooting & Diagnostics.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -348,7 +249,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Data Recovery & Backup Solutions.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -356,7 +257,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Regular System Servicing & Cleaning.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -364,7 +265,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     LAN & WAN Network Setup.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -372,7 +273,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Firewall Installation & Network Security Setup.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -381,18 +282,12 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   </p>
                 </div>
               </div>
-              <div className="absolute inset-0 -z-10 overflow-hidden">
-                <span
-                  className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                  // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
-                ></span>
-              </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-4.5" data-aos="fade-up">
+              <div className="flex items-center gap-3" data-aos="fade-up">
                 <div className="relative h-12 w-12 overflow-hidden ">
                   <Image
                     src={"/icon/fingerprint1.png"}
@@ -403,7 +298,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text- uppercase  font-semibold text-gray-800">
+                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
                     Bio-Metric Service
                   </h3>
                 </div>
@@ -413,7 +308,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -422,7 +317,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Workstations, Printers, and Plotters.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -430,7 +325,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Access Control System Installation & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -439,7 +334,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -447,7 +342,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                     Biometric Time Attendance System Setup.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-2" data-aos="fade-up">
+                <div className="flex gap-3 mb-3" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
@@ -456,17 +351,11 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   </p>
                 </div>
               </div>
-              <div className="absolute inset-0 -z-10 overflow-hidden">
-                <span
-                  className="absolute bottom-0 right-0 h-full w-full bg-cover bg-center bg-no-repeat"
-                  // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
-                ></span>
-              </div>
             </div>
           </div>
         </div>
         {isPage && (
-          <div className="flex justify-center mt-5 ">
+          <div className="flex justify-center max-sm:mt-8 mt-3 ">
             <Link href={"/services"} data-aos={"fade-up"} className=" mx-auto ">
               <button className="bg-[#323085] text-white text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
                 Know more

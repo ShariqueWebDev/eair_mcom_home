@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <div
-        className={`fixed z-50 w-full md:px-10 transition-all ease-in-out duration-300 ${
+        className={`fixed z-50 w-full pb-3 md:px-10 transition-all ease-in-out duration-300 ${
           isVisible || isOpen ? "translate-y-0" : "-translate-y-full"
         } ${hasScrolled ? "bg-gray-100" : "bg-transparent"}`}
       >

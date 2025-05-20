@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   description:
     " Mcom offers expert Cybersecurity Services, IT and Cloud Infrastructure solutions, product distribution, and managed services with a commitment to excellence.",
   icons: {
-    icon: "/logo/logo-mcom.png",
-    shortcut: "/logo/logo-mcom.png",
-    apple: "/logo/logo-mcom.png",
+    icon: "/logo/final-logo.png",
+    shortcut: "/logo/final-logo.png",
+    apple: "/logo/final-logo.png",
   },
   keywords: [
     "Cybersecurity",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/logo-mcom.png",
+        url: "/logo/final-logo.png",
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "MCOM - Cybersecurity & IT Solutions",
     description:
       "Expert IT services from  Mcom: cybersecurity, cloud infrastructure, product distribution, and more.",
-    images: ["/logo/logo-mcom.png"],
+    images: ["/logo/final-logo.png"],
     site: "@mcom",
     creator: "@mcom",
   },

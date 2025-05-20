@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/logo-mcom.png",
+        url: "/logo/final-logo.png",
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Contact  Mcom - Reach Our IT Experts",
     description:
       "Connect with the  Mcom team for personalized IT services, cybersecurity support, and cloud infrastructure solutions.",
-    images: ["/logo/logo-mcom.png"],
+    images: ["/logo/final-logo.png"],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -94,7 +94,7 @@ const Contact = () => {
           path="Contact"
           title="Contact Mcom"
           paragraph="Whether you're seeking IT solutions, product distribution, or managed services, our team is ready to help. Let’s start the conversation today."
-          bgImg="/top-banner/contact-banner.webp"
+          bgImg="/contact-banner2.webp"
         />
       </div>
       <div className="md:px-20 px-5  text-white py-8 md:py-16 flex flex-col lg:flex-row gap-14 lg:gap-14">

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/logo-mcom.png",
+        url: "/logo/final-logo.png",
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "About  Mcom - Technology You Can Trust",
     description:
       "Discover  Mcom’s story, team, and services in Cybersecurity, Cloud, and IT Infrastructure.",
-    images: ["/logo/logo-mcom.png"],
+    images: ["/logo/final-logo.png"],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -123,6 +123,49 @@ const AboutPage = () => {
         title="About MCOM"
         paragraph=" Mcom is dedicated to delivering cutting-edge Cybersecurity, IT Infrastructure, Cloud solutions, and managed services — all rooted in a commitment to innovation, integrity, and excellence."
       />
+      <Wrapper className="pt-16">
+        <div className=" text-justify md:px-3">
+          <h1 className="text-left md:text-5xl text-3xl font-bold uppercase heading-all  text-gray-800 mb-6">
+            About Vostok
+          </h1>
+          <div className="flex flex-col space-y-6 md:flex-row md:space-x-8 md:space-y-0">
+            {/* First column with two list items */}
+            <ul className=" space-y-3 text-gray-700 text-sm flex-1">
+              <li>
+                Vostok Trading LLC is a young entrepreneurial company, providing
+                solutions in the field of Information and Communication
+                Technologies. We are headquartered in Dubai, the commercial
+                capital of the Middle East. Within a span of a few years, we
+                have notched up around 10000 clients in the Middle East region.
+                Our team of 100 professionals is dedicated to bringing best of
+                breed emerging enterprise technology to the region for the
+                benefit of small, medium and large enterprises in the region.
+              </li>
+              <li>
+                Vostok's mission is to maximize the value by providing the
+                high-quality core services that our customers and vendor
+                partners need to cost-effectively sell, deploy and support
+                world-class technology solutions.
+              </li>
+            </ul>
+
+            {/* Second column with one list item */}
+            <ul className=" space-y-3 text-gray-700 flex-1 text-sm">
+              <li>
+                The core business activities of us include creating projects &
+                implementing solutions related to Information Technology,
+                Security Surveillance, Telephony, Trading, Distribution,
+                Retailing of hardware products and providing hardware & software
+                related services. The solutions provided by us and the products
+                we carry are detailed elsewhere. We are often participating in
+                exhibitions to promote our new products and solutions. Event
+                list are carrying the details of future exhibitions which we
+                will participate.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Wrapper>
       <AboutUsSection />
       {/* <Wrapper className="overflow-hidden md:py-16 py-10 bg-gray-100">
         <div className="">
