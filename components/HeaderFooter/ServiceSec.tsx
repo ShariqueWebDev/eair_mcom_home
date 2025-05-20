@@ -18,17 +18,17 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
             className="mb-4.5 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl"
             data-aos="fade-up"
           >
-            Excellence in HVAC Installation, <br className="max-sm:hidden" />{" "}
-            Service & Repair
+            End-to-End IT & Surveillance Services
           </h2>
           <p
             className="mx-auto max-w-[714px] font-medium text-gray-600"
             data-aos="fade-up"
           >
-            Mcom is a heating and cooling service company with a history of
-            excellence, customer service, and quality craftsmanship. We
-            specialize in HVAC service, replacement, and repair for both
-            residential and commercial customers in North America.
+            We install, configure, and maintain systems that keep your business
+            secure and connected — offering end-to-end solutions from CCTV and
+            IT infrastructure to web development and digital branding. From
+            biometrics to branding, we deliver reliable surveillance, seamless
+            networking, and creative digital services under one roof.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
         <div className={``}>
           {/* Column 1 */}
           <div className="space-y-7.5 md:flex md:justify-center md:flex-wrap grid-cols-1 max-sm:place-items-center gap-5">
-            <div
+            {/* <div
               className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
@@ -122,7 +122,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   // style={{ backgroundImage: "url(/images/blur/blur-18.svg)" }}
                 ></span>
               </div>
-            </div>
+            </div> */}
             <div
               className="relative overflow-hidden max-w-[350px] w-full rounded-[19px] md:h-[490px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-8  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
@@ -466,7 +466,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
           </div>
         </div>
         {isPage && (
-          <div className="flex justify-center max-sm:mt-5 ">
+          <div className="flex justify-center mt-5 ">
             <Link href={"/services"} data-aos={"fade-up"} className=" mx-auto ">
               <button className="bg-[#323085] text-white text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
                 Know more

@@ -20,7 +20,7 @@ export default function Home() {
       <EmblaCarousel slides={slidesData} options={OPTIONS} />
       {/* <Banner /> */}
       {/* <ServiceSection isPage={true} /> */}
-      <ServiceSec />
+      <ServiceSec isPage={true} />
 
       <Wrapper className="bg-gray-100 md:py-16 py-10 ">
         <div className="">

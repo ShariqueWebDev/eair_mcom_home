@@ -51,14 +51,31 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                 <p className="heading-all">Our Mission</p>
               </h1>
               <p
+                className="max-w-[524px] mb-3 text-sm text-gray-600"
+                data-aos="fade-up"
+              >
+                Our mission is to enhancing the business growth of our customers
+                with new technology and high-quality solutions that create
+                valuable and reliable competitive advantage for our clients
+                around the world.
+              </p>
+              <p
+                className="max-w-[524px] text-sm mb-3 text-gray-600"
+                data-aos="fade-up"
+              >
+                To provide tailored reliable advice, outstanding expertise and a
+                dedicated service that harnesses the potential of security and
+                proximity technology to meet the complex and diverse
+                requirements of our customers.
+              </p>
+              <p
                 className="max-w-[524px] text-sm text-gray-600"
                 data-aos="fade-up"
               >
-                At Mcom, we are driven by a singular mission - to cultivate a
-                dynamic and diverse portfolio in the realm of Cybersecurity
-                Services, complete IT and Cloud Infrastructure solutions, IT
-                product distributions, and managed services. Guided by our
-                unwavering commitment to excellence.
+                Our mission is to provide protection and security to our clients
+                through a bespoke service tailored to their specific needs,
+                ultimately the safety and security of the client’s staff,
+                premises, assets and the general public is our highest priority.
               </p>
             </div>
           </div>
@@ -72,12 +89,12 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
               className="relative aspect-[238/180] w-full overflow-hidden"
               data-aos="fade-up"
             >
-              <div>
+              <div className="h-full">
                 <Image
                   src="/about_img/2.webp"
                   alt="Culinary Expeditions: Tasting the World's Flavors in the Heart of Local Culture"
                   fill
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover !h-full"
                   sizes="100vw"
                 />
               </div>
@@ -99,7 +116,11 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                 className="max-w-[524px] text-sm text-gray-600"
                 data-aos="fade-up"
               >
-                At Mcom, we are driven by a singular.
+                vision become recognized as a leading contributor to the Middle
+                East’s progressive and evolving IT and security solutions
+                landscape, applying innovation and skill through tailored
+                solutions that continually boost business efficiencies and
+                performance.
               </p>
             </div>
           </div>

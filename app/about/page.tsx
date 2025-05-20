@@ -123,13 +123,10 @@ const AboutPage = () => {
         paragraph=" Mcom is dedicated to delivering cutting-edge Cybersecurity, IT Infrastructure, Cloud solutions, and managed services — all rooted in a commitment to innovation, integrity, and excellence."
       />
       <AboutUsSection />
-      <Wrapper className="overflow-hidden md:py-16 py-10 bg-gray-100">
+      {/* <Wrapper className="overflow-hidden md:py-16 py-10 bg-gray-100">
         <div className="">
-          {/* Header */}
           <div className="relative z-10 mb-12 text-center" data-aos="fade-up">
-            {/* <span className="inline-flex items-center gap-2 rounded-full px-4.5 py-1.5 text-sm font-medium border border-gray-500 text-gray-800 mb-4">
-                <span className="text-[11px]">Meet Our Team</span>
-              </span> */}
+         
             <h2
               className="mb-4 text-2xl sm:text-4xl xl:text-5xl font-bold heading-all"
               data-aos="fade-up"
@@ -146,7 +143,6 @@ const AboutPage = () => {
             </p>
           </div>
 
-          {/* Team Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 pb-16 ">
             {teamMembers.map((member, index) => (
               <div
@@ -181,7 +177,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </Wrapper>
+      </Wrapper> */}
       <div className="">
         <OurClients />
       </div>

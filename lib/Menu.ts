@@ -7,6 +7,7 @@ export const menu = [
     label: "About Mcom",
     url: "/about",
   },
+
   {
     label: "Services ",
     url: "/services",
@@ -20,6 +21,39 @@ export const menu = [
   //   label: "Events",
   //   url: "/events",
   // },
+];
+
+export const solution = [
+  {
+    label: "Solutions",
+    url: "#",
+    subMenu: [
+      {
+        label: "CCTV-CMS",
+        slug: "/cctv-cms",
+      },
+      {
+        label: "ANPR",
+        slug: "/anpr",
+      },
+      {
+        label: "VMS",
+        slug: "/vms",
+      },
+      {
+        label: "Bio-metric",
+        slug: "/bio-metric",
+      },
+      {
+        label: "DCS",
+        slug: "/dcs",
+      },
+      {
+        label: "NTS",
+        slug: "/nts",
+      },
+    ],
+  },
 ];
 
 export const usefulLinks = [

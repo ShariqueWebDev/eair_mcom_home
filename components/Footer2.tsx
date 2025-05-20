@@ -14,11 +14,11 @@ export default function Footer2() {
             <div className="flex-1 text-center md:col-span-2 lg:text-left">
               <div className="mb-4 flex justify-center lg:justify-start">
                 <div
-                  className="relative w-20 h-12  md:w-28 md:h-16 lg:w-28 lg:h-14 rounded overflow-hidden"
+                  className="relative w-20 h-12  md:w-28 md:h-16 lg:w-40 lg:h-14 rounded overflow-hidden"
                   data-aos="fade-up"
                 >
                   <Image
-                    src="/logo/white-logo.png"
+                    src="/logo/final-white.png"
                     alt="Company Logo"
                     fill
                     className="object-contain "
