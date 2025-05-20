@@ -11,6 +11,7 @@ import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
 import BlogSection from "../../components/BlogSection";
 import FeaturesWeb from "../../components/FeaturesWeb";
 import ServiceSec from "../../components/HeaderFooter/ServiceSec";
+import ScrollWeb from "../../components/ScrollWeb";
 
 export const metadata: Metadata = {
   title: "Our Services -  Mcom",
@@ -84,6 +85,7 @@ const ServicePage = () => {
       <ServiceSec />
       <BlogSection />
       <FeaturesWeb />
+      <ScrollWeb />
     </div>
   );
 };
