@@ -69,7 +69,7 @@ function LogoWall({
               key={idx}
               src={item.imgUrl}
               alt={item.altText}
-              className="border border-gray-200 !rounded-lg shadow-lg "
+              className="border border-gray-200 h-[90px] px-1 !rounded-lg shadow-lg "
             />
           ))}
         </div>
@@ -79,7 +79,7 @@ function LogoWall({
               key={`dup1-${idx}`}
               src={item.imgUrl}
               alt={item.altText}
-              className="border border-gray-200 !rounded-lg shadow-lg "
+              className="border border-gray-200 h-[90px] px-1 !rounded-lg shadow-lg "
             />
           ))}
         </div>
@@ -96,7 +96,7 @@ function LogoWall({
               key={`rev-${idx}`}
               src={item.imgUrl}
               alt={item.altText}
-              className="border border-gray-200 !rounded-lg shadow-lg "
+              className="border border-gray-200 h-[90px] px-1 !rounded-lg shadow-lg "
             />
           ))}
         </div>
@@ -106,7 +106,7 @@ function LogoWall({
               key={`dup2-${idx}`}
               src={item.imgUrl}
               alt={item.altText}
-              className="border border-gray-200 !rounded-lg shadow-lg "
+              className="border border-gray-200 h-[90px] px-1 !rounded-lg shadow-lg "
             />
           ))}
         </div>

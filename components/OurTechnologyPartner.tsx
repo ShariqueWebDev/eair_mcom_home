@@ -8,150 +8,110 @@ import Wrapper from "./Others/Wrapper";
 
 export const logos: { imgUrl: string; altText: string }[] = [
   {
-    imgUrl: "/clients/1.webp",
+    imgUrl: "/technology-partner/1.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/2.webp",
+    imgUrl: "/technology-partner/2.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/3.webp",
+    imgUrl: "/technology-partner/3.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/4.webp",
+    imgUrl: "/technology-partner/4.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/5.webp",
+    imgUrl: "/technology-partner/5.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/6.webp",
+    imgUrl: "/technology-partner/6.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/7.png",
+    imgUrl: "/technology-partner/7.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/8.png",
+    imgUrl: "/technology-partner/8.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/9.png",
+    imgUrl: "/technology-partner/9.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/10.png",
+    imgUrl: "/technology-partner/10.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/11.png",
+    imgUrl: "/technology-partner/11.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/12.png",
+    imgUrl: "/technology-partner/12.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/13.png",
+    imgUrl: "/technology-partner/13.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/14.png",
+    imgUrl: "/technology-partner/14.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/15.png",
+    imgUrl: "/technology-partner/15.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/16.png",
+    imgUrl: "/technology-partner/16.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/17.png",
+    imgUrl: "/technology-partner/17.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/18.png",
+    imgUrl: "/technology-partner/18.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/19.png",
+    imgUrl: "/technology-partner/19.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/20.png",
+    imgUrl: "/technology-partner/20.png",
     altText: "",
   },
   {
-    imgUrl: "/clients/21.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/22.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/23.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/24.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/25.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/26.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/27.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/28.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/29.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/30.png",
-    altText: "",
-  },
-  {
-    imgUrl: "/clients/31.png",
+    imgUrl: "/technology-partner/21.png",
     altText: "",
   },
 ];
 
-const OurClients = () => {
+const OurTechnologyPartner = () => {
   return (
     <Wrapper>
       <div className="templateContainer  text-center py-10 lg:py-14 heading-all space-y-10 bg-white  ">
         <div className="space-y-3">
           <h2
             data-aos="fade-up"
-            className="text-center text-gray-800 font-semibold text-3xl heading-all lg:text-4xl tracking-wide"
+            className="text-center uppercase text-gray-800 font-semibold text-3xl heading-all lg:text-4xl tracking-wide"
           >
-            CLIENTS WE ARE PROUD OF
+            Our Technology partners
           </h2>
           <div className="flex items-center justify-center">
             <p
               data-aos="fade-up"
               className="lg:max-w-[40rem] text-center font-normal text-gray-600 text-sm tracking-wider"
             >
-              Our clients trust us to deliver exceptional talent that drives
-              success across industries, and we take pride in every partnership
-              we build.
+              We are proud to collaborate with a diverse network of leading
+              global technology partners who share our commitment to innovation,
+              quality, and excellence.
             </p>
           </div>
         </div>
@@ -171,4 +131,4 @@ const OurClients = () => {
   );
 };
 
-export default OurClients;
+export default OurTechnologyPartner;

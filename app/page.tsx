@@ -13,6 +13,7 @@ import OurClients from "../components/OurClient";
 import Achievment from "../components/Achievment";
 import ServiceSec from "../components/HeaderFooter/ServiceSec";
 import { Check } from "lucide-react";
+import OurTechnologyPartner from "../components/OurTechnologyPartner";
 
 export default function Home() {
   return (
@@ -166,6 +167,11 @@ export default function Home() {
       <AboutUsSection heading={true} />
       <TestimonialSection />
       <OurClients />
+
+      <Wrapper>
+        <hr className="text-gray-200 " />
+      </Wrapper>
+      <OurTechnologyPartner />
       <div className="bg-gray-100">
         <Achievment />
       </div>

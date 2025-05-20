@@ -8,6 +8,7 @@ import AboutUsSection from "../../components/About/AboutUsSection";
 import Wrapper from "../../components/Others/Wrapper";
 import OurClients from "../../components/OurClient";
 import Achievment from "../../components/Achievment";
+import OurTechnologyPartner from "../../components/OurTechnologyPartner";
 // import AboutUsSection from "@/components/About/AboutUsSection";
 // import Wrapper from "@/components/Others/Wrapper";
 // import OurClients from "@/components/OurClient";
@@ -181,6 +182,11 @@ const AboutPage = () => {
       <div className="">
         <OurClients />
       </div>
+      <Wrapper>
+        <hr className="text-gray-200 " />
+      </Wrapper>
+      <OurTechnologyPartner />
+
       <div className="bg-gray-100">
         <Achievment />
       </div>
