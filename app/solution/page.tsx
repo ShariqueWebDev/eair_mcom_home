@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
+import ScrollWeb from "../../components/ScrollWeb";
+import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
 
 export const metadata: Metadata = {
   title: "Our Solutions - CCTV, VMS, ANPR, Biometric & Access Control | Mcom",
@@ -60,7 +62,17 @@ export const metadata: Metadata = {
 };
 
 const SolutionPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Breadcrumb
+        path="Solution"
+        title="Smart Biometric & Access Control Solutions"
+        paragraph="Enhance security and streamline attendance with advanced fingerprint and RFID systems. Our intelligent, user-friendly devices offer real-time monitoring, multi-verification methods, and robust access control tailored for modern businesses."
+        bgImg="/contact-banner1.webp"
+      />
+      <ScrollWeb />
+    </div>
+  );
 };
 
 export default SolutionPage;
