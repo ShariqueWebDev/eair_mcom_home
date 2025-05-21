@@ -35,13 +35,16 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
         {/* Testimonials Grid */}
         <div className={``}>
           {/* Column 1 */}
-          <div className="space-y-7.5 flex flex-wrap justify-center grid-cols-1 max-sm:place-items-center gap-5">
+          <div className="space-y-7.5 grid md:grid-cols-4 grid-cols-1 max-sm:place-items-center gap-5 max-sm:mx-1.5">
             <div
-              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3" data-aos="fade-up">
-                <div className="relative h-12 w-12 overflow-hidden ">
+              <div
+                className="flex flex-col items-center gap-3"
+                data-aos="fade-up"
+              >
+                <div className="relative h-12 w-12 mt-3 overflow-hidden ">
                   <Image
                     src={"/icon/cctv1.png"}
                     alt={""}
@@ -51,80 +54,67 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
+                  <h3 className="md:text-xl text-2xl heading-all md:h-[40px] uppercase  font-semibold text-gray-800">
                     CCTV Service
                   </h3>
                 </div>
               </div>
               <div
-                className="relative my-6 h-[1px] w-full bg-gray-600"
+                className="relative md:my-3 my-6  h-[1px] w-full bg-gray-600"
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Digital video recording and clients installation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     CCTV camera installation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Certification of CCTV projects.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     IP Camera Installation & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Remote Monitoring Setup (Mobile & PC Access).
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Upgrading Legacy CCTV Systems to HD/IP.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Cloud Storage & Backup Solutions.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3" data-aos="fade-up">
-                <div className="relative h-12 w-12 overflow-hidden ">
+              <div
+                className="flex flex-col justify-center  items-center gap-3"
+                data-aos="fade-up"
+              >
+                <div className="relative h-12 w-12 mt-3 overflow-hidden ">
                   <Image
                     src={"/icon/ui.png"}
                     alt={""}
@@ -134,78 +124,70 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
+                  <h3
+                    heading-all
+                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
+                  >
                     UI/UX Service
                   </h3>
                 </div>
               </div>
               <div
-                className="relative my-6 h-[1px] w-full bg-gray-600"
+                className="relative md:my-3 my-6  h-[1px] w-full bg-gray-600"
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Website Domain Purchase & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Graphics Design & Visual Content Creation.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">Web development.</p>
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
+                    Web development.
+                  </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     UI/UX Wireframing & Prototyping.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     User Journey Mapping & Persona Development.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Brand Identity Design (Logo, Colors, Fonts).
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    User Testing & Feedback Implementation.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3" data-aos="fade-up">
-                <div className="relative h-12 w-12 overflow-hidden ">
+              <div
+                className="flex flex-col justify-center  items-center gap-3"
+                data-aos="fade-up"
+              >
+                <div className="relative h-12 w-12 mt-3 overflow-hidden ">
                   <Image
                     src={"/icon/cloud-service1.png"}
                     alt={""}
@@ -215,80 +197,70 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
+                  <h3
+                    heading-all
+                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
+                  >
                     Networking Service
                   </h3>
                 </div>
               </div>
               <div
-                className="relative my-6 h-[1px] w-full bg-gray-600"
+                className="relative md:my-3 my-6  h-[1px] w-full bg-gray-600"
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Computer Assembling & Hardware Setup.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     System Troubleshooting & Diagnostics.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Data Recovery & Backup Solutions.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Regular System Servicing & Cleaning.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     LAN & WAN Network Setup.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Firewall Installation & Network Security Setup.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Server Installation & Maintenance.
                   </p>
                 </div>
               </div>
             </div>
             <div
-              className="relative overflow-hidden max-w-[430px] w-full rounded-[19px] md:h-[420px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
+              className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
             >
-              <div className="flex items-center gap-3" data-aos="fade-up">
-                <div className="relative h-12 w-12 overflow-hidden ">
+              <div
+                className="flex flex-col justify-center  items-center gap-3"
+                data-aos="fade-up"
+              >
+                <div className="relative h-12 w-12 mt-3 overflow-hidden ">
                   <Image
                     src={"/icon/fingerprint1.png"}
                     alt={""}
@@ -298,56 +270,50 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl uppercase  font-semibold text-gray-800">
+                  <h3
+                    heading-all
+                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
+                  >
                     Bio-Metric Service
                   </h3>
                 </div>
               </div>
               <div
-                className="relative my-6 h-[1px] w-full bg-gray-600"
+                className="relative md:my-3 my-6  h-[1px] w-full bg-gray-600"
                 data-aos="fade-up"
               ></div>
               <div className="">
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Annual Maintenance Contracts (AMC) for Servers,
-                    Workstations, Printers, and Plotters.
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
+                    Annual Maintenance Contracts for Servers, Workstations,
+                    Printers, and Plotters.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Access Control System Installation & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    PABX (Private Automatic Branch Exchange) Installation &
-                    Configuration.
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
+                    PABX Installation & Configuration.
                   </p>
                 </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
+                <div className="flex gap-3 mb-1" data-aos="fade-up">
                   <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
                     <Check color="#fff" size={16} />
                   </div>
-                  <p className="text-sm mb-2 text-gray-700">
+                  <p className="text-sm mb-2 font-[500] text-gray-700">
                     Biometric Time Attendance System Setup.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-3" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 text-gray-700">
-                    Intercom & Paging System Installation.
                   </p>
                 </div>
               </div>
@@ -357,7 +323,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
         {isPage && (
           <div className="flex justify-center max-sm:mt-8 mt-3 ">
             <Link href={"/services"} data-aos={"fade-up"} className=" mx-auto ">
-              <button className="bg-[#323085] text-white text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
+              <button className="border border-gray-600 text-sm rounded-md  px-5 py-1.5 !cursor-pointer">
                 Know more
               </button>
             </Link>

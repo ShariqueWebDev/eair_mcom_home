@@ -28,11 +28,7 @@ const TestimonialSection = () => {
           Our Testimonials
         </h4>
         <div className="">
-          <EmblaCarousel
-            slides={SLIDES}
-            options={OPTIONS}
-            components={<TestimonialCard />}
-          />
+          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
       </>
     </div>

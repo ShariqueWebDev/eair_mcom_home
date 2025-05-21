@@ -435,8 +435,10 @@
 
 import Image from "next/image";
 import Wrapper from "./Others/Wrapper";
+import { Check } from "lucide-react";
 
 interface Project {
+  main_title: string;
   title1: string;
   points1: string[];
   title2?: string;
@@ -450,8 +452,8 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title1:
-      "CCTV Central Monitoring with Integrated Intrusion Alarm Solutions for",
+    main_title: "CCTV - CMS Solution ",
+    title1: "CCTV Central Monitoring with Integrated Intrusion Alarm",
     points1: ["DUBAI Police", "SHARJAH Police", "RAS AL KHAIMAH Police"],
     title2: "CCTV Central Monitoring Solutions for",
     points2: ["Banking", "Jewellery", "Money Exchange", "Corporate Sectors"],
@@ -463,6 +465,7 @@ const projects: Project[] = [
     reverse: true,
   },
   {
+    main_title: "ANPR Solution",
     title1: "ANPR Features",
     points1: [
       "Can capture number plates of the vehicle at the speed of 200 km/h.",
@@ -473,7 +476,6 @@ const projects: Project[] = [
     points2: [
       "Over speed, under speed, unfastened safety belt, calling while driving, running red light.",
       "Supports statistics (by lane and by time period) on vehicle flow, average speed, vehicle type, occupancy, average queue length and supports exporting reports, etc.",
-      "Supports recognizing large, medium-sized, small vehicles and motorcycles in the baseline version.",
     ],
     description:
       "Our ANPR (Automatic Number Plate Recognition) systems are designed for high-speed and high-accuracy vehicle monitoring. Ideal for highways and urban environments, these systems can detect various traffic violations such as speeding, running red lights, and distracted driving. With support for detailed vehicle classification, plate recognition by country and type, and robust reporting tools, our ANPR solutions offer scalable.",
@@ -484,6 +486,7 @@ const projects: Project[] = [
   },
 
   {
+    main_title: "VMS Solution",
     title1: "VMS Features",
     points1: [
       "24x7 Reliable recording",
@@ -506,6 +509,7 @@ const projects: Project[] = [
 
   // new added
   {
+    main_title: "BIO - Metric ",
     title1: "Finger Print Time Attendance",
     points1: [
       "Standalone fingerprint time attendance + RFID function.",
@@ -528,6 +532,7 @@ const projects: Project[] = [
   },
 
   {
+    main_title: "DCS Solution",
     title1: "Data Center Solution",
     points1: [
       "Data Center is a repository that houses computing facilities like servers, routers, switches and firewalls, as well as supporting components like backup equipment, fire suppression facilities and air conditioning.",
@@ -548,6 +553,7 @@ const projects: Project[] = [
     reverse: true,
   },
   {
+    main_title: "NTS Solution",
     title1: "Networking Solutions",
     points1: [
       "Our open, agile, cloud-driven networking solutions will help your business to grow across borders with ease.",
@@ -566,12 +572,12 @@ const projects: Project[] = [
     reverse: false,
   },
   {
+    main_title: "Gate Barrier ",
     title1: "Intelligent Gate Barrier Solutions",
     points1: [
       "Automated gate barrier systems for secure, efficient vehicle access control in commercial and residential premises.",
       "Supports RFID, ANPR, and remote access for seamless entry and exit management.",
       "Integrated with surveillance and access control systems for real-time monitoring and enhanced security.",
-      "Robust and weather-resistant design ensures reliable performance in all environmental conditions.",
     ],
     title2: "Smart Entry & Exit Management",
     points2: [
@@ -591,11 +597,11 @@ const projects: Project[] = [
 export default function ScrollWeb() {
   return (
     <section className="flex flex-col gap-5 lg:gap-10 min-h-screen pb-16">
-      <div className="mx-auto w-full max-w-3xl text-center mt-16 md:px-6 flex flex-col gap-2">
-        <h1 className="text-3xl uppercase md:text-4xl heading-all font-bold tracking-tight">
+      <div className="mx-auto w-full max-w-3xl text-center md:mt-16 mt-12 md:px-6 flex flex-col gap-2">
+        <h1 className="text-3xl uppercase md:text-4xl heading-all font-bold tracking-tight text-gray-800">
           Vision and Solution
         </h1>
-        <p className="text- font-medium text-gray-600 ">
+        <p className="text- font-medium text-gray-600 px-4 ">
           See how I partner with clients to create designs that stand out, drive
           engagement, and push boundaries.
         </p>
@@ -603,40 +609,53 @@ export default function ScrollWeb() {
 
       <div className="mx-auto  w-full ">
         <Wrapper>
-          <div className=" gap-6">
-            <div className="md:col-start-2 md:col-span-10 flex flex-col gap-8 md:gap-8 ">
+          <div className=" gap-6 ">
+            <div className="md:col-start-2 md:col-span-10 flex flex-col gap-8 md:gap-8  ">
               {projects.map((project, index) => (
                 <div key={index} className="relative ">
                   <div
-                    className={`flex flex-col gap-10 js-project-container relative md:flex-row  ${
+                    className={`flex flex-col gap-10 js-project-container relative md:flex-row   ${
                       project.reverse ? "md:flex-row-reverse" : ""
                     }`}
                   >
-                    <div className="w-full md:w-1/2 max-sm:px-3">
+                    <div className="w-full md:w-1/2 md:py-8  ">
                       <div className="lg:sticky pt-6 top-10 md:-mt-6">
                         {/* Text Content */}
+                        <h3 className="heading-all text-3xl md:text-4xl mb-5 font-semibold text-gray-800">
+                          {project?.main_title}
+                        </h3>
                         <div className="pb-6">
-                          <h4 className="mb-4 sm:text-xl heading-all md:text-xl text-base font-semibold">
+                          <h4 className="mb-4 sm:text heading-all border-l-3 border-[#2f3192] pl-2 md:text- text-base font-semibold text-gray-700">
                             {project.title1}
                           </h4>
-                          <ul className="list-disc list-outside text-sm mb-6 text-gray-700">
+                          <ul className=" text-sm mb-6 text-gray-700">
                             {project.points1.map((point, i) => (
-                              <li key={i} className="mb-2">
-                                {point}
-                              </li>
+                              <div className="flex gap-2">
+                                <span className=" mt-1">
+                                  <Check size={16} color="#2f3192" />
+                                </span>
+                                <li key={i} className="mb-2">
+                                  {point}
+                                </li>
+                              </div>
                             ))}
                           </ul>
 
                           {project.title2 && (
                             <>
-                              <h4 className="mb-4 md:text-xl heading-all text-xl font-semibold">
+                              <h4 className="mb-3 md:text- heading-all border-l-3 border-[#2f3192] pl-2 text- font-semibold  text-gray-700">
                                 {project.title2}
                               </h4>
-                              <ul className="list-disc list-outside text-sm text-gray-700">
+                              <ul className=" text-sm text-gray-700">
                                 {project.points2?.map((point, i) => (
-                                  <li key={i} className="mb-2">
-                                    {point}
-                                  </li>
+                                  <div className="flex gap-2">
+                                    <span className=" mt-1">
+                                      <Check size={16} color="#2f3192" />
+                                    </span>
+                                    <li key={i} className="mb-2">
+                                      {point}
+                                    </li>
+                                  </div>
                                 ))}
                               </ul>
                             </>

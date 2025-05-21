@@ -1,6 +1,6 @@
 import React from "react";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ data }: { data: any }) => {
   return (
     <div className="space-y-5 text-center">
       <h3

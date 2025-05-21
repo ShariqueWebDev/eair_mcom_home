@@ -13,7 +13,7 @@ const Achievment = () => {
             Company Achievements
           </h2>
         </div>
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 max-sm:!gap-20">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 max-sm:!gap-20 w-full">
           {/* Happy Clients */}
           <CounterItem
             end={20}
@@ -64,8 +64,8 @@ const CounterItem = ({
   });
 
   return (
-    <div ref={ref} className="space-y-10 max-sm:space-y-3 max-w-[300px] w-full">
-      <div className="text-7xl max-sm:text-6xl bg-[#2f2f84] bg-clip-text text-transparent font-semibold">
+    <div ref={ref} className="space-y-7 max-sm:space-y-3 max-w-[300px] w-full ">
+      <div className="text-6xl max-sm:text-5xl bg-[#2f2f84] bg-clip-text text-transparent font-semibold heading-all">
         <CountUp
           start={0}
           end={inView ? end : 0} // Start counting when in view
@@ -76,7 +76,7 @@ const CounterItem = ({
         />
       </div>
       <hr />
-      <div className="text-2xl text-gray-500">{label}</div>
+      <div className="text-xl text-gray-500">{label}</div>
     </div>
   );
 };

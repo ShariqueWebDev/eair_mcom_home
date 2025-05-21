@@ -128,9 +128,9 @@ const AboutPage = () => {
           <h1 className="text-left md:text-5xl text-3xl font-bold uppercase heading-all  text-gray-800 mb-6">
             About Vostok
           </h1>
-          <div className="flex flex-col space-y-6 md:flex-row md:space-x-8 md:space-y-0">
+          <div className="flex flex-col md:flex-row  md:space-y-0">
             {/* First column with two list items */}
-            <ul className=" space-y-3 text-gray-700 text-sm flex-1">
+            <ul className=" space-y-3 text-gray-700 md:!w-[50%] w-full text-sm ">
               <li>
                 Vostok Trading LLC is a young entrepreneurial company, providing
                 solutions in the field of Information and Communication
@@ -150,7 +150,7 @@ const AboutPage = () => {
             </ul>
 
             {/* Second column with one list item */}
-            <ul className=" space-y-3 text-gray-700 flex-1 text-sm">
+            <ul className=" space-y-3 text-gray-700 md:!w-[50%] w-full md:pl-12   text-sm">
               <li>
                 The core business activities of us include creating projects &
                 implementing solutions related to Information Technology,

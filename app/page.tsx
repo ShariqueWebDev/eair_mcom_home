@@ -14,6 +14,7 @@ import Achievment from "../components/Achievment";
 import ServiceSec from "../components/HeaderFooter/ServiceSec";
 import { Check } from "lucide-react";
 import OurTechnologyPartner from "../components/OurTechnologyPartner";
+import SectorsWeConsider from "../components/ServiceWeProvide/SectorsWeConsider";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       {/* <Banner /> */}
       {/* <ServiceSection isPage={true} /> */}
       <ServiceSec isPage={true} />
+      {/* <Wrapper>
+        <SectorsWeConsider />
+      </Wrapper> */}
 
       <Wrapper className="bg-gray-100 md:py-16 py-10 ">
         <div className="">

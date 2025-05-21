@@ -1,21 +1,7 @@
 export const serviceData = [
   {
-    name: "IT Service",
-    iconPath: "/icon/it-service1.png",
-    image: "/images/user/user-01.png",
-    text: "The pre-built examples in this kit saved me weeks of development time. It’s a fantastic starting point for any AI SaaS project!",
-    points: [
-      "Server installation and configuration.",
-      "Infrastructure planning and implementing.",
-      "Remote access services.",
-      "Exchange server configuration.",
-      "Terminal server and client connectivity.",
-      "Email server solutions for corporate.",
-      "NAT solutions.",
-    ],
-  },
-  {
     name: "CCTV Service",
+    slug: "cctv-service",
     iconPath: "/icon/cctv1.png",
     image: "/images/user/user-02.png",
     text: "Building with OpenAI and Next.js has never been easier. The kit’s structure is intuitive and well-documented.",
