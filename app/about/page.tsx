@@ -126,23 +126,23 @@ const AboutPage = () => {
       <Wrapper className="pt-16">
         <div className=" text-justify md:px-3">
           <h1 className="text-left md:text-5xl text-3xl font-bold uppercase heading-all  text-gray-800 mb-6">
-            About Vostok
+            About Mcom
           </h1>
           <div className="flex flex-col md:flex-row  md:space-y-0">
             {/* First column with two list items */}
             <ul className=" space-y-3 text-gray-700 md:!w-[50%] w-full text-sm ">
               <li>
-                Vostok Trading LLC is a young entrepreneurial company, providing
-                solutions in the field of Information and Communication
-                Technologies. We are headquartered in Dubai, the commercial
-                capital of the Middle East. Within a span of a few years, we
-                have notched up around 10000 clients in the Middle East region.
-                Our team of 100 professionals is dedicated to bringing best of
-                breed emerging enterprise technology to the region for the
-                benefit of small, medium and large enterprises in the region.
+                Mcom is a young entrepreneurial company, providing solutions in
+                the field of Information and Communication Technologies. We are
+                headquartered in Dubai, the commercial capital of the Middle
+                East. Within a span of a few years, we have notched up around
+                10000 clients in the Middle East region. Our team of 100
+                professionals is dedicated to bringing best of breed emerging
+                enterprise technology to the region for the benefit of small,
+                medium and large enterprises in the region.
               </li>
               <li>
-                Vostok's mission is to maximize the value by providing the
+                Mcom mission is to maximize the value by providing the
                 high-quality core services that our customers and vendor
                 partners need to cost-effectively sell, deploy and support
                 world-class technology solutions.
