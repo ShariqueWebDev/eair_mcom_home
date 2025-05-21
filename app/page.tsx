@@ -168,9 +168,13 @@ export default function Home() {
           </div>
         </div>
       </Wrapper>
-      <AboutUsSection heading={true} />
+      <div className="md:my-5">
+        <AboutUsSection heading={true} />
+      </div>
       <TestimonialSection />
-      <OurClients />
+      <div className="md:mt-5">
+        <OurClients />
+      </div>
 
       <Wrapper>
         <hr className="text-gray-200 " />

@@ -179,7 +179,7 @@ import Wrapper from "../Others/Wrapper";
 
 const AboutUsSection = ({ heading }: { heading?: boolean }) => {
   return (
-    <Wrapper className=" md:pb-16 md:pt10 py-10">
+    <Wrapper className=" md:pb- py-10">
       <div className="">
         {heading && (
           <h3

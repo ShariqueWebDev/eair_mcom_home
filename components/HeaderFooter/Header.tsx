@@ -52,15 +52,15 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <div
-        className={`fixed z-50 w-full pb-3 md:px-10 transition-all ease-in-out duration-300 ${
+        className={`fixed z-50 w-full  md:px-10 transition-all ease-in-out duration-300 ${
           isVisible || isOpen ? "translate-y-0" : "-translate-y-full"
         } ${hasScrolled ? "bg-gray-100" : "bg-transparent"}`}
       >
-        <div className="templateContainer py-2 flex flex-row-reverse lg:flex-row justify-between items-center">
+        <div className="templateContainer py-2 flex flex-row-reverse lg:flex-row justify-between !items-center">
           {/* Sidebar Menu */}
 
           {/* Hamburger Menu */}
-          <div className="w-1/2 md:w-1/3 flex items-center justify-end lg:justify-start mt-3">
+          <div className="w-1/2 md:w-1/3 flex items-center justify-end lg:justify-start mb-0.5 ">
             <button
               className={`hamburger z-50 ${isOpen ? "open" : ""}`}
               onClick={toggleMenu}

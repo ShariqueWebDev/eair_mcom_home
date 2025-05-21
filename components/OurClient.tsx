@@ -136,7 +136,7 @@ export const logos: { imgUrl: string; altText: string }[] = [
 const OurClients = () => {
   return (
     <Wrapper>
-      <div className="templateContainer  text-center py-10 lg:py-14 heading-all space-y-10 bg-white  ">
+      <div className="templateContainer  text-center py-10 lg:pb-14 heading-all space-y-10 bg-white  ">
         <div className="space-y-3">
           <h2
             data-aos="fade-up"

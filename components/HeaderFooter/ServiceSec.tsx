@@ -8,7 +8,7 @@ import { serviceData } from "../../lib/serviceData";
 const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
   return (
     <section className="relative z-20 overflow-hidden py-10  md:pt-16">
-      <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
+      <div className="mx-auto max-w-[1190px] max-sm:px-4 sm:px-8 xl:px-0">
         {/* Header Section */}
         <div className="relative z-10 mb-12 text-center">
           {/* <span className="inline-flex items-center gap-2 rounded-full px-4.5 py-1.5 text-sm font-medium border border-gray-500 text-gray-800 mb-4">
