@@ -13,7 +13,7 @@ const Achievment = () => {
             Company Achievements
           </h2>
         </div>
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 max-sm:!gap-20 w-full">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-3 max-sm:!gap-20 ">
           {/* Happy Clients */}
           <CounterItem
             end={20}
