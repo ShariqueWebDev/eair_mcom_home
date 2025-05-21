@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     "IT Product Distribution",
     "Technology Services UAE",
   ],
-  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  authors: [{ name: " Mcom", url: `${process.env.FRONTEND_URL}` }],
   creator: " Mcom",
   publisher: " Mcom",
-  metadataBase: new URL("https://mcom.com"),
+  metadataBase: new URL(`${process.env.FRONTEND_URL}`),
   openGraph: {
     title: "Our Solutions - CCTV, VMS, ANPR, Biometric & Access Control | Mcom",
     description:
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/final-logo.png",
+        url: `${process.env.FRONTEND_URL}/logo/final-logo.png`,
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Our Solutions - CCTV, VMS, ANPR, Biometric & Access Control | Mcom",
     description:
       "Explore Mcom’s intelligent security and monitoring solutions including CCTV Central Monitoring, ANPR, Video Management Systems, Biometric Access, Door Control Systems, and Network Time Servers tailored for diverse industries.",
-    images: ["/logo/final-logo.png"],
+    images: [`${process.env.FRONTEND_URL}/logo/final-logo.png`],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://mcom.com/services",
+    canonical: `${process.env.FRONTEND_URL}/services`,
   },
 };
 
@@ -70,7 +70,7 @@ const SolutionPage = () => {
         paragraph="Enhance security and streamline attendance with advanced fingerprint and RFID systems. Our intelligent, user-friendly devices offer real-time monitoring, multi-verification methods, and robust access control."
         bgImg="/contact-banner1.webp"
       />
-      <ScrollWeb />
+      <ScrollWeb key={""} />
     </div>
   );
 };

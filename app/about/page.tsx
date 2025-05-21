@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     "Technology Company",
     "IT Company About",
   ],
-  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  authors: [{ name: " Mcom", url: `${process.env.FRONTEND_URL}` }],
   creator: " Mcom",
   publisher: " Mcom",
-  metadataBase: new URL("https://mcom.com"),
+  metadataBase: new URL(`${process.env.FRONTEND_URL}`),
   openGraph: {
     title: "About  Mcom - IT & Cybersecurity Experts",
     description:
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/final-logo.png",
+        url: `${process.env.FRONTEND_URL}/logo/final-logo.png`,
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "About  Mcom - Technology You Can Trust",
     description:
       "Discover  Mcom’s story, team, and services in Cybersecurity, Cloud, and IT Infrastructure.",
-    images: ["/logo/final-logo.png"],
+    images: [`${process.env.FRONTEND_URL}/logo/final-logo.png`],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://mcom.com/about",
+    canonical: `${process.env.FRONTEND_URL}/about`,
   },
 };
 

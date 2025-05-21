@@ -124,10 +124,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3
-                    heading-all
-                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
-                  >
+                  <h3 className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800">
                     UI/UX Service
                   </h3>
                 </div>
@@ -197,10 +194,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3
-                    heading-all
-                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
-                  >
+                  <h3 className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800">
                     Networking Service
                   </h3>
                 </div>
@@ -270,10 +264,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3
-                    heading-all
-                    className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800"
-                  >
+                  <h3 className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800">
                     Bio-Metric Service
                   </h3>
                 </div>

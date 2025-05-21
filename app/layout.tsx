@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     " Mcom",
     "IT Services UAE",
   ],
-  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  authors: [{ name: " Mcom", url: `${process.env.FRONTEND_URL}` }],
   creator: " Mcom",
   publisher: " Mcom",
   metadataBase: new URL("https://mcom.com"),
@@ -48,11 +48,11 @@ export const metadata: Metadata = {
     title: "MCOM - Complete IT & Cybersecurity Solutions",
     description:
       "Discover  Mcom's full range of cybersecurity, cloud infrastructure, IT distribution, and managed services designed for modern businesses.",
-    url: "https://mcom.com",
+    url: `${process.env.FRONTEND_URL}`,
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/final-logo.png",
+        url: `${process.env.FRONTEND_URL}/logo/final-logo.png`,
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     title: "MCOM - Cybersecurity & IT Solutions",
     description:
       "Expert IT services from  Mcom: cybersecurity, cloud infrastructure, product distribution, and more.",
-    images: ["/logo/final-logo.png"],
+    images: [`${process.env.FRONTEND_URL}/logo/final-logo.png`],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://mcom.com",
+    canonical: `${process.env.FRONTEND_URL}`,
   },
 };
 
@@ -90,6 +90,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log(process.env.FRONTEND_URL);
+
   return (
     <html lang="en">
       <head>

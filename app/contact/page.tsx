@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     "IT Company UAE",
     "Technology Contact Page",
   ],
-  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  authors: [{ name: " Mcom", url: `${process.env.FRONTEND_URL}` }],
   creator: " Mcom",
   publisher: " Mcom",
-  metadataBase: new URL("https://mcom.com"),
+  metadataBase: new URL(`${process.env.FRONTEND_URL}`),
   openGraph: {
     title: "Contact  Mcom - Let's Connect",
     description:
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/final-logo.png",
+        url: `${process.env.FRONTEND_URL}/logo/final-logo.png`,
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Contact  Mcom - Reach Our IT Experts",
     description:
       "Connect with the  Mcom team for personalized IT services, cybersecurity support, and cloud infrastructure solutions.",
-    images: ["/logo/final-logo.png"],
+    images: [`${process.env.FRONTEND_URL}/logo/final-logo.png`],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://mcom.com/contact",
+    canonical: `${process.env.FRONTEND_URL}/contact`,
   },
 };
 

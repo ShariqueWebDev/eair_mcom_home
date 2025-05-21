@@ -26,19 +26,19 @@ export const metadata: Metadata = {
     "IT Product Distribution",
     "Technology Services UAE",
   ],
-  authors: [{ name: " Mcom", url: "https://mcom.com" }],
+  authors: [{ name: " Mcom", url: `${process.env.FRONTEND_URL}` }],
   creator: " Mcom",
   publisher: " Mcom",
-  metadataBase: new URL("https://mcom.com"),
+  metadataBase: new URL(`${process.env.FRONTEND_URL}`),
   openGraph: {
     title: " Mcom Services - IT & Cybersecurity Solutions",
     description:
       "Discover  Mcom’s comprehensive IT and cybersecurity service offerings designed to empower businesses with secure, scalable, and reliable solutions.",
-    url: "https://mcom.com/services",
+    url: `${process.env.FRONTEND_URL}`,
     siteName: " Mcom",
     images: [
       {
-        url: "/logo/final-logo.png",
+        url: `${process.env.FRONTEND_URL}/logo/final-logo.png`,
         width: 800,
         height: 600,
         alt: " Mcom Logo",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Services -  Mcom",
     description:
       "Explore our expert IT services — from cybersecurity to cloud infrastructure — all under one roof at  Mcom.",
-    images: ["/logo/final-logo.png"],
+    images: [`${process.env.FRONTEND_URL}/logo/final-logo.png`],
     site: "@mcom",
     creator: "@mcom",
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://mcom.com/services",
+    canonical: `${process.env.FRONTEND_URL}/services`,
   },
 };
 

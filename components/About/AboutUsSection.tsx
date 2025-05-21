@@ -350,8 +350,7 @@ const AboutUsSection = ({ heading }: { heading?: boolean }) => {
                 <div className="heading-all">Our Value</div>
               </h2>
               <p className="max-w-[524px] text-sm mb-3 text-gray-600">
-                Empowering Success through Authenticity, Expertise, and Timely
-                Solutions.
+                Empowering Success through Authenticity,
               </p>
               <p
                 className="max-w-[524px] text-sm mb-3 text-gray-600"
