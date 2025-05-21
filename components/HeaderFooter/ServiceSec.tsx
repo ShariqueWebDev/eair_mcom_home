@@ -35,7 +35,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
         {/* Testimonials Grid */}
         <div className={``}>
           {/* Column 1 */}
-          <div className="space-y-7.5 grid md:grid-cols-4 grid-cols-1 max-sm:place-items-center gap-5 max-sm:mx-1.5">
+          <div className="space-y-7.5  md:flex md:justify-center grid-cols-1 max-sm:place-items-center gap-5 max-sm:mx-1.5">
             <div
               className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
@@ -54,7 +54,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                   />
                 </div>
                 <div>
-                  <h3 className="md:text-xl text-2xl heading-all md:h-[40px] uppercase  font-semibold text-gray-800">
+                  <h3 className="md:text-xl text-2xl heading-all  uppercase  font-semibold text-gray-800">
                     CCTV Service
                   </h3>
                 </div>
@@ -106,76 +106,7 @@ const ServiceSec = ({ isPage }: { isPage?: boolean }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
-              data-aos="fade-up"
-            >
-              <div
-                className="flex flex-col justify-center  items-center gap-3"
-                data-aos="fade-up"
-              >
-                <div className="relative h-12 w-12 mt-3 overflow-hidden ">
-                  <Image
-                    src={"/icon/ui.png"}
-                    alt={""}
-                    width={48}
-                    height={48}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="md:text-xl text-2xl heading-all uppercase text-center  font-semibold text-gray-800">
-                    UI/UX Service
-                  </h3>
-                </div>
-              </div>
-              <div
-                className="relative md:my-3 my-6  h-[1px] w-full bg-gray-600"
-                data-aos="fade-up"
-              ></div>
-              <div className="">
-                <div className="flex gap-3 mb-1" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 font-[500] text-gray-700">
-                    Website Domain Purchase & Configuration.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-1" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 font-[500] text-gray-700">
-                    Graphics Design & Visual Content Creation.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-1" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 font-[500] text-gray-700">
-                    Web development.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-1" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 font-[500] text-gray-700">
-                    UI/UX Wireframing & Prototyping.
-                  </p>
-                </div>
-                <div className="flex gap-3 mb-1" data-aos="fade-up">
-                  <div className="w-4 h-4 p-0.5 mt-1 bg-[#353382] rounded-full flex justify-center items-center">
-                    <Check color="#fff" size={16} />
-                  </div>
-                  <p className="text-sm mb-2 font-[500] text-gray-700">
-                    User Journey Mapping & Persona Development.
-                  </p>
-                </div>
-              </div>
-            </div>
+
             <div
               className="relative overflow-hidden md:max-w-[300px] w-full rounded-[19px] md:h-[410px] h-auto bg-gray-100 bg-opacity-50 backdrop-blur-md p-6  from-purple-500/30 to-pink-500/30"
               data-aos="fade-up"
