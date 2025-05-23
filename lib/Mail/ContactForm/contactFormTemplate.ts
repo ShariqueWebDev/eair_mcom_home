@@ -38,7 +38,7 @@ export const contactFormTemplate = ({
                     <td style="padding-bottom: 20px; text-align: center">
                       <img
                         src="${process.env.FRONTEND}/assets/logo/newLogo.png"
-                        alt="Yovant Recruitment Services"
+                        alt="Mcom"
                         style="width: 100px"
                       />
                     </td>
