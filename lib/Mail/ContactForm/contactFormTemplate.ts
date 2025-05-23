@@ -68,7 +68,7 @@ export const contactFormTemplate = ({
                           line-height: 1.5;
                         "
                       >
-                        This email was generated from Yovant Recruitment Services.
+                        This email was generated from Mcom.
                         Please contact us if you have any questions.
                       </p>
                     </td>
