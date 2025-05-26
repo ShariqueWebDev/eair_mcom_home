@@ -13,6 +13,9 @@
   @apply container mx-auto px-4 md:px-6 lg:px-10;
 }
 
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -72,4 +75,51 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+th,
+tr,
+td {
+  border: 1px solid rgb(199, 198, 198);
+  padding: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  th,
+  tr,
+  td {
+    border: 1px solid rgb(199, 198, 198);
+    padding: 3px;
+    font-size: 8px;
+  }
+}
+
+thead,
+th {
+  background-color: #2e496b;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+table tbody tr th {
+  background-color: #2e496b;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+table tbody tr:hover {
+  background-color: #ddd;
 }

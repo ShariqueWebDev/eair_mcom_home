@@ -5,9 +5,9 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Metadata } from "next";
 import React from "react";
-import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
-import ContactCard from "../../components/ContactCard";
-import ContactForm from "../../components/Forms/ContactForm";
+import Breadcrumb from "../../../components/BreadCrumb/BreadCrumb";
+import ContactCard from "../../../components/ContactCard";
+import ContactForm from "../../../components/Forms/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us -  Mcom",

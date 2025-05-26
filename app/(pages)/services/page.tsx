@@ -6,11 +6,11 @@
 // import BenefitSectionForService from "@/components/Services/BenefitSection";
 import { Metadata } from "next";
 import React from "react";
-import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
+import Breadcrumb from "../../../components/BreadCrumb/BreadCrumb";
 // import ServiceSection from "../../components/HeaderFooter/ServiceSection";
-import BlogSection from "../../components/BlogSection";
-import FeaturesWeb from "../../components/FeaturesWeb";
-import ServiceSec from "../../components/HeaderFooter/ServiceSec";
+import BlogSection from "../../../components/BlogSection";
+import FeaturesWeb from "../../../components/FeaturesWeb";
+import ServiceSec from "../../../components/HeaderFooter/ServiceSec";
 // import ScrollWeb from "../../components/ScrollWeb";
 
 export const metadata: Metadata = {

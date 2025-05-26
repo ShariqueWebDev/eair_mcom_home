@@ -19,7 +19,7 @@ export const slidesData: SlidesDataProps[] = [
         <br className="max-sm:hidden" /> and Connected Infrastructure.
       </div>
     ),
-    imgPath: "/banner-bg/banner1.webp",
+    imgPath: "/banner-bg/banner5.webp",
   },
   {
     title: "Smart License Plate Detection",
@@ -36,7 +36,7 @@ export const slidesData: SlidesDataProps[] = [
       </div>
     ),
 
-    imgPath: "/banner-bg/log-book1.webp",
+    imgPath: "/banner-bg/banner2.webp",
   },
   {
     title: "Advanced Video Management Server (VMS)",

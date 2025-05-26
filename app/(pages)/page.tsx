@@ -1,20 +1,23 @@
-import AboutUsSection from "../components/About/AboutUsSection";
+import AboutUsSection from "../../components/About/AboutUsSection";
 import Image from "next/image";
 // import Banner, { OPTIONS, slidesData } from "@/components/HeaderFooter/Banner";
-import EmblaCarousel from "../components/HeaderFooter/EmbalBannerCarousel/EmblaCarousel";
+import EmblaCarousel from "../../components/HeaderFooter/EmbalBannerCarousel/EmblaCarousel";
 
-import TestimonialSection from "../components/TestimonialPage/TestimonialSection";
+import TestimonialSection from "../../components/TestimonialPage/TestimonialSection";
 
-import "../components/HeaderFooter/EmbalBannerCarousel/embla.css";
+import "../../components/HeaderFooter/EmbalBannerCarousel/embla.css";
 import Link from "next/link";
-import Wrapper from "../components/Others/Wrapper";
-import { OPTIONS, slidesData } from "../lib/emblaData";
-import OurClients from "../components/OurClient";
-import Achievment from "../components/Achievment";
-import ServiceSec from "../components/HeaderFooter/ServiceSec";
+import Wrapper from "../../components/Others/Wrapper";
+import { OPTIONS, slidesData } from "../../lib/emblaData";
+import OurClients from "../../components/OurClient";
+import Achievment from "../../components/Achievment";
+import ServiceSec from "../../components/HeaderFooter/ServiceSec";
 import { Check } from "lucide-react";
-import OurTechnologyPartner from "../components/OurTechnologyPartner";
-import SectorsWeConsider from "../components/ServiceWeProvide/SectorsWeConsider";
+import OurTechnologyPartner from "../../components/OurTechnologyPartner";
+import SectorsWeConsider from "../../components/ServiceWeProvide/SectorsWeConsider";
+import OurProductSection from "../../components/OurProductSection/OurProductSection";
+import ProductCard from "../../components/OurProductSection/ProductCard";
+import StorySection from "../../components/StorySection/StorySection";
 
 export default function Home() {
   return (
@@ -22,6 +25,8 @@ export default function Home() {
       <EmblaCarousel slides={slidesData} options={OPTIONS} />
       {/* <Banner /> */}
       {/* <ServiceSection isPage={true} /> */}
+
+      {/* <ProductCard /> */}
       <ServiceSec isPage={true} />
       {/* <Wrapper>
         <SectorsWeConsider />
@@ -168,8 +173,14 @@ export default function Home() {
           </div>
         </div>
       </Wrapper>
-      <div className="md:my-5">
+      {/* <div className="md:my-5">
         <AboutUsSection heading={true} />
+      </div> */}
+      <div className="">
+        <OurProductSection />
+      </div>
+      <div className="">
+        <StorySection />
       </div>
       <TestimonialSection />
       <div className="md:mt-5">

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
-import ScrollWeb from "../../components/ScrollWeb";
-import Breadcrumb from "../../components/BreadCrumb/BreadCrumb";
+import ScrollWeb from "../../../components/ScrollWeb";
+import Breadcrumb from "../../../components/BreadCrumb/BreadCrumb";
 
 export const metadata: Metadata = {
   title: "Our Solutions - CCTV, VMS, ANPR, Biometric & Access Control | Mcom",
