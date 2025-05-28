@@ -62,16 +62,28 @@ Situated on the Yas Island, one of the world’s leading leisure and entertainme
     main_title: "Residential",
     details: [
       {
-        name: "Residential",
+        name: "API Properties",
         title: "Residential Project",
         desc: `A modern residential complex with advanced security systems.`,
-        imgPath: "/story-img/res1.jpg",
+        imgPath: "/story-img/resident1.webp",
       },
       {
-        name: "Residential",
+        name: "Ayla Resident",
         title: "Residential Project",
         desc: `A modern residential complex with advanced security systems.`,
-        imgPath: "/story-img/res1.jpg",
+        imgPath: "/story-img/resident2.webp",
+      },
+      {
+        name: "API Trio Tower",
+        title: "Residential Project",
+        desc: `A modern residential complex with advanced security systems.`,
+        imgPath: "/story-img/resident3.webp",
+      },
+      {
+        name: "Masaken Al Muraqqabat 01",
+        title: "Residential Project",
+        desc: `A modern residential complex with advanced security systems.`,
+        imgPath: "/story-img/resident4.webp",
       },
     ],
   },
@@ -81,15 +93,15 @@ Situated on the Yas Island, one of the world’s leading leisure and entertainme
     details: [
       {
         name: "Retail",
-        title: "Retail Plaza",
+        title: "Palm Strip Mall",
         desc: `A bustling retail plaza with state-of-the-art surveillance.`,
-        imgPath: "/story-img/ret1.jpg",
+        imgPath: "/story-img/retail1.webp",
       },
       {
         name: "Retail",
-        title: "Retail Plaza",
+        title: "Sunset Mall",
         desc: `A bustling retail plaza with state-of-the-art surveillance.`,
-        imgPath: "/story-img/ret1.jpg",
+        imgPath: "/story-img/retail2.webp",
       },
     ],
   },
@@ -113,7 +125,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
               className="md:flex-[0_0_25%] flex-[0_0_100%] min-w-0 pl-4 transform-gpu"
               key={index}
             >
-              <div className="md:h-[25rem] h-[22rem]  rounded-lg  select-none ">
+              <div className="  rounded-lg  select-none ">
                 <img
                   src={slide.imgPath}
                   alt={slide.title}
@@ -121,7 +133,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
                 />
                 <div className="py-4">
                   <h3 className="text-xl font-semibold">{slide.title}</h3>
-                  <p className="text-sm text-gray-600">{slide.desc}</p>
+                  {/* <p className="text-sm text-gray-600">{slide.desc}</p> */}
                 </div>
               </div>
             </div>
@@ -150,9 +162,9 @@ const App: React.FC = () => {
   return (
     <div className="p-4 md:px-20 px-4">
       <div className="flex gap-4 mb-6 overflow-x-auto [&::-webkit-scrollbar]:hidden scrollbar-none">
-        {storyData.map((story) => (
+        {storyData.map((story, index) => (
           <button
-            key={story.main_title}
+            key={index}
             onClick={() => setSelectedCategory(story.main_title)}
             className={`px-4 py-2 rounded-full ${
               selectedCategory === story.main_title

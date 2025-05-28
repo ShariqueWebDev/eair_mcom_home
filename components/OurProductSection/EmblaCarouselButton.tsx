@@ -57,7 +57,7 @@ export const PrevButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-transparent border-2 border-gray-500 text-gray-800 cursor-pointer disabled:text-gray-400 touch-manipulation transition-colors"
+      className="inline-flex  items-center justify-center w-9 h-9 rounded-full  bg-[#2d2f95] text-white cursor-pointer disabled:text-gray-400 touch-manipulation transition-colors"
       type="button"
       {...restProps}
     >
@@ -77,7 +77,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-transparent border-2 border-gray-500 text-gray-800 cursor-pointer disabled:text-gray-400 touch-manipulation transition-colors"
+      className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#2d2f95] text-white cursor-pointer disabled:text-gray-400 touch-manipulation transition-colors"
       type="button"
       {...restProps}
     >

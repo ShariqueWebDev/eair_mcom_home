@@ -61,7 +61,7 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="w-full mx-auto bg-gray-100">
+    <section className="w-full relative mx-auto bg-gray-100">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom -ml-0">
           {slides.map((item: slideProductDataProps, index: number) => (
@@ -124,12 +124,14 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
       </div>
 
       {/* Optional Navigation */}
-      {/* <div className="grid grid-cols-[auto_1fr] justify-between gap-3 mt-7">
-        <div className="grid grid-cols-2 gap-1.5 items-center">
+      <div className="absolute top-1/2 left-0 w-full flex justify-between px-3 -translate-y-1/2 pointer-events-none">
+        <div className="pointer-events-auto">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        </div>
+        <div className="pointer-events-auto">
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
