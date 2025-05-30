@@ -25,7 +25,7 @@ export const sendContactEnquiry: React.FC<SendFuncProps> = async ({
 
   try {
     await sendmail({
-      to: "shariquedev966@gmail.com",
+      to: "Sales@mcomcctv.com",
       name: " Mcom",
       subject: "Contact Form Enquiry (  Mcom )",
       body: emailBody,

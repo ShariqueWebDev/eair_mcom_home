@@ -63,25 +63,25 @@ Situated on the Yas Island, one of the world’s leading leisure and entertainme
     details: [
       {
         name: "API Properties",
-        title: "Residential Project",
+        title: "API Properties",
         desc: `A modern residential complex with advanced security systems.`,
         imgPath: "/story-img/resident1.webp",
       },
       {
         name: "Ayla Resident",
-        title: "Residential Project",
+        title: "Ayla Resident",
         desc: `A modern residential complex with advanced security systems.`,
         imgPath: "/story-img/resident2.webp",
       },
       {
         name: "API Trio Tower",
-        title: "Residential Project",
+        title: "API Trio Tower",
         desc: `A modern residential complex with advanced security systems.`,
         imgPath: "/story-img/resident3.webp",
       },
       {
         name: "Masaken Al Muraqqabat 01",
-        title: "Residential Project",
+        title: "Masaken Al Muraqqabat 01",
         desc: `A modern residential complex with advanced security systems.`,
         imgPath: "/story-img/resident4.webp",
       },

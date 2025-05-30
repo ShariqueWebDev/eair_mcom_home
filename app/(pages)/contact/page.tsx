@@ -82,7 +82,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Mail",
-      value: "sales@mcomcctv.com",
+      value: "Sales@mcomcctv.com",
     },
   ];
 
@@ -112,8 +112,8 @@ const Contact = () => {
             >
               Need to get in touch? We'd love to hear from you! Please fill out
               the form or email{" "}
-              <a href="mailto:sales@mcomcctv.com" className="text-lightGolden">
-                sales@mcomcctv.com
+              <a href="mailto:Sales@mcomcctv.com" className="text-lightGolden">
+                Sales@mcomcctv.com
               </a>
               , and our customer service team will respond within 24-72 hours.
             </p>

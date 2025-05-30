@@ -34,7 +34,7 @@ const SocialMediaButton = () => {
     <div className={``}>
       <a
         target="_blank"
-        href="https://wa.me/+917718093407"
+        href="https://wa.me/+971559563722"
         className={` rounded-full transition-all relative group cursor-pointer duration-[0.2s] ease-out hidden md:flex p-2.5  text-white  bg-green-600  hover:bg-green-800`}
       >
         <FaWhatsapp className="text-2xl" />

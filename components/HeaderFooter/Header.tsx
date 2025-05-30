@@ -192,7 +192,7 @@ const Header: React.FC<HeaderProps> = () => {
                 Email
               </h4>
               <p className="text-sm text-gray-300 mt-1 tracking-wide">
-                sales@mcomcctv.com
+                Sales@mcomcctv.com
               </p>
               <hr className="mt-2 text-gray-400" />
             </div>
@@ -270,7 +270,7 @@ const Header: React.FC<HeaderProps> = () => {
               Email
             </h4>
             <p className="text-sm text-gray-300 mt-1 tracking-wide">
-              sales@mcomcctv.com
+              Sales@mcomcctv.com
             </p>
             <hr className="mt-2 text-gray-400" />
           </div>

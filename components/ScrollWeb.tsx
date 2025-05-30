@@ -456,7 +456,7 @@ const projects: Project[] = [
     title1: "CCTV Central Monitoring with Integrated Intrusion Alarm",
     points1: ["DUBAI Police", "SHARJAH Police", "RAS AL KHAIMAH Police"],
     title2: "CCTV Central Monitoring Solutions for",
-    points2: ["Banking", "Jewellery", "Money Exchange", "Corporate Sectors"],
+    points2: ["Hospitality", "Retail", "Residential"],
 
     description:
       "CCTV description: We provide advanced CCTV Central Monitoring and Intrusion Alarm Solutions for law enforcement and high-security sectors like banking, jewelry, and corporate environments. Our system supports all major DVR/NVR/IPC brands with real-time streaming, customizable multi-camera views, and multilingual support. It's a reliable, scalable, and user-friendly solution for 24/7 surveillance and protection.",
@@ -554,6 +554,7 @@ const projects: Project[] = [
   },
   {
     main_title: "NTS Solution",
+
     title1: "Networking Solutions",
     points1: [
       "Our open, agile, cloud-driven networking solutions will help your business to grow across borders with ease.",
