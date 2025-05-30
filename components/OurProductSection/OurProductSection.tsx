@@ -124,7 +124,10 @@ const OurProductSection = () => {
   return (
     <Wrapper className="md:py-16 py-10">
       <div className="">
-        <h3 className="mb-7 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl text-center">
+        <h3
+          className="mb-7 text-2xl font-bold text-gray-800 heading-all sm:text-4xl uppercase xl:text-4xl text-center"
+          data-aos="fade-up"
+        >
           Our Lastest Products
         </h3>
         <div className="">

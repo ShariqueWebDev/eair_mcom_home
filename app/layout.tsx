@@ -27,8 +27,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(process.env.FRONTEND_URL);
-
   return (
     <html lang="en">
       <head>

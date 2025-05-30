@@ -5,6 +5,8 @@ import Image from "next/image";
 import Wrapper from "./Others/Wrapper";
 
 export default function Footer2() {
+  const fullyear = new Date();
+
   return (
     <Wrapper className="bg-gray-900 text-white pt-12 pb-5">
       <footer className="">
@@ -223,7 +225,7 @@ export default function Footer2() {
               className="flex-1 w-full text-center md:text-left"
               data-aos="fade-up"
             >
-              <div className="w-full h-32 sm:h-36 md:h-40 lg:h-48 rounded overflow-hidden">
+              <div className="w-full h-48 rounded overflow-hidden">
                 <iframe
                   className="w-full h-full border-0"
                   loading="lazy"
@@ -238,8 +240,7 @@ export default function Footer2() {
           {/* Bottom Section: Copyright */}
           <div className="border-t border-gray-700 mt-8 sm:mt-10 md:mt-12 pt-4 text-center text-xs sm:text-sm md:text-base lg:text-base">
             <p className="text-sm text-gray-300">
-              © 2025 By Mcom | All Rights Reserved. Terms & Conditions. Privacy
-              Policy
+              © {fullyear?.getFullYear()} By Mcom | All Rights Reserved.
             </p>
           </div>
         </div>

@@ -124,6 +124,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
             <div
               className="md:flex-[0_0_25%] flex-[0_0_100%] min-w-0 pl-4 transform-gpu"
               key={index}
+              data-aos="fade-up"
             >
               <div className="  rounded-lg  select-none ">
                 <img
@@ -141,7 +142,10 @@ const EmblaCarousel: React.FC<PropType> = ({ slides, options }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-[auto_1fr] justify-between gap-6 mt-7">
+      <div
+        className="grid grid-cols-[auto_1fr] justify-between gap-6 mt-7"
+        data-aos="fade-up"
+      >
         <div className="grid grid-cols-2 gap-2 items-center">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
@@ -161,7 +165,10 @@ const App: React.FC = () => {
 
   return (
     <div className="p-4 md:px-20 px-4">
-      <div className="flex gap-4 mb-6 overflow-x-auto [&::-webkit-scrollbar]:hidden scrollbar-none">
+      <div
+        className="flex gap-4 mb-6 overflow-x-auto [&::-webkit-scrollbar]:hidden scrollbar-none"
+        data-aos="fade-up"
+      >
         {storyData.map((story, index) => (
           <button
             key={index}

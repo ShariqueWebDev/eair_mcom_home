@@ -74,13 +74,19 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
                      flex-col-reverse justify-center items-center"
                   >
                     <div className="z-10 md:p-11 p-3 bg-white rounded-lg md:w-1/2 w-full md:mt-12 mt-0">
-                      <h4 className="md:text-3xl text-xl mb-5 heading-all font-semibold">
+                      <h4
+                        className="md:text-3xl text-xl mb-5 heading-all font-semibold"
+                        data-aos="fade-up"
+                      >
                         Features
                       </h4>
                       <ul className="">
                         {item?.features?.map((feature, index) => {
                           return (
-                            <li className="flex gap-3 text-gray-600 mb-3 text-sm items-center">
+                            <li
+                              className="flex gap-3 text-gray-600 mb-3 text-sm items-center"
+                              data-aos="fade-up"
+                            >
                               <span className="bg-[#2d2f95] rounded-full  p-0.5">
                                 <Check size={11} color="#fff" />
                               </span>
@@ -92,14 +98,23 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
                     </div>
                     <div className="md:w-1/2 w-full ">
                       <div className="flex justify-center  flex-col items-center">
-                        <h3 className="md:text-3xl text-2xl  font-semibold heading-all">
+                        <h3
+                          className="md:text-3xl text-2xl  font-semibold heading-all"
+                          data-aos="fade-up"
+                        >
                           {item?.title}
                         </h3>
-                        <h4 className="text-sm text-gray-500 max-sm:text-center ">
+                        <h4
+                          className="text-sm text-gray-500 max-sm:text-center "
+                          data-aos="fade-up"
+                        >
                           {item?.subtitle}
                         </h4>
 
-                        <div className="max-w-[580px] rounded-lg overflow-hidden shadow-2xl mt-5">
+                        <div
+                          className="max-w-[580px] rounded-lg overflow-hidden shadow-2xl mt-5"
+                          data-aos="fade-up"
+                        >
                           <Image
                             src={item?.imgPath}
                             alt={item?.title}
