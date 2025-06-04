@@ -18,7 +18,7 @@ const OurProductSection = () => {
       id: 1,
       title: "MC-IPCWD8M",
       subtitle: "Smart AI Black Light WDR Box Camera",
-      imgPath: "/productImg/d8m.jpg",
+      imgPath: "/productImg/d8m.webp",
       features: [
         `1/2.8" 8MP SONY CMOS Sensor`,
         `Support H.265+, H.265, H.264 encoding`,
@@ -35,7 +35,7 @@ const OurProductSection = () => {
       id: 2,
       title: "MC-IPCLW777",
       subtitle: "HD IPC IR Vandal proof Dome Camera",
-      imgPath: "/productImg/w777.jpg",
+      imgPath: "/productImg/w777.webp",
 
       features: [
         `1/2.8" 5MP SONY CMOS Sensor`,
@@ -52,7 +52,7 @@ const OurProductSection = () => {
       id: 3,
       title: "MC-IPCBFX773",
       subtitle: "HD IPC IR Vandal proof Varifocal Dome Camera",
-      imgPath: "/productImg/f773.jpg",
+      imgPath: "/productImg/f773.webp",
 
       features: [
         `1/2.8" 5MP SONY CMOS Sensor`,
@@ -70,7 +70,7 @@ const OurProductSection = () => {
       id: 4,
       title: "MC-IPCDFX774",
       subtitle: "HD IPC IR Vandalproof Dome Camera",
-      imgPath: "/productImg/x774.jpg",
+      imgPath: "/productImg/x774.webp",
 
       features: [
         `1/2.8" 5MP SONY CMOS Sensor`,
@@ -88,7 +88,7 @@ const OurProductSection = () => {
       id: 5,
       title: "MC-IPCBFX776",
       subtitle: "HD IPC IR Bullet Camera",
-      imgPath: "/productImg/x776.jpg",
+      imgPath: "/productImg/x776.webp",
 
       features: [
         `1/2.8" 5MP SONY CMOS Sensor`,
@@ -106,7 +106,7 @@ const OurProductSection = () => {
       id: 6,
       title: "MC-IPCBFX775",
       subtitle: "HD IPC IR Vandal proof Varifocal Bullet Camera",
-      imgPath: "/productImg/x775.jpg",
+      imgPath: "/productImg/x775.webp",
 
       features: [
         `1/2.8" 5MP SONY CMOS Sensor`,

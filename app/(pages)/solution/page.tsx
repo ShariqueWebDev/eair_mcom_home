@@ -66,8 +66,8 @@ const SolutionPage = () => {
     <div>
       <Breadcrumb
         path="Solution"
-        title="Biometric & Access Control Solutions"
-        paragraph="Enhance security and streamline attendance with advanced fingerprint and RFID systems. Our intelligent, user-friendly devices offer real-time monitoring, multi-verification methods, and robust access control."
+        title="Biometric & Access Control"
+        paragraph="Enhance security and streamline attendance with advanced fingerprint and RFID systems."
         bgImg="/contact-banner1.webp"
       />
       <ScrollWeb />

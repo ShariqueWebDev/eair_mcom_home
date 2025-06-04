@@ -600,11 +600,11 @@ export default function ScrollWeb() {
     <section className="flex flex-col gap-5 lg:gap-10 min-h-screen pb-16">
       <div className="mx-auto w-full max-w-3xl text-center md:mt-16 mt-12 md:px-6 flex flex-col gap-2">
         <h1 className="text-3xl uppercase md:text-4xl heading-all font-bold tracking-tight text-gray-800">
-          Vision and Solution
+          Integrated Security & Surveillance Solutions
         </h1>
         <p className="text- font-medium text-gray-600 px-4 ">
-          See how I partner with clients to create designs that stand out, drive
-          engagement, and push boundaries.
+          Complete integrated security, surveillance, and infrastructure
+          solutions for smart, scalable, and secure environments.
         </p>
       </div>
 

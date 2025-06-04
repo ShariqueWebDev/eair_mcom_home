@@ -18,6 +18,11 @@ import SectorsWeConsider from "../../components/ServiceWeProvide/SectorsWeConsid
 import OurProductSection from "../../components/OurProductSection/OurProductSection";
 import ProductCard from "../../components/OurProductSection/ProductCard";
 import StorySection from "../../components/StorySection/StorySection";
+import EmblaANPRcarouselSection from "../../components/OurProductSection/EmblaANPRcaruselSection";
+import ANPRSection, {
+  ANPRslidesData,
+} from "../../components/OurProductSection/ANPRSection";
+import NewANPRsection from "../../components/OurProductSection/NewANPRsection";
 
 export default function Home() {
   return (
@@ -176,6 +181,9 @@ export default function Home() {
       {/* <div className="md:my-5">
         <AboutUsSection heading={true} />
       </div> */}
+      <div className="">
+        <NewANPRsection />
+      </div>
       <div className="">
         <OurProductSection />
       </div>

@@ -27,10 +27,7 @@ type PropType = {
   options?: EmblaOptionsType;
 };
 
-const EmblaCarouselProductSection: React.FC<PropType> = ({
-  slides,
-  options,
-}) => {
+const EmblaANPRcarouselSection: React.FC<PropType> = ({ slides, options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -65,10 +62,7 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y touch-pinch-zoom -ml-0">
           {slides.map((item: slideProductDataProps, index: number) => (
-            <div
-              className="flex-[0_0_100%] min-w-0 pl-0 pb-10 max-sm:pt-10"
-              key={index}
-            >
+            <div className="flex-[0_0_100%] min-w-0 pl-0 py-10" key={index}>
               <div>
                 <Wrapper className=" w-full ">
                   <div
@@ -76,43 +70,20 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
                     className="flex md:flex-row md:gap-10 gap-5
                      flex-col-reverse justify-center items-center"
                   >
-                    <div className="z-10 md:p-11 p-3 bg-white rounded-lg md:w-1/2 w-full md:mt-12 mt-0">
-                      <h4
-                        className="md:text-3xl text-xl mb-5 heading-all font-semibold"
-                        data-aos="fade-up"
-                      >
-                        Features
-                      </h4>
-                      <ul className="">
-                        {item?.features?.map((feature, index) => {
-                          return (
-                            <li
-                              className="flex gap-3 text-gray-600 mb-3 text-sm items-center"
-                              data-aos="fade-up"
-                            >
-                              <span className="bg-[#2d2f95] rounded-full  p-0.5">
-                                <Check size={11} color="#fff" />
-                              </span>
-                              {feature}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
                     <div className="md:w-1/2 w-full ">
                       <div className="flex justify-center  flex-col items-center">
-                        <h3
+                        {/* <h3
                           className="md:text-3xl text-2xl  font-semibold heading-all"
                           data-aos="fade-up"
                         >
                           {item?.title}
-                        </h3>
-                        <h4
+                        </h3> */}
+                        {/* <h4
                           className="text-sm text-gray-500 max-sm:text-center "
                           data-aos="fade-up"
                         >
                           {item?.subtitle}
-                        </h4>
+                        </h4> */}
 
                         <div
                           className="max-w-[580px] rounded-lg overflow-hidden mt-5"
@@ -132,6 +103,29 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
                         </div>
                       </div>
                       {/* <div className="absolute inset-0 bg-black/60" /> */}
+                    </div>
+                    <div className="z-10 md:p-11 p-3 bg-white rounded-lg md:w-1/2 w-full md:mt-12 mt-0">
+                      <h4
+                        className="md:text-3xl text-xl mb-5 heading-all font-semibold"
+                        data-aos="fade-up"
+                      >
+                        {item?.title}
+                      </h4>
+                      <ul className="">
+                        {item?.features?.map((feature, index) => {
+                          return (
+                            <li
+                              className="flex gap-3 text-gray-600 mb-3 text-sm items-center"
+                              data-aos="fade-up"
+                            >
+                              <span className="bg-[#2d2f95] rounded-full  p-0.5">
+                                <Check size={11} color="#fff" />
+                              </span>
+                              {feature}
+                            </li>
+                          );
+                        })}
+                      </ul>
                     </div>
                   </div>
                 </Wrapper>
@@ -154,4 +148,4 @@ const EmblaCarouselProductSection: React.FC<PropType> = ({
   );
 };
 
-export default EmblaCarouselProductSection;
+export default EmblaANPRcarouselSection;
